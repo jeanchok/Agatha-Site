@@ -80,51 +80,6 @@ m441 163 c-29 -140 87 -256 227 -227 42 8 53 7 68 -6 17 -15 -2 -35 -315 -349
                 <div className="bar3"></div>
             </button>
             <ul className={!menuClass ? 'none' : 'list'}>
-                {/* <Link
-                    to='accueil'
-                    className={(nav) => (nav.isActive ? "nav-active" : "")}
-                    onClick={(e) => scrollToSection(e, to)}
-                >
-                    <li className='content__item'>
-                        <span className='link link--metis'>ACCUEIL</span>
-                    </li>
-                </Link>
-                <Link
-                    to='actus'
-                    className={(nav) => (nav.isActive ? "nav-active" : "")}
-                    onClick={(e) => scrollToSection(e, to)}
-                >
-                    <li className='content__item'>
-                        <span className='link link--metis'>ACTUS</span>
-                    </li>
-                </Link>
-                <Link
-                    to='programmation'
-                    className={(nav) => (nav.isActive ? "nav-active" : "")}
-                    onClick={(e) => scrollToSection(e, to)}
-                >
-                    <li className='content__item'>
-                        <span className='link link--metis'>PROGRAMMATION</span>
-                    </li>
-                </Link>
-                <Link
-                    to='infos'
-                    className={(nav) => (nav.isActive ? "nav-active" : "")}
-                    onClick={(e) => scrollToSection(e, to)}
-                >
-                    <li className='content__item'>
-                        <span className='link link--metis'>INFOS PRATIQUES</span>
-                    </li>
-                </Link>
-                <Link
-                    to='partenaires'
-                    className={(nav) => (nav.isActive ? "nav-active" : "")}
-                    onClick={(e) => scrollToSection(e, to)}
-                >
-                    <li className='content__item'>
-                        <span className='link link--metis'>PARTENAIRES</span>
-                    </li>
-                </Link> */}
                 {navLink("accueil", "ACCUEIL")}
                 {navLink("actus", "ACTUS")}
                 {navLink("programmation", "PROGRAMMATION")}

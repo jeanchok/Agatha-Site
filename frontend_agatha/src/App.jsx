@@ -4,6 +4,7 @@ import Header from './Components/Header'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Accueil from './Pages/Accueil';
 import InfosFullPage from './Pages/InfosFullPage';
+import ProgrammationFullPage from './Pages/ProgrammationFullPage';
 import { MyContext } from './Hooks/useContext';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Accueil />} />
           <Route path="*" element={<Accueil />} />
           <Route path="infospratiques" element={<InfosFullPage />} />
+          <Route path="programmation" element={<ProgrammationFullPage />} />
           {/* <Route path="contact" element={<Contact />} />
         <Route path="portfolio" element={<Portfolio />} />
         <Route path="competences" element={<Competences />} /> */}

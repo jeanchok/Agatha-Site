@@ -5,7 +5,7 @@ const Header2 = (idHref) => {
         <header>
             <div className='header2'>
                 <div className='linkContainer'>
-                    <a className='linkContainer__linkButton' href={idHref}>
+                    <a className='linkContainer__linkButton glow-on-hover' href={idHref}>
                         <img src="/img/pointes-de-fleches-fines-a-droite.png" alt="fleche" />
                         <span>RETOUR</span>
 

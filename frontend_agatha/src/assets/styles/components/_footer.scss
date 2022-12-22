@@ -6,6 +6,12 @@ footer {
     flex-direction: column;
     align-items: center;
     bottom: 0;
+
+    @media (max-width: 970px) {
+        height: 130px;
+        flex-wrap: wrap;
+    }
+
 }
 
 .footer__topline {
@@ -20,6 +26,8 @@ footer {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    gap: 16px;
+    flex-wrap: wrap;
 
     a {
         text-decoration: none;

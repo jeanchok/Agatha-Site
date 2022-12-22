@@ -3,6 +3,15 @@
     // background-size: 400% 400%;
     //animation: gradient 15s ease infinite;
 
+    h2 {
+        @media (max-width: 1038px) {
+            font-size: 80px;
+        }
+
+        @media (max-width: 800px) {
+            font-size: 60px;
+        }
+    }
 }
 
 // @keyframes gradient {

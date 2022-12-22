@@ -23,7 +23,7 @@ const Infos = () => {
                             à Paris en 1h10.
                         </p>
                         <div className='linkContainer'>
-                            <a className='linkContainer__linkButton' href="/infospratiques">
+                            <a className='linkContainer__linkButton glow-on-hover' href="/infospratiques">
                                 <span>EN SAVOIR +</span>
                                 <img src="/img/pointes-de-fleches-fines-a-droite.png" alt="fleche" />
                             </a>
