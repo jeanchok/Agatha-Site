@@ -1,0 +1,18 @@
+.sectionContainer {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+section {
+    height: 100vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+// body {
+//     height: 100%;
+//     background: linear-gradient(180deg, #72DDFF 0%, rgba(223, 146, 90, 0.786458) 33.85%, #BF200A 41.67%, #4B0065 68.23%, #01002E 81.25%, #000000 100%);
+// }

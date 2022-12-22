@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "programmations",
+  "info": {
+    "singularName": "programmation",
+    "pluralName": "programmations",
+    "displayName": "Programmation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "NomArtiste": {
+      "type": "string"
+    },
+    "DescriptionArtiste": {
+      "type": "text"
+    },
+    "ImageArtiste": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "SceneArtiste": {
+      "type": "string"
+    },
+    "DateArtiste": {
+      "type": "date"
+    },
+    "LienSpotify": {
+      "type": "string"
+    }
+  }
+}

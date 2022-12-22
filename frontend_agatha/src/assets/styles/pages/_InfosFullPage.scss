@@ -1,0 +1,53 @@
+.InfosFullPage {
+    background: linear-gradient(180deg, #4B0065, #01002E);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+
+
+    &__infosContainer {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 150px;
+
+        @media (max-width: 1024px) {
+
+            width: 83.33333333333333%;
+        }
+    }
+
+    .moduleInfoContainer {
+        border-bottom: 1px solid white;
+        padding: 18px 0;
+
+        &__title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            button {
+                border-radius: 50px;
+                width: 40px;
+                height: 40px;
+                font-size: 26px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                color: white;
+                background: black;
+                border: transparent;
+                cursor: pointer;
+
+                span {
+                    margin-top: -5px;
+                }
+            }
+        }
+    }
+}

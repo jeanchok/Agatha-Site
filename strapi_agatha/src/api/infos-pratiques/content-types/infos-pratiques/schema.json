@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "infos_pratiquess",
+  "info": {
+    "singularName": "infos-pratiques",
+    "pluralName": "infos-pratiquess",
+    "displayName": "Infos Pratiques"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "TitreInfosPratiques": {
+      "type": "string"
+    },
+    "TexteInfosPratiques": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "artistes_mis_en_avants",
+  "info": {
+    "singularName": "artistes-mis-en-avant",
+    "pluralName": "artistes-mis-en-avants",
+    "displayName": "Artistes mis en avant",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "NomArtiste": {
+      "type": "string"
+    },
+    "ImageArtisteMisEnAvant": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "DateArtisteMisEnAvant": {
+      "type": "date"
+    }
+  }
+}

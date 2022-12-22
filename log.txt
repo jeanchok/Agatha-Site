@@ -1,0 +1,7 @@
+mdp : adminagatha
+
+contact@jeanchoquet.fr
+
+Agathaadmin123$
+
+npm run strapi admin:reset-user-password --email="contact@jeanchoquet.fr" --password="Adminagatha123$"

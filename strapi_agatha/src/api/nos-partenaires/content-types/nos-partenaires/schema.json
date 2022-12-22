@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nos_partenairess",
+  "info": {
+    "singularName": "nos-partenaires",
+    "pluralName": "nos-partenairess",
+    "displayName": "Nos Partenaires"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "NomPartenaire": {
+      "type": "string"
+    },
+    "LogoPartenaire": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

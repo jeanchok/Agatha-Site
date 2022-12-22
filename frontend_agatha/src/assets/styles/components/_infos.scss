@@ -1,0 +1,148 @@
+#infos {
+    background: linear-gradient(180deg, #4B0065, #01002E);
+    display: flex;
+    flex-direction: column;
+
+
+
+    h2 {
+
+        display: flex;
+        justify-content: flex-start;
+        width: 80%;
+        margin-bottom: -25px;
+        line-height: 0.90;
+
+        @media (max-width: 563px) {
+
+            font-size: 50px !important;
+        }
+
+        @media (max-width: 1115px) {
+
+            margin-bottom: -85px;
+            font-size: 80px;
+        }
+
+        @media (max-width: 1430px) {
+
+            margin-bottom: -86px;
+        }
+    }
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    height: 98%;
+}
+
+.infosContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    flex-direction: row;
+    width: 85%;
+    padding: 75px 25px 25px 25px;
+    gap: 15px;
+    flex-wrap: nowrap;
+
+    .linkContainer {
+        display: flex;
+        justify-content: end;
+        z-index: 11;
+        position: relative;
+
+        &__linkButton {
+            padding: 8px 16px;
+            display: flex;
+            background-color: black;
+            color: white;
+            align-items: center;
+            gap: 16px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 18px;
+
+            span {
+                margin: 0;
+            }
+        }
+
+    }
+
+    @media (max-width: 1115px) {
+        flex-direction: column;
+    }
+
+    &__video {
+        display: flex;
+        min-width: 70%;
+        max-height: 100%;
+        margin-top: 20px;
+
+        iframe {
+
+            aspect-ratio: 16/9 !important;
+            width: 100%;
+        }
+
+    }
+
+    &__text {
+        text-align: justify;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-content: center;
+        height: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-height: 500px;
+        margin-right: 16px;
+        margin-left: 16px;
+
+        h3 {
+            text-align: end;
+            font-size: 48px;
+            color: white;
+            margin-top: 0;
+            margin-bottom: 16px;
+
+            &::after {
+                content: "";
+                display: flex;
+                height: 2px;
+                background: white;
+                margin-top: 25px;
+            }
+
+        }
+
+
+
+        p {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.5;
+            font-weight: 100;
+        }
+
+
+
+    }
+
+    &__link {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+
+    }
+}

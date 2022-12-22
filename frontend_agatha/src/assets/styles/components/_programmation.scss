@@ -1,0 +1,93 @@
+#programmation {
+    background: linear-gradient(180deg, #BF200A, #4B0065);
+
+}
+
+.programmation {
+
+    h2 {
+        margin: 0;
+        margin-bottom: 0px;
+        margin-bottom: -35px;
+        z-index: 10;
+        position: relative;
+
+    }
+
+    .linkContainer {
+        display: flex;
+        justify-content: end;
+        margin-top: -16px;
+        z-index: 11;
+        position: relative;
+
+        &__linkButton {
+            padding: 8px 16px;
+            display: flex;
+            background-color: black;
+            color: white;
+            align-items: center;
+            gap: 16px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 18px;
+
+            span {
+                margin: 0;
+            }
+        }
+
+    }
+}
+
+.programmationContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+
+    .item1 {
+        justify-self: end;
+        align-self: center;
+    }
+
+    .item2 {
+        justify-self: start;
+    }
+
+    .item3 {
+        justify-self: end;
+    }
+
+    .item4 {
+        justify-self: end;
+    }
+
+
+    &__card {
+        position: relative;
+
+        width: 100%;
+
+        &--text {
+            bottom: 20px;
+            position: absolute;
+            left: 16px;
+            font-size: 32px;
+
+            h3 {
+                margin: 0;
+            }
+
+            p {
+                margin-top: 8px;
+                margin-bottom: 0;
+                padding: 5px;
+                background-color: #ff00d7;
+                font-weight: bold;
+                font-size: 25px;
+            }
+        }
+    }
+}

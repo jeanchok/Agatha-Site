@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "actuses",
+  "info": {
+    "singularName": "actus",
+    "pluralName": "actuses",
+    "displayName": "Actus"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "TitreActu": {
+      "type": "string"
+    },
+    "TexteActu": {
+      "type": "richtext"
+    },
+    "imageActu": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
