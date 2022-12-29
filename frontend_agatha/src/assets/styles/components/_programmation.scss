@@ -1,6 +1,6 @@
 #programmation {
-    background: linear-gradient(180deg, #BF200A, #4B0065);
 
+    background: linear-gradient(180deg, rgba(255, 166, 103, .8), rgba(191, 32, 10, .8));
 }
 
 .programmation {
@@ -9,6 +9,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media (max-width: 800px) {
+        margin-top: 70px;
+        height: 88%
+    }
 
     h2 {
         margin: 0;
@@ -19,10 +24,12 @@
 
         @media (max-width: 1038px) {
             font-size: 80px;
+
         }
 
         @media (max-width: 800px) {
-            font-size: 60px;
+            font-size: 50px;
+            line-height: 58px;
         }
 
     }
@@ -33,6 +40,11 @@
         margin-top: -16px;
         z-index: 11;
         position: relative;
+
+        @media (max-width: 800px) {
+            justify-content: center;
+            margin-top: 8px;
+        }
 
         &__linkButton {
             padding: 8px 16px;
@@ -63,6 +75,11 @@
 
     @media (max-width: 1038px) {
         flex-direction: column;
+        margin-top: 43px;
+    }
+
+    @media (max-width: 800px) {
+        height: 80%;
     }
 
 
@@ -112,7 +129,7 @@
 
     .item4 {
         margin-left: 30px;
-        margin-top: 30px;
+        margin-top: 20px;
 
         @media (max-width: 1038px) {
             margin: 0;
@@ -134,8 +151,19 @@
             left: 16px;
             font-size: 32px;
 
+            @media (max-width: 800px) {
+                bottom: 0px;
+                line-height: 28px;
+            }
+
             h3 {
                 margin: 0;
+
+                @media (max-width: 800px) {
+                    font-size: 26px;
+                }
+
+
             }
 
             p {
@@ -145,6 +173,11 @@
                 background-color: #ff00d7;
                 font-weight: bold;
                 font-size: 25px;
+
+                @media (max-width: 800px) {
+                    font-size: 22px;
+                }
+
             }
         }
     }

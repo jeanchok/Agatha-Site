@@ -35,6 +35,12 @@ const Actus = () => {
                         ))}
                     </Carousel>
                 </div>
+                <div className='linkContainer'>
+                    <a className='linkContainer__linkButton glow-on-hover' href="/">
+                        <span>DEVENIR BENEVOLE</span>
+                        <img src="/img/pointes-de-fleches-fines-a-droite.png" alt="fleche" />
+                    </a>
+                </div>
             </InView>
         </section >
     );

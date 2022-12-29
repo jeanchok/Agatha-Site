@@ -11,6 +11,7 @@ import { useInView } from 'react-intersection-observer';
 import { InView } from 'react-intersection-observer';
 
 
+
 const Accueil = () => {
 
     return (
@@ -18,9 +19,11 @@ const Accueil = () => {
             <Header />
             <Socials />
             <div className='sectionContainer'>
+
+
                 <Landing />
-                <Actus />
                 <Programmation />
+                <Actus />
                 <Infos />
                 <Partenaires />
             </div>

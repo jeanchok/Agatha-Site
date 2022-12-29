@@ -70,7 +70,7 @@ m441 163 c-29 -140 87 -256 227 -227 42 8 53 7 68 -6 17 -15 -2 -35 -315 -349
 89 38 122 -33 33 -59 25 -122 -38z"/>
                         </g>
                     </svg>
-                    <h3>BILLETERIE</h3>
+                    <h3>BILLETTERIE</h3>
                 </button>
 
             </div>
@@ -81,8 +81,8 @@ m441 163 c-29 -140 87 -256 227 -227 42 8 53 7 68 -6 17 -15 -2 -35 -315 -349
             </button>
             <ul className={!menuClass ? 'none' : 'list'}>
                 {navLink("accueil", "ACCUEIL")}
-                {navLink("actus", "ACTUS")}
                 {navLink("programmation", "PROGRAMMATION")}
+                {navLink("actus", "ACTUS")}
                 {navLink("infos", "INFOS PRATIQUES")}
                 {navLink("partenaires", "PARTENAIRES")}
             </ul>

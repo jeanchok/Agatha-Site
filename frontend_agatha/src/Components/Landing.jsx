@@ -24,7 +24,12 @@ const Landing = (props) => {
     return (
         <section id='accueil' ref={props.ref}>
             <InView as="div" className='accueil' onChange={(inView, entry) => { if (inView) { setNavActive('accueil') } }}>
-                <h2>AGATHA FESTIVAL</h2>
+                <div className='accueil__text'>
+                    <h1>AGATHA</h1>
+                    <h1>FESTIVAL</h1>
+                    <h3>1ère EDITION</h3>
+                    <h3 className='accueil__text--date'>DU 9 AU 11 JUIN 2023</h3>
+                </div>
             </InView>
             {/* <Particles minAlpha={minAlpha} drift={drift} yVariance={yVariance} rotation={rotation} speed={speed} color={color} direction={direction} shape={shape} imageUrl={imageUrl} /> */}
         </section>

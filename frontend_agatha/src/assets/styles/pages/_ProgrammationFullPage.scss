@@ -6,4 +6,170 @@
     align-items: center;
     min-height: 100vh;
     position: relative;
+
+    &__title {
+        margin-top: 50px;
+
+        h2 {
+            position: relative;
+            margin-bottom: 0;
+
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: -20px;
+                left: 0;
+                right: 0;
+                height: 0;
+                border-top: 4px solid white;
+                width: 270px;
+            }
+        }
+
+    }
+
+    &__buttonContainer {
+        width: 80%;
+        display: flex;
+        justify-content: end;
+
+        &--artisteButton {
+            margin-right: -26px;
+        }
+
+        .artisteActive {
+            padding-right: 30px;
+        }
+
+        .sceneActive {
+            padding-left: 30px;
+        }
+
+        .artisteActive,
+        .sceneActive {
+            background-color: #ffffff7d;
+            z-index: 1;
+            cursor: default;
+        }
+
+        button {
+            cursor: pointer;
+            border-radius: 50px;
+            border: transparent;
+            padding: 8px 16px;
+            font-size: 18px;
+            color: white;
+            background-color: black;
+            z-index: 2;
+        }
+    }
+
+    &__title {
+        h3 {
+            font-size: 28px;
+        }
+    }
+
+
+    &__date {
+        display: flex;
+        justify-content: flex-start;
+        width: 70%;
+
+        h4 {
+            font-size: 28px;
+            background-color: black;
+            padding: 5px 16px;
+        }
+    }
+
+
+    .grid {
+        margin-bottom: 90px;
+
+        &__textCard {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+
+            h4 {
+                justify-content: center;
+                display: flex;
+                height: 70%;
+                align-items: center;
+                font-size: 28px;
+            }
+
+            &--link {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &1 {
+                    text-decoration: none;
+                    color: white;
+                    background-color: black;
+                    padding: 5px 8px;
+                    font-size: 18px;
+                }
+
+                &2 {
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        &__incomingArtiste {
+            background-color: rgba(0, 0, 0, 0.685);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h4 {
+                font-size: 28px;
+            }
+        }
+
+        img {
+            width: 50px;
+        }
+    }
+}
+
+.progScenesContainer {
+    width: 60%;
+    margin-top: 50px;
+
+    &__days {
+        display: flex;
+        justify-content: space-between;
+
+        .daySelected {
+            background-color: #D9D9D9;
+            border-bottom: 1px solid white;
+        }
+
+        button {
+            width: 25%;
+            font-size: 20px;
+            background-color: black;
+            color: white;
+            padding: 8px;
+            border: transparent;
+            font-family: Oswald;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+
+    &__artistes {
+        background-color: #D9D9D9;
+
+        &--scenes {
+            display: flex;
+            justify-content: space-around;
+            font-size: 20px;
+        }
+    }
 }

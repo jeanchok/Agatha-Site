@@ -1,0 +1,68 @@
+Date : 2022-12-26 14:19:10
+Directory : c:\Users\AKAJ\Documents\Entreprise\Festival Nath\Agatha Site\frontend_agatha\src
+Total : 35 files,  1534 codes, 96 comments, 348 blanks, all 1978 lines
+
+Languages
++------------------+------------+------------+------------+------------+------------+
+| language         | files      | code       | comment    | blank      | total      |
++------------------+------------+------------+------------+------------+------------+
+| SCSS             |         13 |        881 |         79 |        213 |      1,173 |
+| JavaScript React |         21 |        638 |         10 |        133 |        781 |
+| CSS              |          1 |         15 |          7 |          2 |         24 |
++------------------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                             | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                                |         35 |      1,534 |         96 |        348 |      1,978 |
+| Components                                                                                                                       |         13 |        499 |          7 |        105 |        611 |
+| Hooks                                                                                                                            |          2 |         25 |          0 |          7 |         32 |
+| Pages                                                                                                                            |          3 |         79 |          0 |         13 |         92 |
+| assets                                                                                                                           |         12 |        869 |         79 |        213 |      1,161 |
+| assets\styles                                                                                                                    |         12 |        869 |         79 |        213 |      1,161 |
+| assets\styles\components                                                                                                         |          8 |        729 |         74 |        189 |        992 |
+| assets\styles\pages                                                                                                              |          3 |         67 |          4 |         10 |         81 |
++----------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------------------------------------------------------------------+------------------+------------+------------+------------+------------+
+| filename                                                                                                                         | language         | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------------------------------------------+------------------+------------+------------+------------+------------+
+| c:\Users\AKAJ\Documents\Entreprise\Festival Nath\Agatha Site\frontend_agatha\src\App.jsx                                         | JavaScript React |         24 |          3 |          6 |         33 |
+| c:\Users\AKAJ\Documents\Entreprise\Festival Nath\Agatha Site\frontend_agatha\src\App.scss                                        | SCSS             |         12 |          0 |          0 |         12 |
+| c:\Users\AKAJ\Documents\Entreprise\Festival Nath\Agatha Site\frontend_agatha\src\Components\Actus.jsx                            | JavaScript React |         35 |          1 |          7 |         43 |
+| c:\Users\AKAJ\Documents\Entreprise\Festival Nath\Agatha Site\frontend_agatha\src\Components\Footer.jsx                           | JavaScript React |         29 |          0 |          7 |         36 |
+| c:\Users\AKAJ\Documents\Entreprise\Festival Nath\Agatha Site\frontend_agatha\src\Components\Header.jsx                           | JavaScript React |         75 |          1 |         18 |         94 |
+| c:\Users\AKAJ\Documents\Entreprise\Festival Nath\Agatha Site\frontend_agatha\src\Components\Header2.jsx                          | JavaScript React |         41 |          0 |          6 |         47 |
+| c:\Users\AKAJ\Documents\Entreprise\Festival Nath\Agatha Site\frontend_agatha\src\Components\Infos.jsx                            | JavaScript React |         34 |          0 |          5 |         39 |
+| c:\Users\AKAJ\Documents\Entreprise\Festival Nath\Agatha Site\frontend_agatha\src\Components\Landing.jsx                          | JavaScript React |         24 |          2 |          8 |         34 |
+| c:\Users\AKAJ\Documents\Entreprise\Festival Nath\Agatha Site\frontend_agatha\src\Components\ModuleInfos.jsx                      | JavaScript React |         22 |          0 |          6 |         28 |
+| c:\Users\AKAJ\Documents\Entreprise\Festival Nath\Agatha Site\frontend_agatha\src\Components\Partenaires.jsx                      | JavaScript React |         44 |          1 |          6 |         51 |
+| c:\Users\AKAJ\Documents\Entreprise\Festival Nath\Agatha Site\frontend_agatha\src\Components\Particules.jsx                       | JavaScript React |          9 |          0 |          4 |         13 |
+| c:\Users\AKAJ\Documents\Entreprise\Festival Nath\Agatha Site\frontend_agatha\src\Components\Programmation.jsx                    | JavaScript React |         60 |          2 |         11 |         73 |
+| c:\Users\AKAJ\Documents\Entreprise\Festival Nath\Agatha Site\frontend_agatha\src\Components\ProgrammationArtiste.jsx             | JavaScript React |         80 |          0 |         18 |         98 |
+| c:\Users\AKAJ\Documents\Entreprise\Festival Nath\Agatha Site\frontend_agatha\src\Components\ProgrammationScene.jsx               | JavaScript React |         26 |          0 |          3 |         29 |
+| c:\Users\AKAJ\Documents\Entreprise\Festival Nath\Agatha Site\frontend_agatha\src\Components\Socials.jsx                          | JavaScript React |         20 |          0 |          6 |         26 |
+| c:\Users\AKAJ\Documents\Entreprise\Festival Nath\Agatha Site\frontend_agatha\src\Hooks\useContext.jsx                            | JavaScript React |          2 |          0 |          3 |          5 |
+| c:\Users\AKAJ\Documents\Entreprise\Festival Nath\Agatha Site\frontend_agatha\src\Hooks\useFetch.jsx                              | JavaScript React |         23 |          0 |          4 |         27 |
+| c:\Users\AKAJ\Documents\Entreprise\Festival Nath\Agatha Site\frontend_agatha\src\Pages\Accueil.jsx                               | JavaScript React |         27 |          0 |          4 |         31 |
+| c:\Users\AKAJ\Documents\Entreprise\Festival Nath\Agatha Site\frontend_agatha\src\Pages\InfosFullPage.jsx                         | JavaScript React |         27 |          0 |          6 |         33 |
+| c:\Users\AKAJ\Documents\Entreprise\Festival Nath\Agatha Site\frontend_agatha\src\Pages\ProgrammationFullPage.jsx                 | JavaScript React |         25 |          0 |          3 |         28 |
+| c:\Users\AKAJ\Documents\Entreprise\Festival Nath\Agatha Site\frontend_agatha\src\assets\styles\_settings.scss                    | SCSS             |         73 |          1 |         14 |         88 |
+| c:\Users\AKAJ\Documents\Entreprise\Festival Nath\Agatha Site\frontend_agatha\src\assets\styles\components\_actus.scss            | SCSS             |         98 |         10 |         23 |        131 |
+| c:\Users\AKAJ\Documents\Entreprise\Festival Nath\Agatha Site\frontend_agatha\src\assets\styles\components\_footer.scss           | SCSS             |         35 |          0 |          8 |         43 |
+| c:\Users\AKAJ\Documents\Entreprise\Festival Nath\Agatha Site\frontend_agatha\src\assets\styles\components\_header.scss           | SCSS             |        237 |          3 |         50 |        290 |
+| c:\Users\AKAJ\Documents\Entreprise\Festival Nath\Agatha Site\frontend_agatha\src\assets\styles\components\_infos.scss            | SCSS             |        116 |          0 |         33 |        149 |
+| c:\Users\AKAJ\Documents\Entreprise\Festival Nath\Agatha Site\frontend_agatha\src\assets\styles\components\_landing.scss          | SCSS             |         11 |         13 |          5 |         29 |
+| c:\Users\AKAJ\Documents\Entreprise\Festival Nath\Agatha Site\frontend_agatha\src\assets\styles\components\_partenaires.scss      | SCSS             |         58 |          0 |         20 |         78 |
+| c:\Users\AKAJ\Documents\Entreprise\Festival Nath\Agatha Site\frontend_agatha\src\assets\styles\components\_programmation.scss    | SCSS             |        144 |          0 |         40 |        184 |
+| c:\Users\AKAJ\Documents\Entreprise\Festival Nath\Agatha Site\frontend_agatha\src\assets\styles\components\_socials.scss          | SCSS             |         30 |         48 |         10 |         88 |
+| c:\Users\AKAJ\Documents\Entreprise\Festival Nath\Agatha Site\frontend_agatha\src\assets\styles\pages\_InfosFullPage.scss         | SCSS             |         46 |          0 |          8 |         54 |
+| c:\Users\AKAJ\Documents\Entreprise\Festival Nath\Agatha Site\frontend_agatha\src\assets\styles\pages\_ProgrammationFullPage.scss | SCSS             |          9 |          0 |          0 |          9 |
+| c:\Users\AKAJ\Documents\Entreprise\Festival Nath\Agatha Site\frontend_agatha\src\assets\styles\pages\_accueil.scss               | SCSS             |         12 |          4 |          2 |         18 |
+| c:\Users\AKAJ\Documents\Entreprise\Festival Nath\Agatha Site\frontend_agatha\src\config.jsx                                      | JavaScript React |          2 |          0 |          0 |          2 |
+| c:\Users\AKAJ\Documents\Entreprise\Festival Nath\Agatha Site\frontend_agatha\src\index.css                                       | CSS              |         15 |          7 |          2 |         24 |
+| c:\Users\AKAJ\Documents\Entreprise\Festival Nath\Agatha Site\frontend_agatha\src\main.jsx                                        | JavaScript React |          9 |          0 |          2 |         11 |
+| Total                                                                                                                            |                  |      1,534 |         96 |        348 |      1,978 |
++----------------------------------------------------------------------------------------------------------------------------------+------------------+------------+------------+------------+------------+

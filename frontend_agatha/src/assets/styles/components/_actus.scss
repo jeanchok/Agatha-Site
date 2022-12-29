@@ -1,7 +1,7 @@
 #actus {
     flex-direction: column;
     overflow: hidden;
-    background: linear-gradient(180deg, #ffa667, #BF200A);
+    background: linear-gradient(180deg, rgba(191, 32, 10, .8), rgba(75, 0, 101, .85));
     // background-size: 400% 400%;
     // animation: gradient 15s ease infinite;
     height: 100vh;
@@ -11,6 +11,36 @@
         justify-content: flex-start;
         width: 80%;
         margin-bottom: -46px;
+        z-index: 10;
+    }
+
+    .linkContainer {
+        display: flex;
+        justify-content: end;
+        z-index: 11;
+        position: relative;
+        padding: 10px;
+
+        &__linkButton {
+            padding: 8px 16px;
+            display: flex;
+            background-color: black;
+            color: white;
+            align-items: center;
+            gap: 16px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 18px;
+
+            a {
+                cursor: pointer;
+            }
+
+            span {
+                margin: 0;
+            }
+        }
+
     }
 }
 
@@ -102,7 +132,6 @@
 
         img {
             width: 70px;
-            background-color: white;
             border-radius: 50px;
         }
 
