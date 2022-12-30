@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import useFetch from '../hooks/useFetch';
+import useFetch from '../Hooks/useFetch';
 import ModuleInfos from '../components/ModuleInfos';
 import Footer from '../Components/Footer';
 import Header2 from '../Components/Header2';
