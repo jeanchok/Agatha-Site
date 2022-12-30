@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useContext } from 'react';
 import env from "react-dotenv";
-import useFetch from '../hooks/useFetch'
+import useFetch from '../Hooks/useFetch'
 import { Link } from 'react-router-dom'
 import Carousel from 'carousel-react-rcdev'
 import { InView } from 'react-intersection-observer';

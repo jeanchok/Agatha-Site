@@ -3,7 +3,7 @@ import Particles from "./Particules";
 import Footer from '../Components/Footer';
 import { InView } from 'react-intersection-observer';
 import { MyContext } from '../Hooks/useContext';
-import useFetch from '../hooks/useFetch';
+import useFetch from '../Hooks/useFetch';
 
 const Partenaires = (props) => {
     const { navActive, setNavActive } = useContext(MyContext);

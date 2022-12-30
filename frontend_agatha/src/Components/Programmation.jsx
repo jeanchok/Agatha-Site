@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { InView } from 'react-intersection-observer';
 import { MyContext } from '../Hooks/useContext';
-import useFetch from '../hooks/useFetch';
+import useFetch from '../Hooks/useFetch';
 
 
 const Programmation = () => {

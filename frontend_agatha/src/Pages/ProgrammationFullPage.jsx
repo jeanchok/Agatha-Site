@@ -3,7 +3,7 @@ import Header2 from '../Components/Header2';
 import Footer from '../Components/Footer';
 import ProgrammationArtiste from '../Components/ProgrammationArtiste';
 import ProgrammationScene from '../Components/ProgrammationScene';
-import useFetch from '../hooks/useFetch';
+import useFetch from '../Hooks/useFetch';
 
 const ProgrammationFullPage = () => {
     const [isArtisteSelected, setIsArtisteSelected] = useState(true);
