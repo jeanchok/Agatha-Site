@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import useFetch from '../Hooks/useFetch';
-import ModuleInfos from '../components/ModuleInfos';
+import ModuleInfos from '../Components/ModuleInfos';
 import Footer from '../Components/Footer';
 import Header2 from '../Components/Header2';
 
