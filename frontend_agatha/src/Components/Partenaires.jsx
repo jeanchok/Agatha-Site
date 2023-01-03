@@ -8,7 +8,7 @@ import useFetch from '../Hooks/useFetch';
 const Partenaires = (props) => {
     const { navActive, setNavActive } = useContext(MyContext);
     const API_URL = import.meta.env.VITE_API_URL;
-    const { loading, error, data } = useFetch(API_URL + 'api/nos-partenairess?populate=*')
+    const { loading, error, data } = useFetch(API_URL + '/api/nos-partenairess?populate=*')
     if (loading) return <p>Loading...</p>
     if (error) return <p>Errror :</p>
 
