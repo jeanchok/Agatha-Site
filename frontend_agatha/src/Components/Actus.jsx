@@ -11,7 +11,7 @@ import { MyContext } from '../Hooks/useContext';
 const Actus = () => {
     // const { loading, error, data } = useFetch(env.API_URL + '/api/actuses')
     const API_URL = import.meta.env.VITE_API_URL;
-    const { loading, error, data } = useFetch(API_URL + '/api/actuses?populate=*')
+    const { loading, error, data } = useFetch(API_URL + 'api/actuses?populate=*')
     if (loading) return <p>Loading...</p>
     if (error) return <p>Errror :</p>
 

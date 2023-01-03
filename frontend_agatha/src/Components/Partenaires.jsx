@@ -8,7 +8,7 @@ import useFetch from '../Hooks/useFetch';
 const Partenaires = (props) => {
     const { navActive, setNavActive } = useContext(MyContext);
     const API_URL = import.meta.env.VITE_API_URL;
-    const { loading, error, data } = useFetch(API_URL + '/api/nos-partenairess?populate=*')
+    const { loading, error, data } = useFetch(API_URL + 'api/nos-partenairess?populate=*')
     if (loading) return <p>Loading...</p>
     if (error) return <p>Errror :</p>
 
@@ -30,7 +30,7 @@ const Partenaires = (props) => {
                     <h3>ILS NOUS ACCOMPAGNENT</h3>
                 </div>
                 <div className='partenairesContainer'>
-                    {data.data.map(partenaires => (
+                    {data ? data.data.map(partenaires => (
                         <div key={partenaires.id} className={"partenairesContainer__card item" + partenaires.id}>
 
                             <img src={API_URL + partenaires.attributes.LogoPartenaire.data.attributes.url} alt="" />
@@ -38,7 +38,7 @@ const Partenaires = (props) => {
                                 <h4>{partenaires.attributes.NomPartenaire} </h4>
                             </div>
                         </div>
-                    ))}
+                    )) : null}
                 </div>
             </InView>
             <Footer />

@@ -8,7 +8,7 @@ import useFetch from '../Hooks/useFetch';
 const ProgrammationFullPage = () => {
     const [isArtisteSelected, setIsArtisteSelected] = useState(true);
     const API_URL = import.meta.env.VITE_API_URL;
-    const { loading, error, data } = useFetch(API_URL + '/api/programmations?populate=*')
+    const { loading, error, data } = useFetch(API_URL + 'api/programmations?populate=*')
     if (loading) return <p>Loading...</p>
     if (error) return <p>Errror :</p>
 

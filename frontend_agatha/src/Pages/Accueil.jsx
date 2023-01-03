@@ -23,7 +23,7 @@ const Accueil = () => {
 
                 <Landing />
                 <Programmation />
-                {/* <Actus /> */}
+                <Actus />
                 <Infos />
                 <Partenaires />
             </div>
