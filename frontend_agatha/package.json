@@ -14,7 +14,6 @@
     "@fortawesome/free-regular-svg-icons": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "carousel-react-rcdev": "^0.0.5",
     "dotenv": "^16.0.3",
     "flickity": "^3.0.0",
     "localforage": "^1.10.0",
