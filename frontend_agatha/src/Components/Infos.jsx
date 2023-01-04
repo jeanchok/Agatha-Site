@@ -17,10 +17,6 @@ const Infos = () => {
                         <p>Le Domaine du Denais se trouve sur la commune de SaintDenis-d’Anjou, petit village médiéval aux nombreux monuments classés.
 
                             Situé dans le département de la Mayenne, ce village est au centre d’un triangle formé par trois grandes villes : Angers (40km), Le Mans (70 km), Laval (49 km).
-
-                            D’autre part, seulement 10 km le sépare de la ville de
-                            Sablé-sur-Sarthe dont la gare de TGV ouvre un accès
-                            à Paris en 1h10.
                         </p>
                         {/* <div className='linkContainer'>
                             <a className='linkContainer__linkButton glow-on-hover' href="/infospratiques">

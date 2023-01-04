@@ -22,7 +22,7 @@ const Programmation = () => {
         <section id='programmation'>
             <InView as="div" className='programmation' onChange={(inView, entry) => { if (inView) { setNavActive('programmation') } }}>
                 <h2>LES ARTISTES</h2>
-                <div className='programmationContainer'>
+                <div className='programmationContainer' style={data.data.length === 0 ? { background: '#ffffff4d' } : null}>
                     {data.data.length === 0 ?
                         <div className='programmationContainer__incContainer'>
                             <h3>PROGAMMATION A VENIR</h3>

@@ -18,19 +18,46 @@
 
             @media (max-width: 1038px) {
                 width: 100%;
-                margin-left: 8px;
+                margin-left: 30px;
             }
 
             h1 {
                 font-size: 110px;
                 font-weight: 400;
                 margin: 0;
+                color: white;
+
+                @media (max-width: 644px) {
+                    font-size: 50px;
+                }
+
+                @media (max-width: 1115px) {
+                    font-size: 60px;
+                }
+
+                @media (max-width: 1430px) {
+                    font-size: 90px;
+                }
             }
 
             h3 {
                 font-size: 60px;
                 font-weight: 300;
                 margin: 0;
+
+
+
+                @media (max-width: 644px) {
+                    font-size: 40px;
+                }
+
+                @media (max-width: 1115px) {
+                    font-size: 50px;
+                }
+
+                @media (max-width: 1430px) {
+                    font-size: 50px;
+                }
             }
 
             &--date {}

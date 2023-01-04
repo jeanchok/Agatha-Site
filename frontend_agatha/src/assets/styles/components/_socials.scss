@@ -62,8 +62,20 @@
     top: 40%;
     z-index: 15;
 
+    @media (max-width: 400px) {
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.411);
+        border-top-left-radius: 18px;
+        border-bottom-left-radius: 18px;
+        top: 50%;
+    }
+
     h4 {
         transform: rotate(90deg);
+
+        @media (max-width: 400px) {
+            display: none;
+        }
     }
 }
 

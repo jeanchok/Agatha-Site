@@ -12,6 +12,15 @@
         width: 80%;
         margin-bottom: -46px;
         z-index: 10;
+
+        @media (max-width: 1038px) {
+            font-size: 60px;
+
+        }
+
+        @media (max-width: 800px) {
+            font-size: 50px;
+        }
     }
 
     .linkContainer {
@@ -19,7 +28,11 @@
         justify-content: end;
         z-index: 11;
         position: relative;
-        padding: 10px;
+        margin-top: -24px;
+
+        @media (max-width: 800px) {
+            margin-top: 25%;
+        }
 
         &__linkButton {
             padding: 8px 16px;
@@ -65,16 +78,16 @@
 }
 
 .mycard {
-    min-width: 350px;
-    max-width: 350px;
+    // min-width: 350px;
+    // max-width: 350px;
 
     height: 350px;
     background-color: black;
     margin: 10px;
     color: white;
     position: relative;
-    -webkit-box-shadow: -10px 10px 0px 5px #cecece;
-    box-shadow: -10px 10px 0px 5px #cecece;
+    // -webkit-box-shadow: -10px 10px 0px 5px #cecece;
+    // box-shadow: -10px 10px 0px 5px #cecece;
 
     img {
         width: 100%;
