@@ -82,6 +82,45 @@
         height: 80%;
     }
 
+    &__incContainer {
+        height: 80%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h3 {
+            font-size: 50px;
+            padding: 20px;
+            background: linear-gradient(300deg, #000000, #303030, #404040);
+            background-size: 180% 180%;
+            animation: gradient-animation 18s ease infinite;
+
+            @media (max-width: 1038px) {
+                font-size: 45px;
+
+            }
+
+            @media (max-width: 800px) {
+                font-size: 40px;
+                line-height: 58px;
+            }
+        }
+
+        @keyframes gradient-animation {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    }
 
     &__container1 {
         width: 40%;

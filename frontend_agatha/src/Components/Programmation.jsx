@@ -23,8 +23,12 @@ const Programmation = () => {
             <InView as="div" className='programmation' onChange={(inView, entry) => { if (inView) { setNavActive('programmation') } }}>
                 <h2>LES ARTISTES</h2>
                 <div className='programmationContainer'>
+                    {data.data.length === 0 ?
+                        <div className='programmationContainer__incContainer'>
+                            <h3>PROGAMMATION A VENIR</h3>
+                        </div> : null}
                     <div className='programmationContainer__container1'>
-                        {data ?
+                        {data.data.length > 0 ?
                             data.data.map((artiste, index) => {
                                 if (index < 2) {
                                     return (
@@ -34,16 +38,17 @@ const Programmation = () => {
                                                 <h3>{artiste.attributes.NomArtiste} </h3>
                                                 <p>{DateFormater(artiste.attributes.DateArtisteMisEnAvant)}</p>
                                             </div>
-                                            {/* <img src={API_URL + artiste.attributes.ImageArtisteMisEnAvant.data.attributes.url} alt="" /> */}
                                         </div>
 
                                     )
                                 }
 
-                            }) : null}
+                            }) :
+                            null
+                        }
                     </div>
                     <div className='programmationContainer__container2'>
-                        {data ? data.data.map((artiste, index) => {
+                        {data.data.length > 0 ? data.data.map((artiste, index) => {
                             if (index > 1) {
                                 return (
 
@@ -52,7 +57,6 @@ const Programmation = () => {
                                             <h3>{artiste.attributes.NomArtiste} </h3>
                                             <p>{DateFormater(artiste.attributes.DateArtisteMisEnAvant)}</p>
                                         </div>
-                                        {/* <img src={API_URL + artiste.attributes.ImageArtisteMisEnAvant.data.attributes.url} alt="" /> */}
                                     </div>
 
                                 )
@@ -60,7 +64,7 @@ const Programmation = () => {
                         }) : null}
                     </div>
                 </div>
-                {data ?
+                {data.data.length > 0 ?
                     <div className='linkContainer'>
                         <a className='linkContainer__linkButton glow-on-hover' href="/programmation">
                             <span>TOUTE LA PROGRAMMATION</span>

@@ -2,7 +2,7 @@ import React, { useEffect, useState, useContext } from 'react';
 import env from "react-dotenv";
 import useFetch from '../Hooks/useFetch'
 import { Link } from 'react-router-dom'
-//import Carousel from 'carousel-react-rcdev'
+import Carousel from 'carousel-react-rcdev'
 import { InView } from 'react-intersection-observer';
 import { MyContext } from '../Hooks/useContext';
 
@@ -17,13 +17,26 @@ const Actus = () => {
 
     const { navActive, setNavActive } = useContext(MyContext);
 
+    const defaultItem = { defaultItem: "defaultItem" };
+
+    let fakeActus = [];
+
+    if (data) {
+        const nbActustoAdd = data.data.length < 4 ? 4 - data.data.length : 0;
+        for (let i = 1; i <= nbActustoAdd; i++) {
+            fakeActus.push(defaultItem);
+        }
+    }
+
+
+
 
     return (
         <section id='actus'>
             <InView as="div" className='actus' onChange={(inView, entry) => { if (inView) { setNavActive('actus') } }} >
                 <h2>LES ACTUS</h2>
                 <div className='actusContainer'>
-                    {/* <Carousel>
+                    <Carousel>
                         {data.data.map(actus => (
                             <div key={actus.id} className="mycard">
                                 <div className='mycard__text'>
@@ -33,14 +46,25 @@ const Actus = () => {
                                 <img src={API_URL + actus.attributes.imageActu.data.attributes.url} alt="" />
                             </div>
                         ))}
-                    </Carousel> */}
+                        {
+                            (fakeActus.length > 0) ? fakeActus.map(fakeActus => (
+                                <div className="mycard">
+                                    <div className='mycard__text'>
+                                        <h3>ACTUALITES A VENIR</h3>
+                                    </div>
+                                </div>
+                            ))
+                                :
+                                null
+                        }
+                    </Carousel>
                 </div>
-                <div className='linkContainer'>
+                {/* <div className='linkContainer'>
                     <a className='linkContainer__linkButton glow-on-hover' href="/">
                         <span>DEVENIR BENEVOLE</span>
                         <img src="/img/pointes-de-fleches-fines-a-droite.png" alt="fleche" />
                     </a>
-                </div>
+                </div> */}
             </InView>
         </section >
     );

@@ -22,12 +22,12 @@ const Infos = () => {
                             Sablé-sur-Sarthe dont la gare de TGV ouvre un accès
                             à Paris en 1h10.
                         </p>
-                        <div className='linkContainer'>
+                        {/* <div className='linkContainer'>
                             <a className='linkContainer__linkButton glow-on-hover' href="/infospratiques">
                                 <span>EN SAVOIR +</span>
                                 <img src="/img/pointes-de-fleches-fines-a-droite.png" alt="fleche" />
                             </a>
-                        </div>
+                        </div> */}
 
                     </div>
                 </div>
