@@ -10,7 +10,8 @@ const Infos = () => {
                 <h2>LE DOMAINE DU DENAIS</h2>
                 <div className='infosContainer'>
                     <div className='infosContainer__video'>
-                        <iframe id="video-6-1_vimeo_iframe" frameborder="0" src="https://player.vimeo.com/video/205894013?loop=0&amp;_=1&amp;" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen="true" allow="autoplay" data-ready="true"></iframe>
+                        {/* <iframe id="video-6-1_vimeo_iframe" frameborder="0" src="https://player.vimeo.com/video/205894013?loop=0&amp;_=1&amp;" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen="true" allow="autoplay" data-ready="true"></iframe> */}
+                        <img src="/img/domaine du denais carte.PNG" alt="carte domaine du denais" />
                     </div>
                     <div className='infosContainer__text'>
                         <h3>OÙ ÇA ?</h3>

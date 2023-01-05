@@ -14,13 +14,14 @@ import { InView } from 'react-intersection-observer';
 
 const Accueil = () => {
 
+
+
     return (
         <>
             <Header />
             <Socials />
-            <div className='sectionContainer'>
 
-
+            <div className={(navigator.userAgent.indexOf("Chrome") != -1) ? 'sectionContainerChrome' : 'sectionContainer'}>
                 <Landing />
                 <Programmation />
                 <Actus />

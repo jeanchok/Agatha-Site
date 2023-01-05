@@ -68,7 +68,7 @@
             gap: 16px;
             text-decoration: none;
             border-radius: 50px;
-            font-size: 18px;
+            font-size: 20px;
 
             span {
                 margin: 0;
@@ -79,6 +79,12 @@
 
     @media (max-width: 1115px) {
         flex-direction: column;
+        height: 60%;
+    }
+
+    @media (max-width: 375px) {
+        flex-direction: column;
+        height: 55%;
     }
 
     &__video {
@@ -89,6 +95,11 @@
 
         @media (max-width: 644px) {
             margin-top: 0px;
+        }
+
+        img {
+            width: 100%;
+            aspect-ratio: 16/9;
         }
 
         iframe {

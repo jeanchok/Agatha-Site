@@ -23,11 +23,18 @@ const Programmation = () => {
             <InView as="div" className='programmation' onChange={(inView, entry) => { if (inView) { setNavActive('programmation') } }}>
                 <h2>LES ARTISTES</h2>
                 <div className='programmationContainer' style={data.data.length === 0 ? { background: '#ffffff4d' } : null}>
-                    {data.data.length === 0 ?
-                        <div className='programmationContainer__incContainer'>
-                            <h3>PROGAMMATION A VENIR</h3>
-                        </div> : null}
+
                     <div className='programmationContainer__container1'>
+                        {data.data.length === 0 ?
+                            <>
+                                <div className='programmationContainer__incContainer programmationContainer__card item'>
+                                    <h3>PROGAMMATION A VENIR</h3>
+                                </div>
+                                <div className='programmationContainer__incContainer programmationContainer__card item'>
+                                    <h3>PROGAMMATION A VENIR</h3>
+                                </div>
+                            </>
+                            : null}
                         {data.data.length > 0 ?
                             data.data.map((artiste, index) => {
                                 if (index < 2) {
@@ -48,6 +55,16 @@ const Programmation = () => {
                         }
                     </div>
                     <div className='programmationContainer__container2'>
+                        {data.data.length === 0 ?
+                            <>
+                                <div className='programmationContainer__incContainer programmationContainer__card item'>
+                                    <h3>PROGAMMATION A VENIR</h3>
+                                </div>
+                                <div className='programmationContainer__incContainer programmationContainer__card item'>
+                                    <h3>PROGAMMATION A VENIR</h3>
+                                </div>
+                            </>
+                            : null}
                         {data.data.length > 0 ? data.data.map((artiste, index) => {
                             if (index > 1) {
                                 return (

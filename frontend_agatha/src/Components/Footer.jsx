@@ -22,7 +22,6 @@ const Footer = () => {
         <footer>
             <div className='footer__topline'></div>
             <div className='footer__linkContainer'>
-                {navLink("accueil", "ACCUEIL")}
                 {navLink("mentions-legales", "MENTIONS LEGALES & CGV")}
                 {navLink("contact", "CONTACT")}
                 {navLink("partenariat", "PARTENARIAT")}

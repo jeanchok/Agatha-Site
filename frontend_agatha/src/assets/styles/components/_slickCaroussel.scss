@@ -2,6 +2,11 @@
 //     display: flex;
 //     gap: 15px;
 // }
+.alice-carousel {
+    li {
+        max-width: 350px;
+    }
+}
 
 .alice-carousel__prev-btn,
 .alice-carousel__next-btn {

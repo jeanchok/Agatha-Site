@@ -28,7 +28,6 @@ const Actus = () => {
 
     let fakeActus = [];
 
-    const handleDragStart = (e) => e.preventDefault();
 
     const items = [];
 
