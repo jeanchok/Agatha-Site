@@ -93,6 +93,10 @@
         max-height: 100%;
         margin-top: 20px;
 
+        @media (895px <=width <=1115px) {
+            height: 330px;
+        }
+
         @media (max-width: 644px) {
             margin-top: 0px;
         }
@@ -100,6 +104,8 @@
         img {
             width: 100%;
             aspect-ratio: 16/9;
+            object-fit: contain;
+
         }
 
         iframe {
@@ -118,8 +124,6 @@
         margin: auto;
         align-content: center;
         height: 100%;
-        text-overflow: ellipsis;
-        overflow: hidden;
         max-height: 500px;
         margin-right: 16px;
         margin-left: 16px;

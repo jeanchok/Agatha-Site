@@ -55,7 +55,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-
+        position: relative;
 
 
         &__card {
@@ -73,6 +73,14 @@
             img {
                 width: 250px;
             }
+        }
+
+        &__maya {
+            position: absolute;
+            right: 150px;
+            top: -273px;
+            height: 641px;
+            opacity: 0.5;
         }
     }
 }

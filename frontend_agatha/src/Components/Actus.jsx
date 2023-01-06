@@ -97,6 +97,7 @@ const Actus = () => {
                                 null
                         }
                     </Carousel> */}
+                    <img className='actusContainer__maya' src="/img/maya2.png" alt="illustration maya 2" />
                 </div>
                 <div className='linkContainer'>
                     <a className='linkContainer__linkButton glow-on-hover' href="https://forms.gle/jre4ZCbTBnWh7bKo9" target="_blank">
