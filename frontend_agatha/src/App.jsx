@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Accueil from './Pages/Accueil';
 import InfosFullPage from './Pages/InfosFullPage';
 import ProgrammationFullPage from './Pages/ProgrammationFullPage';
+import MentionsLegales from './Pages/MentionsLegales';
 import { MyContext } from './Hooks/useContext';
 
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="*" element={<Accueil />} />
           <Route path="infospratiques" element={<InfosFullPage />} />
           <Route path="programmation" element={<ProgrammationFullPage />} />
+          <Route path="mentionslegales" element={<MentionsLegales />} />
           {/* <Route path="contact" element={<Contact />} />
         <Route path="portfolio" element={<Portfolio />} />
         <Route path="competences" element={<Competences />} /> */}

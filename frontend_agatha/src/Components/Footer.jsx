@@ -22,10 +22,15 @@ const Footer = () => {
         <footer>
             <div className='footer__topline'></div>
             <div className='footer__linkContainer'>
-                {navLink("mentions-legales", "MENTIONS LEGALES & CGV")}
+                {navLink("mentionslegales", "MENTIONS LEGALES & CGV")}
                 {navLink("contact", "CONTACT")}
                 {navLink("partenariat", "PARTENARIAT")}
-                {navLink("benevolat", "BENEVOLAT")}
+                <a className='footer__linkContainer--link' href="https://forms.gle/jre4ZCbTBnWh7bKo9" target="_blank">
+                    <li className='content__item'>
+                        <span className='link link--metis'>BENEVOLAT</span>
+                    </li>
+                </a>
+
 
             </div>
         </footer>

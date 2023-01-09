@@ -1,0 +1,15 @@
+.Mentions {
+    background: linear-gradient(180deg, #4B0065, #01002E);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+
+    h2 {
+        font-size: 80px;
+        margin-top: 185px;
+    }
+
+}
