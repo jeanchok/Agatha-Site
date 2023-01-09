@@ -15,9 +15,8 @@ const Infos = () => {
                     </div>
                     <div className='infosContainer__text'>
                         <h3>ACCESSIBILITE</h3>
-                        <p>Le Domaine du Denais se trouve sur la commune de SaintDenis-d’Anjou, petit village médiéval aux nombreux monuments classés.
-
-                            Situé dans le département de la Mayenne, ce village est au centre d’un triangle formé par trois grandes villes : Angers (40km), Le Mans (70 km), Laval (49 km).
+                        <p>
+                            Agatha Festival se déroulera au domaine du Denais, sur la commune de Saint-Denis-d'Anjou (53290), petit village médiéval aux nombreux monuments classés. Le domaine se situe au centre d'un triangle formé par trois grandes villes : Angers, Le Mans et Laval. Une gare ferroviaire dessert la commune voisine de Sablé-sur-Sarthe, située à seulement 15 minutes en voiture. Cette gare est desservie par le TGV, ce qui la place à seulement 1 heure 10 de Paris. Pour vous rendre sur place, nous vous recommandons de privilégier le covoiturage, grâce au groupe Facebook AGATHA FESTIVAL - COVOITURAGE.
                         </p>
                         {/* <div className='linkContainer'>
                             <a className='linkContainer__linkButton glow-on-hover' href="/infospratiques">
