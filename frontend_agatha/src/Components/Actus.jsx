@@ -1,8 +1,7 @@
 import React, { useEffect, useState, useContext } from 'react';
-import env from "react-dotenv";
+// import env from "react-dotenv";
 import useFetch from '../Hooks/useFetch'
 import { Link } from 'react-router-dom'
-// import Carousel from 'carousel-react-rcdev'
 import { InView } from 'react-intersection-observer';
 import { MyContext } from '../Hooks/useContext';
 import "react-alice-carousel/lib/scss/alice-carousel.scss";
@@ -12,7 +11,6 @@ import AliceCarousel from 'react-alice-carousel';
 
 
 const Actus = () => {
-    // const { loading, error, data } = useFetch(env.API_URL + '/api/actuses')
     const API_URL = import.meta.env.VITE_API_URL;
     const { loading, error, data } = useFetch(API_URL + '/api/actuses?populate=*')
     if (loading) return <p>Loading...</p>
@@ -37,7 +35,6 @@ const Actus = () => {
         for (let i = 1; i <= nbActustoAdd; i++) {
             items.push(defaultItem);
         }
-
     }
 
     let actus = data.data;
@@ -99,12 +96,7 @@ const Actus = () => {
                     </Carousel> */}
                     <img className='actusContainer__maya' src="/img/maya2.png" alt="illustration maya 2" />
                 </div>
-                <div className='linkContainer'>
-                    <a className='linkContainer__linkButton glow-on-hover' href="https://forms.gle/jre4ZCbTBnWh7bKo9" target="_blank">
-                        <span>DEVENIR BENEVOLE</span>
-                        <img src="/img/pointes-de-fleches-fines-a-droite.png" alt="fleche" />
-                    </a>
-                </div>
+
             </InView>
         </section >
     );

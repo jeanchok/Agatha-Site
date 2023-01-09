@@ -26,9 +26,15 @@ const Landing = (props) => {
             <InView as="div" className='accueil' onChange={(inView, entry) => { if (inView) { setNavActive('accueil') } }}>
                 <div className='accueil__text'>
                     <h1>AGATHA</h1>
-                    <h1>FESTIVAL</h1>
-                    <h3>1ère EDITION</h3>
-                    <h3 className='accueil__text--date'>DU 9 AU 11 JUIN 2023</h3>
+                    <h1>FESTIVAL #1</h1>
+                    <h3 className='accueil__text--date'>9/10/11 JUIN 2023</h3>
+                    <h3>La quête du Quetzacoatl</h3>
+                    <div className='linkContainer'>
+                        <a className='linkContainer__linkButton glow-on-hover' href="https://forms.gle/jre4ZCbTBnWh7bKo9" target="_blank">
+                            <span>DEVENIR BENEVOLE</span>
+                            <img src="/img/pointes-de-fleches-fines-a-droite.png" alt="fleche" />
+                        </a>
+                    </div>
                 </div>
             </InView>
             {/* <Particles minAlpha={minAlpha} drift={drift} yVariance={yVariance} rotation={rotation} speed={speed} color={color} direction={direction} shape={shape} imageUrl={imageUrl} /> */}

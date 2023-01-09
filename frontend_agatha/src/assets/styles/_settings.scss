@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
+@font-face {
+    font-family: 'black_ravensregular';
+    src: url('./font/webfontkit-20230109-032420/black-ravens-webfont.woff2') format('woff2'),
+        url('./font/webfontkit-20230109-032420/black-ravens-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 :root {
     font-family: Oswald;
 
@@ -14,9 +24,10 @@
 }
 
 h2 {
-    font-size: 95px;
+    font-size: 135px;
     font-weight: 500;
     line-height: 90px;
+    font-family: 'black_ravensregular';
 }
 
 /* Button styles */

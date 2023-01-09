@@ -12,10 +12,11 @@
         width: 80%;
         margin-bottom: -25px;
         line-height: 0.90;
+        margin-bottom: -70px;
 
         @media (max-width: 644px) {
             margin-bottom: 0px;
-            font-size: 50px !important;
+            font-size: 75px !important;
             margin-top: 95px;
         }
 
@@ -25,10 +26,6 @@
             font-size: 80px;
         }
 
-        @media (max-width: 1430px) {
-
-            margin-bottom: -70px;
-        }
     }
 }
 
@@ -169,7 +166,7 @@
             text-overflow: ellipsis;
             overflow: hidden;
             margin: auto;
-            font-size: 18px;
+            font-size: 21px;
             line-height: 1.5;
             font-weight: 100;
         }

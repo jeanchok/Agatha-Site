@@ -17,6 +17,7 @@
         flex-direction: column;
 
         justify-content: center;
+        margin-bottom: -40px;
 
         @media (max-width: 600px) {
             margin-left: 10px
@@ -26,11 +27,12 @@
             margin: 0;
 
             @media (max-width: 800px) {
-                font-size: 60px;
+                font-size: 75px;
+                line-height: 1;
             }
 
             @media (max-width: 400px) {
-                font-size: 48px;
+                font-size: 60px;
             }
         }
 
@@ -83,4 +85,158 @@
             opacity: 0.5;
         }
     }
+}
+
+/* Contact Form */
+
+#contact-form {
+    max-width: 800px;
+    margin: auto;
+    animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    width: 70%;
+}
+
+.formInput {
+    width: 100%;
+    min-height: 40px;
+    margin-top: 15px;
+    background-color: transparent;
+    color: white;
+    border: white solid 1px;
+    box-shadow: -1px 1px 4px 0px rgba(255, 255, 255, 0.35) inset;
+    -webkit-box-shadow: -1px 1px 4px 0px rgba(255, 255, 255, 0.35) inset;
+    -moz-box-shadow: -1px 1px 4px 0px rgba(255, 255, 255, 0.35) inset;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+
+.formInput::placeholder {
+    color: white;
+    margin-left: 50px;
+
+    padding-top: 5px;
+    font-size: 15px;
+
+}
+
+#contact-form textarea {
+    width: 100%;
+    min-height: 100px;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+// #contact-form button {
+//     width: 100%;
+//     min-height: 40px;
+//     margin-top: 20px;
+//     background-color: #363636;
+//     color: white;
+//     font-size: 22px;
+//     border-radius: 10px;
+//     cursor: pointer;
+//     border: transparent;
+//     box-shadow: -1px 1px 4px 0px rgba(255, 255, 255, 0.35) inset;
+//     -webkit-box-shadow: -1px 1px 4px 0px rgba(255, 255, 255, 0.35) inset;
+//     -moz-box-shadow: -1px 1px 4px 0px rgba(255, 255, 255, 0.35) inset;
+//     -webkit-box-sizing: border-box;
+//     box-sizing: border-box;
+//     -webkit-transition: all 0.35s ease;
+//     transition: all 0.35s ease;
+// }
+
+.successMessage {
+    font-size: 20px;
+    margin-top: 15px;
+    color: #ffffff;
+}
+
+// #contact-form button:hover {
+//     background-color: #CCA43B;
+//     box-shadow: -1px 1px 4px 0px rgba(136, 136, 136, 0.35) inset;
+//     -webkit-box-shadow: -1px 1px 4px 0px rgba(255, 255, 255, 0.35) inset;
+//     -moz-box-shadow: -1px 1px 4px 0px rgba(126, 126, 126, 0.35) inset;
+// }
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 45%;
+    animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.contactInfo a,
+.competencesContainer a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    margin-top: 20px;
+    transition: all 0.35s ease;
+}
+
+.contactInfo a:hover,
+.competencesContainer a:hover {
+    color: #CCA43B;
+}
+
+.contactInfo p {
+    display: flex;
+    margin-top: 15px;
+}
+
+.contactInfo span {
+    color: white;
+    font-size: calc(10px + 2vmin);
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.contactFormContainer {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.contactForm {
+    width: 55%;
+}
+
+.textContact {
+    margin: auto;
+    margin-top: 20px;
+}
+
+.linkContainer {
+    display: flex;
+    position: relative;
+    margin-top: 16px;
+    justify-content: center;
+
+    &__linkButton {
+        padding: 8px 16px;
+        display: flex;
+        background-color: black;
+        color: white;
+        align-items: center;
+        gap: 16px;
+        text-decoration: none;
+        border-radius: 50px;
+        font-size: 18px;
+
+        a {
+            cursor: pointer;
+
+        }
+
+        span {
+            margin: 0;
+            font-size: 24px;
+        }
+    }
+
 }

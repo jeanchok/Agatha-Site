@@ -19,37 +19,8 @@
         }
 
         @media (max-width: 800px) {
-            font-size: 50px;
+            font-size: 75px;
         }
-    }
-
-    .linkContainer {
-        display: flex;
-        justify-content: end;
-        z-index: 11;
-        position: relative;
-        margin-top: -24px;
-
-        &__linkButton {
-            padding: 8px 16px;
-            display: flex;
-            background-color: black;
-            color: white;
-            align-items: center;
-            gap: 16px;
-            text-decoration: none;
-            border-radius: 50px;
-            font-size: 18px;
-
-            a {
-                cursor: pointer;
-            }
-
-            span {
-                margin: 0;
-            }
-        }
-
     }
 }
 
