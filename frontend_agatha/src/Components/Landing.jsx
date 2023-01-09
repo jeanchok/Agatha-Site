@@ -23,7 +23,10 @@ const Landing = (props) => {
 
     return (
         <section id='accueil' ref={props.ref}>
+
             <InView as="div" className='accueil' onChange={(inView, entry) => { if (inView) { setNavActive('accueil') } }}>
+                <div className='accueil__clouds'></div>
+                <div className="sun"></div>
                 <div className='accueil__text'>
                     <h1>AGATHA</h1>
                     <h1>FESTIVAL #1</h1>
@@ -36,7 +39,9 @@ const Landing = (props) => {
                         </a>
                     </div>
                 </div>
+
             </InView>
+
             {/* <Particles minAlpha={minAlpha} drift={drift} yVariance={yVariance} rotation={rotation} speed={speed} color={color} direction={direction} shape={shape} imageUrl={imageUrl} /> */}
         </section>
     );

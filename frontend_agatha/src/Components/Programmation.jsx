@@ -21,6 +21,7 @@ const Programmation = () => {
     return (
         <section id='programmation'>
             <InView as="div" className='programmation' onChange={(inView, entry) => { if (inView) { setNavActive('programmation') } }}>
+                {/* <div className="sun2"></div> */}
                 <h2>LES ARTISTES</h2>
                 <div className='programmationContainer' style={data.data.length === 0 ? { background: '#ffffff4d' } : null}>
                     <img className='programmationContainer__dragon' src="/img/dragon.png" alt="illustration dragon" />
