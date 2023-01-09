@@ -22,7 +22,7 @@
 
         @media (max-width: 1115px) {
 
-            margin-bottom: -85px;
+            margin-bottom: -49px;
             font-size: 80px;
         }
 
@@ -45,7 +45,7 @@
     background-color: rgba(255, 255, 255, 0.2);
     flex-direction: row;
     width: 75%;
-    padding: 75px 25px 25px 25px;
+    padding: 22px 25px 25px 25px;
     gap: 15px;
     flex-wrap: nowrap;
 
@@ -77,6 +77,7 @@
     @media (max-width: 1115px) {
         flex-direction: column;
         height: 60%;
+        padding-top: 50px;
     }
 
     @media (max-width: 375px) {
@@ -131,7 +132,7 @@
 
         h3 {
             text-align: end;
-            font-size: 48px;
+            font-size: 36px;
             color: white;
             margin-top: 0;
             margin-bottom: 16px;
@@ -143,7 +144,7 @@
 
             @media (max-width: 1115px) {
                 margin: 0;
-                font-size: 40px;
+                font-size: 28px;
             }
 
             &::after {
@@ -151,7 +152,7 @@
                 display: flex;
                 height: 2px;
                 background: white;
-                margin-top: 25px;
+                margin-top: 5px;
 
                 @media (max-width: 644px) {
                     margin-top: 5px;
