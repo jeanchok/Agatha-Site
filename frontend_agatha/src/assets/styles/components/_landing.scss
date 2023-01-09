@@ -52,8 +52,9 @@
                 margin: 0;
                 color: white;
                 font-family: 'black_ravensregular';
-                mix-blend-mode: difference;
+                //mix-blend-mode: difference;
                 line-height: 1;
+                text-shadow: 1px 1px 2px black;
 
                 @media (max-width: 644px) {
                     font-size: 50px;
@@ -72,10 +73,10 @@
                 font-size: 90px;
                 font-weight: 300;
                 margin: 0;
-                mix-blend-mode: difference;
+                //mix-blend-mode: difference;
                 font-family: 'black_ravensregular';
                 line-height: 1;
-
+                text-shadow: 1px 1px 2px black;
 
                 @media (max-width: 644px) {
                     font-size: 40px;
