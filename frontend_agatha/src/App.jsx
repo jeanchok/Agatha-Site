@@ -7,6 +7,7 @@ import InfosFullPage from './Pages/InfosFullPage';
 import ProgrammationFullPage from './Pages/ProgrammationFullPage';
 import MentionsLegales from './Pages/MentionsLegales';
 import { MyContext } from './Hooks/useContext';
+import Contact from './Pages/Contact';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path="infospratiques" element={<InfosFullPage />} />
           <Route path="programmation" element={<ProgrammationFullPage />} />
           <Route path="mentionslegales" element={<MentionsLegales />} />
+          <Route path="contact" element={<Contact />} />
           {/* <Route path="contact" element={<Contact />} />
         <Route path="portfolio" element={<Portfolio />} />
         <Route path="competences" element={<Competences />} /> */}

@@ -26,7 +26,7 @@ const Landing = (props) => {
 
             <InView as="div" className='accueil' onChange={(inView, entry) => { if (inView) { setNavActive('accueil') } }}>
                 <div className='accueil__clouds'></div>
-                <div className="sun"></div>
+                {/* <div className="sun"></div> */}
                 <div className='accueil__text'>
                     <h1>AGATHA</h1>
                     <h1>FESTIVAL #1</h1>

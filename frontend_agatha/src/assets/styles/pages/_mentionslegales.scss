@@ -7,6 +7,10 @@
     min-height: 100vh;
     position: relative;
 
+    &__title {
+        text-align: center;
+    }
+
     h2 {
         font-size: 80px;
         margin-top: 185px;

@@ -1,0 +1,23 @@
+.contactPage {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(1, 0, 46, .95), rgba(0, 0, 0, 1));
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+
+    #contact-form {
+        margin-top: 10px;
+    }
+
+    h2 {
+        margin-bottom: 0;
+        margin-top: 150px;
+        font-size: 80px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+}

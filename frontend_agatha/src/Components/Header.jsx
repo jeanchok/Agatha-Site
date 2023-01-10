@@ -34,7 +34,6 @@ const Header = () => {
                 <li className='content__item'>
                     <span className='link link--metis'>{text}</span>
                 </li>
-                {console.log(navActive)}
             </Link>
 
         );

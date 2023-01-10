@@ -14,10 +14,12 @@ const Partenaires = (props) => {
     const [phoneNumber, setPhoneNumber] = useState('');
     const [status, setStatus] = useState('');
     const [messageBody, setMessageBody] = useState('');
-    const { navActive, setNavActive } = useContext(MyContext);
     const form = useRef();
-    const API_URL = import.meta.env.VITE_API_URL;
     const EMAILJS = import.meta.env.VITE_EMAILJS;
+
+    const { navActive, setNavActive } = useContext(MyContext);
+
+    const API_URL = import.meta.env.VITE_API_URL;
     const { loading, error, data } = useFetch(API_URL + '/api/nos-partenairess?populate=*')
     if (loading) return <p>Loading...</p>
     if (error) return <p>Errror :</p>
@@ -43,15 +45,15 @@ const Partenaires = (props) => {
             });
     };
 
-    let color = "white";
-    let direction = 90;
-    let shape = "circle";
-    let imageUrl = "";
-    let rotation = 0;
-    let speed = 10;
-    let yVariance = 0;
-    let drift = 0;
-    let minAlpha = 0.8;
+    // let color = "white";
+    // let direction = 90;
+    // let shape = "circle";
+    // let imageUrl = "";
+    // let rotation = 0;
+    // let speed = 10;
+    // let yVariance = 0;
+    // let drift = 0;
+    // let minAlpha = 0.8;
     return (
         <section id='partenaires'>
             <InView as="div" className='partenaires' onChange={(inView, entry) => { if (inView) { setNavActive('partenaires') } }}>
@@ -124,7 +126,7 @@ const Partenaires = (props) => {
                                 type='email'
                                 name='email'
                                 className='form-control formInput'
-                                placeholder='Addresse email'
+                                placeholder='Adresse email'
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"

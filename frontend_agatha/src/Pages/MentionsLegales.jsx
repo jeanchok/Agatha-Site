@@ -7,7 +7,10 @@ const MentionsLegales = () => {
     return (
         <div className='Mentions'>
             <Header2 idHref="/" />
-            <h2>MENTIONS LEGALES</h2>
+            <div className='Mentions__title'>
+                <h2>MENTIONS LEGALES</h2>
+            </div>
+
             <p>
                 <strong> Raison Sociale :</strong> Association loi 1901 AGATHA
             </p><p>
