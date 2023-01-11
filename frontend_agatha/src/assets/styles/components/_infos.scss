@@ -26,6 +26,12 @@
             font-size: 80px;
         }
 
+        @media (max-width: 400px) {
+            font-size: 60px !important;
+            margin-bottom: -31px;
+            margin-top: 50px;
+        }
+
     }
 }
 

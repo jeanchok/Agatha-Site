@@ -85,6 +85,48 @@
             opacity: 0.5;
         }
     }
+
+
+    .linkContainer {
+        display: flex;
+        position: relative;
+        margin-top: 16px;
+        justify-content: center;
+
+        &__linkButton {
+            padding: 8px 16px;
+            display: flex;
+            background-color: black;
+            color: white;
+            align-items: center;
+            gap: 16px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-family: Oswald;
+
+            a {
+                cursor: pointer;
+
+            }
+
+            span {
+                font-size: 22px;
+                margin-top: -2px;
+
+                @media (max-width: 400px) {
+                    font-size: 18px;
+                }
+            }
+
+            img {
+                @media (max-width: 400px) {
+                    width: 25px;
+                }
+            }
+        }
+
+    }
 }
 
 /* Contact Form */
@@ -210,35 +252,4 @@
 .textContact {
     margin: auto;
     margin-top: 20px;
-}
-
-.linkContainer {
-    display: flex;
-    position: relative;
-    margin-top: 16px;
-    justify-content: center;
-
-    &__linkButton {
-        padding: 8px 16px;
-        display: flex;
-        background-color: black;
-        color: white;
-        align-items: center;
-        gap: 16px;
-        text-decoration: none;
-        border-radius: 50px;
-        font-size: 18px;
-        font-family: Oswald;
-
-        a {
-            cursor: pointer;
-
-        }
-
-        span {
-            font-size: 22px;
-            margin-top: -2px;
-        }
-    }
-
 }
