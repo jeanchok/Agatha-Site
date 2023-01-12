@@ -28,6 +28,7 @@ const Accueil = () => {
                 <Infos />
                 <Partenaires />
             </div>
+
         </>
     );
 };

@@ -13,13 +13,17 @@
         margin-bottom: -46px;
         z-index: 10;
 
-        @media (max-width: 1038px) {
-            font-size: 60px;
+        @media screen and (max-width: 1038px) {
+            font-size: 80px;
 
         }
 
-        @media (max-width: 800px) {
+        @media screen and (max-width: 800px) {
             font-size: 75px;
+        }
+
+        @media screen and (max-width: 400px) {
+            margin-top: 0;
         }
     }
 }
@@ -48,7 +52,7 @@
         bottom: 0;
         right: 0;
         opacity: 0.5;
-        height: 550px;
+        height: 110%;
     }
 
     &__creeper {
@@ -81,7 +85,7 @@
     // min-width: 350px;
     // max-width: 350px;
 
-    height: 350px;
+    height: 330px;
     background-color: rgba(0, 0, 0, 0.459);
     margin: 10px;
     color: white;

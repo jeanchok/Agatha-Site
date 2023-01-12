@@ -14,22 +14,23 @@
         line-height: 0.90;
         margin-bottom: -70px;
 
-        @media (max-width: 644px) {
+        @media screen and (max-width: 644px) {
             margin-bottom: 0px;
             font-size: 75px !important;
             margin-top: 95px;
         }
 
-        @media (max-width: 1115px) {
+        @media screen and (max-width: 1115px) {
 
             margin-bottom: -49px;
             font-size: 80px;
         }
 
-        @media (max-width: 400px) {
+        @media screen and (max-width: 400px) {
             font-size: 60px !important;
             margin-bottom: -31px;
-            margin-top: 50px;
+            margin-top: 85px;
+            line-height: 0.75;
         }
 
     }
@@ -81,20 +82,21 @@
 
     }
 
-    @media (max-width: 1475px) {
+    @media screen and (max-width: 1475px) {
         flex-direction: column;
         padding-top: 50px;
 
     }
 
-    @media (max-width: 1115px) {
+    @media screen and (max-width: 1115px) {
         flex-direction: column;
         padding-top: 50px;
     }
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 375px) {
         flex-direction: column;
         height: 65%;
+        padding-top: 40px;
     }
 
     &__video {
@@ -103,11 +105,11 @@
         max-height: 100%;
         margin-top: 20px;
 
-        @media (895px <=width <=1475px) {
+        @media screen and (895px <=width <=1475px) {
             height: 330px;
         }
 
-        @media (max-width: 644px) {
+        @media screen and (max-width: 644px) {
             margin-top: 0px;
         }
 
@@ -138,7 +140,7 @@
         max-height: 500px;
 
 
-        @media (max-width: 644px) {
+        @media screen and (max-width: 644px) {
             margin-top: -10px;
         }
 
@@ -149,12 +151,12 @@
             margin-top: 0;
             margin-bottom: 16px;
 
-            @media (max-width: 644px) {
+            @media screen and (max-width: 644px) {
                 margin: 0;
                 font-size: 36px;
             }
 
-            @media (max-width: 1115px) {
+            @media screen and (max-width: 1115px) {
                 margin: 0;
                 font-size: 28px;
             }
@@ -166,7 +168,7 @@
                 background: white;
                 margin-top: 5px;
 
-                @media (max-width: 644px) {
+                @media screen and (max-width: 644px) {
                     margin-top: 5px;
                 }
             }
@@ -181,8 +183,12 @@
             line-height: 1.5;
             font-weight: 100;
 
-            @media (max-width: 644px) {
+            @media screen and (max-width: 644px) {
                 font-size: 16px;
+            }
+
+            @media screen and (max-width: 400px) {
+                font-size: 14px;
             }
         }
 
