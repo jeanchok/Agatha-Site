@@ -58,8 +58,23 @@
         opacity: 1;
         height: 550px;
         transform: rotate(311deg);
+        animation: creeper 10s infinite;
     }
 
+    @keyframes creeper {
+        0% {
+            transform: rotate(311deg) scale(1, 1);
+        }
+
+        40% {
+            transform: rotate(311deg) scale(1.1, 1);
+        }
+
+        100% {
+            transform: rotate(311deg) scale(1, 1);
+        }
+
+    }
 }
 
 .mycard {
