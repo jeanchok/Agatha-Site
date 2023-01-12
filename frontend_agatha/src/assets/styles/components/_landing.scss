@@ -72,6 +72,8 @@
                 display: flex;
                 align-items: center;
                 margin: 0 20px;
+                height: 50%;
+                justify-content: center;
             }
 
             h1 {
@@ -86,10 +88,10 @@
                 text-shadow: 1px 1px 2px black;
 
                 @media (max-width: 644px) {
-                    font-size: 50px;
+                    font-size: 75px;
                 }
 
-                @media (max-width: 1115px) {
+                @media (min-width: 644px) and (max-width: 1115px) {
                     font-size: 100px;
                 }
 

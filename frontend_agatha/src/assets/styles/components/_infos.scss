@@ -54,6 +54,7 @@
     padding: 22px 25px 25px 25px;
     gap: 15px;
     flex-wrap: nowrap;
+    max-height: 70vh;
 
     .linkContainer {
         display: flex;
@@ -114,6 +115,7 @@
             width: 100%;
             aspect-ratio: 16/9;
             object-fit: contain;
+            height: 100%;
 
         }
 
@@ -180,7 +182,7 @@
             font-weight: 100;
 
             @media (max-width: 644px) {
-                font-size: 18px;
+                font-size: 16px;
             }
         }
 
