@@ -95,6 +95,8 @@ const Actus = () => {
                         }
                     </Carousel> */}
                     <img className='actusContainer__maya' src="/img/maya2.png" alt="illustration maya 2" />
+                    <img className='actusContainer__creeper' src="/img/liane vecto.png" alt="illustration liane" />
+
                 </div>
 
             </InView>

@@ -10,6 +10,9 @@
 
 .alice-carousel__prev-btn,
 .alice-carousel__next-btn {
+    z-index: 10;
+    position: relative;
+
     p {
         font-size: 40px;
         color: rgb(255, 255, 255);

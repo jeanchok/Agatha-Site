@@ -51,6 +51,15 @@
         height: 550px;
     }
 
+    &__creeper {
+        position: absolute;
+        top: 38px;
+        left: -155px;
+        opacity: 1;
+        height: 550px;
+        transform: rotate(311deg);
+    }
+
 }
 
 .mycard {

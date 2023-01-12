@@ -41,7 +41,7 @@
             width: 100%;
             z-index: 1;
             background-image:
-                url("/img/clouds_2d.webp");
+                url("/img/nuages.webp");
 
             background-repeat: repeat;
             background-position: 0 0;
@@ -69,7 +69,9 @@
 
             @media (max-width: 1038px) {
                 width: 100%;
-                margin-left: 30px;
+                display: flex;
+                align-items: center;
+                margin: 0 20px;
             }
 
             h1 {
@@ -88,10 +90,10 @@
                 }
 
                 @media (max-width: 1115px) {
-                    font-size: 60px;
+                    font-size: 100px;
                 }
 
-                @media (max-width: 1430px) {
+                @media (min-width: 1430px) {
                     font-size: 110px;
                 }
             }
@@ -120,6 +122,12 @@
                 margin-top: -35px;
                 margin-bottom: 0px;
 
+                @media (max-width: 400px) {
+                    margin-top: -15px;
+
+                }
+
+
                 h3 {
                     width: fit-content;
                     height: 60px;
@@ -132,6 +140,7 @@
 
                     @media (max-width: 380px) {
                         font-size: 45px;
+
                     }
                 }
 
@@ -157,12 +166,6 @@
                 z-index: -1;
                 clip-path: url(#clip);
 
-                /* applying clip animation */
-                @media (min-width: 890px) and (max-width: 1038px) {
-                    height: 50%;
-                    width: 40%;
-                }
-
                 @media (max-width: 890px) {
                     height: 70px;
                     width: 390px;
@@ -176,11 +179,15 @@
             &--edition {
                 animation: flicker 1.5s infinite alternate;
 
+                @media (max-width: 457px) {
+                    text-align: center;
+                }
+
                 h3 {
                     background: linear-gradient(45deg, rgba(255, 0, 0, .5), rgba(255, 115, 0, .5), rgba(255, 251, 0, .5), rgba(72, 255, 0, .5), rgba(0, 255, 213, .5), rgba(0, 43, 255, .5), rgba(122, 0, 255, .5), rgba(255, 0, 200, .5), rgba(255, 0, 0, .5));
                     -webkit-background-clip: text;
                     -webkit-text-stroke: 12px transparent;
-                    color: black;
+                    color: white;
                     animation: identifier 20s linear infinite;
                     transition: opacity .3s ease-in-out;
                     background-size: 400%;

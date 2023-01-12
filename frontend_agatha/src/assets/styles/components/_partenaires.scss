@@ -157,8 +157,12 @@
     color: white;
     margin-left: 50px;
 
-    padding-top: 5px;
+    //padding-top: 10px;
     font-size: 15px;
+    font-family: Oswald;
+    font-weight: 200;
+    font-size: 18px;
+
 
 }
 
@@ -166,7 +170,12 @@
     width: 100%;
     min-height: 100px;
     margin-top: 20px;
-    padding-top: 10px;
+    padding-top: 8px;
+
+    &::placeholder {
+        font-family: Oswald;
+        padding-top: -4px;
+    }
 }
 
 // #contact-form button {
