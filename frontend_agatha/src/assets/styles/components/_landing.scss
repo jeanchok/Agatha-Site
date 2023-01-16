@@ -30,10 +30,38 @@
     .accueil {
         display: flex;
         width: 100%;
-        height: 80%;
+        height: 100%;
         position: relative;
         justify-content: flex-end;
         align-items: center;
+
+        &__creeper {
+            position: absolute;
+            width: 403px;
+            height: 346px;
+            z-index: 10;
+            top: -20px;
+            left: 0;
+            transform: rotate(290deg);
+            animation: creeper 10s infinite;
+        }
+
+
+
+        @keyframes creeper {
+            0% {
+                transform: rotate(311deg) scale(1, 1);
+            }
+
+            40% {
+                transform: rotate(311deg) scale(1.06, 1);
+            }
+
+            100% {
+                transform: rotate(311deg) scale(1, 1);
+            }
+
+        }
 
         &__clouds {
             height: 100vh;
@@ -134,11 +162,16 @@
                     width: fit-content;
                     height: 60px;
                     padding: 10px 20px;
-                    font-size: 60px;
                     margin-top: 15px;
                     margin-bottom: 0px;
                     text-shadow: none;
                     border-radius: 5px;
+                    //font-size: 60px;
+
+                    font-family: Acme-Regular-webfont;
+                    font-size: 35px;
+
+
 
                     @media (max-width: 380px) {
                         font-size: 45px;
@@ -161,7 +194,7 @@
                 content: '';
                 position: absolute;
                 height: 70%;
-                width: 420px;
+                width: 375px;
                 top: 0;
                 left: -45px;
                 background: black;
@@ -170,7 +203,7 @@
 
                 @media (max-width: 890px) {
                     height: 70px;
-                    width: 390px;
+                    width: 375px;
                 }
             }
 

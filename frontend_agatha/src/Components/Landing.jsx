@@ -25,6 +25,7 @@ const Landing = (props) => {
         <section id='accueil' ref={props.ref}>
 
             <InView as="div" className='accueil' onChange={(inView, entry) => { if (inView) { setNavActive('accueil') } }}>
+                <img className='accueil__creeper' src="/img/liane vecto 2.png" alt="illustration liane" />
                 <div className='accueil__clouds'></div>
                 {/* <div className="sun"></div> */}
                 <div className='accueil__text'>

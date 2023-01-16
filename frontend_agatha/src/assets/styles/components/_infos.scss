@@ -43,6 +43,35 @@
     align-items: center;
     scroll-snap-align: start;
     height: 98%;
+
+    &__creeper {
+        position: absolute;
+        width: 403px;
+        height: 346px;
+        z-index: 10;
+        top: -20px;
+        left: 0;
+        transform: rotate(290deg);
+        animation: creeper 10s infinite;
+    }
+
+
+
+    @keyframes creeper {
+        0% {
+            transform: rotate(311deg) scale(1, 1);
+        }
+
+        40% {
+            transform: rotate(311deg) scale(1.06, 1);
+        }
+
+        100% {
+            transform: rotate(311deg) scale(1, 1);
+        }
+
+    }
+
 }
 
 .infosContainer {
@@ -56,13 +85,16 @@
     gap: 15px;
     flex-wrap: nowrap;
     max-height: 70vh;
+    position: relative;
 
     .linkContainer {
         display: flex;
         justify-content: end;
         z-index: 11;
-        position: relative;
+        position: absolute;
         padding: 10px;
+        right: 0;
+        bottom: -34px;
 
         &__linkButton {
             padding: 8px 16px;

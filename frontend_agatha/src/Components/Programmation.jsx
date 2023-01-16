@@ -20,11 +20,12 @@ const Programmation = () => {
 
     return (
         <section id='programmation'>
+            <img className='programmation__creeper' src="/img/liane vecto 6.png" alt="illustration liane" />
+
             <InView as="div" className='programmation' onChange={(inView, entry) => { if (inView) { setNavActive('programmation') } }}>
                 {/* <div className="sun2"></div> */}
                 <h2>LES ARTISTES</h2>
                 <div className='programmationContainer' style={data.data.length === 0 ? { background: '#ffffff4d' } : null}>
-                    <img className='programmationContainer__dragon' src="/img/dragon.png" alt="illustration dragon" />
                     <div className='programmationContainer__container1'>
                         {data.data.length === 0 ?
                             <>

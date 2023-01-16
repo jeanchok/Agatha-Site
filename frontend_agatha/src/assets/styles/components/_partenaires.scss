@@ -41,6 +41,10 @@
                 font-size: 60px;
                 line-height: 0.75;
             }
+
+            @media screen and (max-width: 1115px) {
+                font-size: 80px;
+            }
         }
 
         h3 {

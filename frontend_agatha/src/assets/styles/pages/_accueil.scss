@@ -1,25 +1,63 @@
 .sectionContainer {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    height: 100vh;
+    height: 100dvh;
     scroll-behavior: smooth;
 }
 
 .sectionContainerChrome {
     scroll-snap-type: y proximity;
     overflow-y: scroll;
-    height: 100vh;
+    height: 100dvh;
     scroll-behavior: smooth;
 }
 
 section {
-    height: 100dvh !important;
+    height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
     scroll-snap-align: start;
     overflow: hidden;
 }
+
+
+@media (orientation: landscape) and (max-width: 1180px) and (max-height: 375px) {
+    .sectionContainer {
+        scroll-snap-type: none;
+        height: auto !important;
+    }
+
+    section {
+        scroll-snap-type: none;
+        height: auto !important;
+    }
+
+    .infosContainer {
+        max-height: none !important;
+        margin-bottom: 20px;
+    }
+
+    .actusContainer {
+        min-height: 330px;
+    }
+
+    #actus {
+        height: auto !important;
+    }
+
+    .actus {
+        height: auto !important;
+    }
+
+
+}
+
+// @media (orientation: portrait) {
+//     body {
+//         transform: rotate(-90deg);
+//     }
+// }
 
 // body {
 //     height: 100%;

@@ -14,6 +14,8 @@ function App() {
   const [navActive, setNavActive] = useState('accueil');
   console.log(import.meta.env.VITE_API_URL, "import.meta.env.REACT_APP_API_URL");
 
+
+
   return (
 
     <BrowserRouter>
