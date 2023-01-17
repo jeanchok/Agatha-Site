@@ -1,11 +1,12 @@
 #partenaires {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(180deg, rgba(1, 0, 46, .95), rgba(0, 0, 0, 1));
+    background: linear-gradient(180deg, rgba(46, 22, 35, .95), rgba(0, 0, 0, 1));
     position: relative;
     overflow: hidden;
 }
 
+//rgba(1, 0, 46, .95) rgba(0, 0, 0, 1)
 .partenaires {
     display: flex;
     flex-direction: column;
@@ -15,6 +16,10 @@
 
     @media (max-width: 400px) {
         margin-top: 100px;
+    }
+
+    @media (min-width: 550px) and (max-width:1150px) {
+        width: 85%;
     }
 
     .partenairesText {
@@ -157,7 +162,7 @@
 
 .formInput {
     width: 100%;
-    min-height: 28px;
+    min-height: 32px;
     margin-top: 15px;
     background-color: transparent;
     color: white;

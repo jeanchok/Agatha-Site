@@ -29,10 +29,10 @@ const Landing = (props) => {
                 <div className='accueil__clouds'></div>
                 {/* <div className="sun"></div> */}
                 <div className='accueil__text'>
-                    <h1>AGATHA</h1>
-                    <h1>FESTIVAL #1</h1>
+                    <h1 className='text-focus-in'>AGATHA</h1>
+                    <h1 className='text-focus-in'>FESTIVAL #1</h1>
                     <div className='accueil__text--date brush-wrap'>
-                        <h3 >9/10/11 JUIN 2023</h3>
+                        <h3 className='text-focus-in' >9/10/11 JUIN 2023</h3>
                         <svg height="0" width="0" xmlns="http://www.w3.org/2000/svg">
                             <defs>
 
@@ -78,7 +78,7 @@ const Landing = (props) => {
                         </svg>
                     </div>
                     <div className='accueil__text--edition'>
-                        <h3>La quête du Quetzacoatl</h3>
+                        <h3 className='text-flicker-in-glow'>La quête du Quetzacoatl</h3>
                     </div>
 
                     <div className='linkContainer'>

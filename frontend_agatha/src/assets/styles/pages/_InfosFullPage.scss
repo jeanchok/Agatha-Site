@@ -7,6 +7,30 @@
     min-height: 100vh;
     position: relative;
 
+    h2 {
+        z-index: 1;
+
+        @media (max-width: 702px) {
+            text-align: center;
+        }
+
+        @media (max-width: 466px) {
+            text-align: center;
+            font-size: 95px;
+            margin-top: 110px;
+        }
+    }
+
+    &__creeper {
+        position: absolute;
+        top: -44px;
+        left: 192px;
+        opacity: 1;
+        height: 350px;
+        width: 250px;
+        z-index: 0;
+    }
+
 
     &__infosContainer {
         width: 50%;
@@ -30,6 +54,7 @@
             justify-content: space-between;
             align-items: center;
             font-size: 24px;
+
 
             button {
                 border-radius: 50px;

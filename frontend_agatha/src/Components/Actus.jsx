@@ -13,10 +13,13 @@ import AliceCarousel from 'react-alice-carousel';
 const Actus = () => {
     const API_URL = import.meta.env.VITE_API_URL;
     const { loading, error, data } = useFetch(API_URL + '/api/actuses?populate=*')
+    const [className, setClassName] = useState('actus');
     if (loading) return <p>Loading...</p>
     if (error) return <p>Errror :</p>
 
+
     const { navActive, setNavActive } = useContext(MyContext);
+
 
     const defaultItem = <div className="mycard item">
         <div className='mycard__text'>
@@ -65,7 +68,7 @@ const Actus = () => {
 
     return (
         <section id='actus'>
-            <InView as="div" className='actus' onChange={(inView, entry) => { if (inView) { setNavActive('actus') } }} >
+            <InView as="div" className={className} onChange={(inView, entry) => { if (inView) { setNavActive('actus'); setClassName(className + ' fade-in') } }} >
                 <h2>LES ACTUS</h2>
                 <div className='actusContainer'>
                     <AliceCarousel mouseTracking items={items} paddingLeft={50}

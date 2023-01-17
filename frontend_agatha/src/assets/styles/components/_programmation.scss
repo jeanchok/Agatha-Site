@@ -25,6 +25,11 @@
         top: 40%;
         transform: rotateY(182deg);
         right: -66px;
+
+        @media (max-width: 800px) {
+            width: 250px;
+            height: 200px;
+        }
     }
 
 
@@ -248,5 +253,32 @@
 
             }
         }
+    }
+}
+
+/* Animations */
+
+.fade-in {
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }

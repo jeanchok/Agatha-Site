@@ -5,6 +5,7 @@ import { InView } from 'react-intersection-observer';
 import { MyContext } from '../Hooks/useContext';
 import useFetch from '../Hooks/useFetch';
 import emailjs from '@emailjs/browser';
+import Stars from '../Components/Stars';
 
 const Partenaires = (props) => {
     const [message, setMessage] = useState(false);
@@ -16,6 +17,7 @@ const Partenaires = (props) => {
     const [messageBody, setMessageBody] = useState('');
     const form = useRef();
     const EMAILJS = import.meta.env.VITE_EMAILJS;
+    const [className, setClassName] = useState('partenaires');
 
     const { navActive, setNavActive } = useContext(MyContext);
 
@@ -56,7 +58,7 @@ const Partenaires = (props) => {
     // let minAlpha = 0.8;
     return (
         <section id='partenaires'>
-            <InView as="div" className='partenaires' onChange={(inView, entry) => { if (inView) { setNavActive('partenaires') } }}>
+            <InView as="div" className={className} onChange={(inView, entry) => { if (inView) { setNavActive('partenaires'); setClassName(className + ' fade-in') } }}>
                 <div className='partenairesText'>
                     <h2>DEVENIR PARTENAIRE</h2>
                 </div>
@@ -177,6 +179,7 @@ const Partenaires = (props) => {
                     <img className='partenairesContainer__maya' src="/img/maya1.png" alt="maya illustration" />
                     {/* <Particles minAlpha={minAlpha} drift={drift} yVariance={yVariance} rotation={rotation} speed={speed} color={color} direction={direction} shape={shape} imageUrl={imageUrl} /> */}
                 </div>
+                <Stars />
             </InView>
             <Footer />
 

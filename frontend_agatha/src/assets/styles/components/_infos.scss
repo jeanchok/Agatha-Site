@@ -1,9 +1,9 @@
 #infos {
-    background: linear-gradient(180deg, rgba(75, 0, 101, .85), rgba(1, 0, 46, .95));
+    background: linear-gradient(180deg, rgba(75, 0, 101, .85), rgba(46, 22, 35, .95));
     display: flex;
     flex-direction: column;
 
-
+    //rgba(1, 0, 46, .95)
 
     h2 {
 
@@ -13,6 +13,7 @@
         margin-bottom: -25px;
         line-height: 0.90;
         margin-bottom: -70px;
+        z-index: 10;
 
         @media screen and (max-width: 644px) {
             margin-bottom: 0px;
@@ -44,33 +45,7 @@
     scroll-snap-align: start;
     height: 98%;
 
-    &__creeper {
-        position: absolute;
-        width: 403px;
-        height: 346px;
-        z-index: 10;
-        top: -20px;
-        left: 0;
-        transform: rotate(290deg);
-        animation: creeper 10s infinite;
-    }
 
-
-
-    @keyframes creeper {
-        0% {
-            transform: rotate(311deg) scale(1, 1);
-        }
-
-        40% {
-            transform: rotate(311deg) scale(1.06, 1);
-        }
-
-        100% {
-            transform: rotate(311deg) scale(1, 1);
-        }
-
-    }
 
 }
 
@@ -86,6 +61,44 @@
     flex-wrap: nowrap;
     max-height: 70vh;
     position: relative;
+
+    &__creeper {
+        position: absolute;
+        width: 370px;
+        height: 245px;
+        z-index: 0;
+        top: -23px;
+        left: 5px;
+        transform: rotate(354deg);
+        animation: creeperActus 10s infinite;
+
+        @media screen and (max-width: 450px) {
+            width: 270px;
+            height: 145px;
+            animation: none;
+            top: -10px;
+        }
+    }
+
+
+
+    @keyframes creeperActus {
+        0% {
+            transform: rotate(354deg) scaleY(1, 1);
+            height: 245px
+        }
+
+        40% {
+            transform: rotate(354deg) scaleY(1.06, 1);
+            height: 265px
+        }
+
+        100% {
+            transform: rotate(354deg) scaleY(1, 1);
+            height: 245px
+        }
+
+    }
 
     .linkContainer {
         display: flex;
@@ -150,7 +163,7 @@
             aspect-ratio: 16/9;
             object-fit: contain;
             height: 100%;
-
+            z-index: 10;
         }
 
         iframe {
@@ -211,7 +224,7 @@
 
         p {
             margin: auto;
-            font-size: 21px;
+            font-size: 20px;
             line-height: 1.5;
             font-weight: 100;
 

@@ -6,6 +6,7 @@ import useFetch from '../Hooks/useFetch';
 
 const Programmation = () => {
     const { navActive, setNavActive } = useContext(MyContext);
+    const [className, setClassName] = useState('programmation');
 
     const API_URL = import.meta.env.VITE_API_URL;
     const { loading, error, data } = useFetch(API_URL + '/api/artistes-mis-en-avants?populate=*')
@@ -17,12 +18,12 @@ const Programmation = () => {
         let outputString = date.toLocaleDateString('fr-FR', { weekday: 'long', month: 'long', day: 'numeric' });
         return outputString.toUpperCase();
     }
-
+    // 
     return (
         <section id='programmation'>
             <img className='programmation__creeper' src="/img/liane vecto 6.png" alt="illustration liane" />
 
-            <InView as="div" className='programmation' onChange={(inView, entry) => { if (inView) { setNavActive('programmation') } }}>
+            <InView as="div" className={className} onChange={(inView, entry) => { if (inView) { setNavActive('programmation'); setClassName(className + ' fade-in') } }}>
                 {/* <div className="sun2"></div> */}
                 <h2>LES ARTISTES</h2>
                 <div className='programmationContainer' style={data.data.length === 0 ? { background: '#ffffff4d' } : null}>
