@@ -10,7 +10,7 @@
         display: flex;
         justify-content: flex-start;
         width: 80%;
-        margin-bottom: -46px;
+        margin-bottom: -54px;
         z-index: 10;
 
         @media screen and (max-width: 1038px) {
@@ -79,6 +79,19 @@
         }
 
     }
+
+    .alice-carousel {
+        z-index: 10;
+
+        &__wrapper {
+            padding-left: 126px;
+
+            @media screen and (max-width: 800px) {
+                padding-left: 50px !important;
+            }
+        }
+    }
+
 }
 
 .mycard {

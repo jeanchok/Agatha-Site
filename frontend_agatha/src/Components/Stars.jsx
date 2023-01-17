@@ -3,9 +3,9 @@ import React from 'react';
 const Stars = () => {
     return (
         <div>
-            <div id='stars'></div>
-            <div id='stars2'></div>
-            <div id='stars3'></div>
+            <div class="star1"></div>
+            <div class="star2"></div>
+            <div class="star3"></div>
 
         </div>
     );
