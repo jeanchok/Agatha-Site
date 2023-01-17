@@ -179,7 +179,7 @@
 
 
                     @media (max-width: 380px) {
-                        font-size: 45px;
+                        font-size: 30px;
 
                     }
                 }
@@ -240,21 +240,18 @@
                     @keyframes identifier {
 
                         0% {
-                            // background: linear-gradient(45deg, rgba(255, 0, 0, 1), rgba(255, 115, 0, 1), rgba(255, 251, 0, 1), rgba(72, 255, 0, 1), rgba(0, 255, 213, 1), rgba(0, 43, 255, 1), rgba(122, 0, 255, 1), rgba(255, 0, 200, 1), rgba(255, 0, 0, 1));
-                            // -webkit-background-clip: text;
-                            // -webkit-text-stroke: 12px transparent;
                             background-position: 0 0;
+                            -webkit-background-position: 0 0;
                         }
 
                         50% {
-                            // background: linear-gradient(45deg, rgba(255, 0, 0, .5), rgba(255, 115, 0, .5), rgba(255, 251, 0, .5), rgba(72, 255, 0, .5), rgba(0, 255, 213, .5), rgba(0, 43, 255, .5), rgba(122, 0, 255, .5), rgba(255, 0, 200, .5), rgba(255, 0, 0, .5));
-                            // -webkit-background-clip: text;
-                            // -webkit-text-stroke: 12px transparent;
                             background-position: 400% 0;
+                            -webkit-background-position: 400% 0;
                         }
 
                         100% {
                             background-position: 0 0;
+                            -webkit-background-position: 0 0;
                         }
                     }
 

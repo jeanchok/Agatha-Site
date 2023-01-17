@@ -11,15 +11,6 @@ const Landing = (props) => {
 
     const { navActive, setNavActive } = useContext(MyContext);
 
-    let color = "white";
-    let direction = 90;
-    let shape = "image";
-    let imageUrl = "/img/coud.png";
-    let rotation = 0;
-    let speed = 10;
-    let yVariance = 0;
-    let drift = 0;
-    let minAlpha = 0.8;
 
     return (
         <section id='accueil' ref={props.ref}>

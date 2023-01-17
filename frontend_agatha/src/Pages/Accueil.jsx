@@ -27,7 +27,6 @@ const Accueil = () => {
                 <Actus />
                 <Infos />
                 <Partenaires />
-                <div className='dontGoLandscape'>Restes en mode portrait, sinon j'ai la tête toute penchée.</div>
             </div>
 
         </>

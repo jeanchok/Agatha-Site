@@ -7,15 +7,11 @@ const Infos = () => {
     const [className, setClassName] = useState('infos');
     return (
         <section id='infos'>
-            {/* <img className='infos__creeper' src="/img/liane vecto 4.png" alt="illustration liane" /> */}
 
             <InView as="div" className={className} onChange={(inView, entry) => { if (inView) { setNavActive('infos'); setClassName(className + ' fade-in') } }}>
                 <h2>INFOS PRATIQUES</h2>
                 <div className='infosContainer'>
-                    <img className='infosContainer__creeper' src="/img/liane vecto 8.png" alt="illustration liane" />
-
                     <div className='infosContainer__video'>
-                        {/* <iframe id="video-6-1_vimeo_iframe" frameborder="0" src="https://player.vimeo.com/video/205894013?loop=0&amp;_=1&amp;" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen="true" allow="autoplay" data-ready="true"></iframe> */}
                         <img src="/img/Plan d'accès macro agatha.png" alt="carte domaine du denais" />
                     </div>
                     <div className='infosContainer__text'>
