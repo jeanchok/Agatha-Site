@@ -63,6 +63,7 @@
         height: 110%;
         transform: rotate(311deg);
         animation: creeper 10s infinite;
+        z-index: 20;
     }
 
     @keyframes creeper {
@@ -84,7 +85,7 @@
         z-index: 10;
 
         &__wrapper {
-            padding-left: 126px;
+            padding-left: 126px !important;
 
             @media screen and (max-width: 800px) {
                 padding-left: 50px !important;
