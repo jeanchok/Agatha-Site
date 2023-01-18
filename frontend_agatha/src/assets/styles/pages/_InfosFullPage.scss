@@ -1,5 +1,5 @@
 .InfosFullPage {
-    background: linear-gradient(180deg, #4B0065, #01002E);
+    background: linear-gradient(180deg, rgba(75, 0, 101, .85), rgba(46, 22, 35, .95));
     display: flex;
     flex-direction: column;
     color: white;
@@ -65,13 +65,13 @@
                 align-items: center;
                 justify-content: center;
                 padding: 0;
-                color: white;
-                background: black;
+                color: rgb(0, 0, 0);
+                background: rgb(255, 255, 255);
                 border: transparent;
                 cursor: pointer;
 
                 span {
-                    margin-top: -5px;
+                    margin-left: 1px;
                 }
             }
         }

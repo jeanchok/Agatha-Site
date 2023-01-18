@@ -45,8 +45,8 @@ h2 {
 .glow-on-hover {
     border: none;
     outline: none;
-    color: #fff;
-    background: #1F1F1F;
+    color: rgb(0, 0, 0);
+    background: #ffffff;
     cursor: pointer;
     position: relative;
     z-index: 0;
@@ -88,10 +88,11 @@ h2 {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #111;
+    background: rgb(255, 255, 255);
     left: 0;
     top: 0;
     border-radius: 50px;
+    border: solid 2px black;
 }
 
 @keyframes glowing {
@@ -105,6 +106,48 @@ h2 {
 
     100% {
         background-position: 0 0;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+
+    .sectionContainer {
+        scroll-snap-type: none;
+        overflow-y: none;
+        height: auto;
+        scroll-behavior: none;
+    }
+
+    section {
+        height: auto;
+        scroll-snap-align: none;
+    }
+
+    .accueil {
+        padding: 50px 0;
+    }
+
+    #infos {
+        padding-bottom: 50px;
+    }
+
+    #actus {
+        height: auto;
+        padding: 50px 0;
+
+        .actus {
+            height: auto;
+        }
+    }
+
+    .infosContainer {
+
+        max-height: none;
+    }
+
+    .partenaires {
+        padding: 50px 0;
     }
 }
 

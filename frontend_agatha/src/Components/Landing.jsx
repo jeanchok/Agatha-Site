@@ -3,12 +3,14 @@ import Particles from "./Particules";
 import { InView } from 'react-intersection-observer';
 //import { setGlobalState, useGlobalState } from '../hooks/useGlobalState';
 import { MyContext } from '../Hooks/useContext';
+import Leaves from './Leaves';
 
 
 
 
 const Landing = (props) => {
-
+    const [leavesActive, setLeavesActive] = useState(false);
+    const [leavesActive2, setLeavesActive2] = useState(false);
     const { navActive, setNavActive } = useContext(MyContext);
 
 
@@ -16,7 +18,21 @@ const Landing = (props) => {
         <section id='accueil' ref={props.ref}>
 
             <InView as="div" className='accueil' onChange={(inView, entry) => { if (inView) { setNavActive('accueil') } }}>
-                <img className='accueil__creeper' src="/img/liane vecto 2.png" alt="illustration liane" />
+                <img className='accueil__creeper' src="/img/liane vecto 2.png" alt="illustration liane"
+                    onMouseEnter={() => setLeavesActive(true)}
+                    onMouseLeave={() => setLeavesActive(false)}
+                />
+                <img className='accueil__creeper2' src="/img/liane vecto 7.png" alt="illustration liane"
+                    onMouseEnter={() => setLeavesActive2(true)}
+                    onMouseLeave={() => setLeavesActive2(false)}
+                />
+                {/* <Leaves textAlign={"right"} /> */}
+                {/* {
+                    leavesActive ? <Leaves textAlign={'right'} /> : null
+                }
+                {
+                    leavesActive2 ? <Leaves textAlign={'left'} /> : null
+                } */}
                 <div className='accueil__clouds'></div>
                 {/* <div className="sun"></div> */}
                 <div className='accueil__text'>
@@ -69,10 +85,10 @@ const Landing = (props) => {
                         </svg>
                     </div>
                     <div className='accueil__text--edition'>
-                        <h3 className='text-flicker-in-glow'>La quête du Quetzacoatl</h3>
+                        <h3 className='slide-in-bck-center'>La quête du Quetzacoatl</h3>
                     </div>
 
-                    <div className='linkContainer'>
+                    <div className='linkContainer slide-in-bck-center'>
                         <a className='linkContainer__linkButton glow-on-hover' href="https://forms.gle/jre4ZCbTBnWh7bKo9" target="_blank">
                             <span>DEVENIR BENEVOLE</span>
                             <img src="/img/pointes-de-fleches-fines-a-droite.png" alt="fleche" />

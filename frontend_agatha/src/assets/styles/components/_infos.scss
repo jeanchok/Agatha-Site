@@ -109,6 +109,10 @@
         right: 0;
         bottom: -34px;
 
+        .glow-on-hover:after {
+            border: transparent;
+        }
+
         &__linkButton {
             padding: 8px 16px;
             display: flex;
@@ -122,7 +126,10 @@
 
             span {
                 margin: 0;
+                color: black;
             }
+
+
         }
 
     }

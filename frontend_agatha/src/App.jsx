@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.scss'
 import Header from './Components/Header'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -13,8 +13,6 @@ import Contact from './Pages/Contact';
 function App() {
   const [navActive, setNavActive] = useState('accueil');
   console.log(import.meta.env.VITE_API_URL, "import.meta.env.REACT_APP_API_URL");
-
-
 
   return (
 

@@ -99,6 +99,17 @@
             top: -273px;
             height: 641px;
             opacity: 0.5;
+
+            @media (max-width: 1300px) {
+                right: 0;
+
+            }
+
+
+            @media (max-width: 760px) {
+
+                right: -211px;
+            }
         }
     }
 
@@ -108,6 +119,10 @@
         position: relative;
         margin-top: 16px;
         justify-content: center;
+
+        .glow-on-hover:after {
+            border: transparent;
+        }
 
         &__linkButton {
             padding: 8px 16px;
@@ -129,6 +144,7 @@
             span {
                 font-size: 22px;
                 margin-top: -2px;
+                color: black;
 
                 @media (max-width: 400px) {
                     font-size: 18px;
