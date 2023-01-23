@@ -11,6 +11,12 @@
     justify-content: center;
     position: relative;
 
+    &Title {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+    }
+
     @media (max-width: 800px) {
         margin-top: 70px;
         height: 88%;

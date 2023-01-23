@@ -8,8 +8,11 @@ const Infos = () => {
     return (
         <section id='infos'>
 
-            <InView as="div" className={className} onChange={(inView, entry) => { if (inView) { setNavActive('infos'); setClassName('infos' + ' fade-in') } }}>
-                <h2>INFOS PRATIQUES</h2>
+            <InView as="div" className={className} onChange={(inView, entry) => { if (inView) { setClassName('infos' + ' fade-in') } }}>
+                <InView as="div" className='infosTitle' onChange={(inView, entry) => { if (inView) { setNavActive('infos'); console.log("infos"); } }}>
+
+                    <h2>INFOS PRATIQUES</h2>
+                </InView>
                 <div className='infosContainer'>
                     <div className='infosContainer__video'>
                         <img src="/img/Plan d'accès macro agatha.png" alt="carte domaine du denais" />

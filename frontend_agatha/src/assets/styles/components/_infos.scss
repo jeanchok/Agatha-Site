@@ -47,6 +47,26 @@
     scroll-snap-align: start;
     height: 90dvh;
 
+    @media screen and (max-width: 400px) {
+        height: auto;
+        margin-top: -83px;
+    }
+
+    @media (orientation:landscape) and (max-width: 800px) {
+        height: auto;
+    }
+
+    &Title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+
+        @media screen and (max-width: 400px) {
+            height: auto;
+            margin-top: 33px;
+        }
+    }
 
 
 }
@@ -164,7 +184,7 @@
         // margin-top: 20px;
 
         @media screen and (895px <=width <=1475px) {
-            height: 330px;
+            height: 242px;
         }
 
         @media screen and (max-width: 644px) {
@@ -248,6 +268,7 @@
 
             @media screen and (max-width: 400px) {
                 font-size: 13px;
+                padding-bottom: 15px;
             }
         }
 

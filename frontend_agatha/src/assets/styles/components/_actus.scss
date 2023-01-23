@@ -35,6 +35,12 @@
     flex-direction: column;
     height: 90vh;
     width: 100%;
+
+    &Title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .actusContainer {

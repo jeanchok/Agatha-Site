@@ -17,7 +17,7 @@ const Landing = (props) => {
     return (
         <section id='accueil' ref={props.ref}>
 
-            <InView as="div" className='accueil' onChange={(inView, entry) => { if (inView) { setNavActive('accueil') } }}>
+            <InView as="div" className='accueil' onChange={(inView, entry) => { if (inView) { } }}>
                 <img className='accueil__creeper' src="/img/liane vecto 2.png" alt="illustration liane"
                     onMouseEnter={() => setLeavesActive(true)}
                     onMouseLeave={() => setTimeout(() => {
@@ -39,8 +39,11 @@ const Landing = (props) => {
                 } */}
                 <div className='accueil__clouds'></div>
                 {/* <div className="sun"></div> */}
-                <div className='accueil__text'>
-                    <h1 className='text-focus-in'>AGATHA</h1>
+
+                <InView as="div" className='accueil__text' onChange={(inView, entry) => { if (inView) { } }}>
+                    <InView as="h1" className='text-focus-in' onChange={(inView, entry) => { if (inView) { setNavActive('accueil') } }}>AGATHA</InView>
+
+                    {/* <h1 className='text-focus-in'>AGATHA</h1> */}
                     <h1 className='text-focus-in'>FESTIVAL #1</h1>
                     <div className='accueil__text--date brush-wrap'>
                         <h3 className='text-focus-in' >9/10/11 JUIN 2023</h3>
@@ -98,7 +101,7 @@ const Landing = (props) => {
                             <img src="/img/pointes-de-fleches-fines-a-droite.png" alt="fleche" />
                         </a>
                     </div>
-                </div>
+                </InView>
 
             </InView>
 

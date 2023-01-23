@@ -58,10 +58,13 @@ const Partenaires = (props) => {
     // let minAlpha = 0.8;
     return (
         <section id='partenaires'>
-            <InView as="div" className={className} onChange={(inView, entry) => { if (inView) { setNavActive('partenaires'); setClassName('partenaires' + ' fade-in') } }}>
-                <div className='partenairesText'>
+            <InView as="div" className={className} onChange={(inView, entry) => { if (inView) { setClassName('partenaires' + ' fade-in') } }}>
+                {/* <div className='partenairesText'>
                     <h2>DEVENIR PARTENAIRE</h2>
-                </div>
+                </div> */}
+                <InView as="div" className='partenairesText' onChange={(inView, entry) => { if (inView) { setNavActive('partenaires'); console.log("partenaires") } }}>
+                    <h2>DEVENIR PARTENAIRE</h2>
+                </InView>
                 {/* <form ref={form} onSubmit={sendEmail}>
                     <label>Name</label>
                     <input type="text" name="user_name" />
