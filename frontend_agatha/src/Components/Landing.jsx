@@ -20,18 +20,22 @@ const Landing = (props) => {
             <InView as="div" className='accueil' onChange={(inView, entry) => { if (inView) { setNavActive('accueil') } }}>
                 <img className='accueil__creeper' src="/img/liane vecto 2.png" alt="illustration liane"
                     onMouseEnter={() => setLeavesActive(true)}
-                    onMouseLeave={() => setLeavesActive(false)}
+                    onMouseLeave={() => setTimeout(() => {
+                        setLeavesActive(false)
+                    }, 1000)}
                 />
                 <img className='accueil__creeper2' src="/img/liane vecto 7.png" alt="illustration liane"
                     onMouseEnter={() => setLeavesActive2(true)}
-                    onMouseLeave={() => setLeavesActive2(false)}
+                    onMouseLeave={() => setTimeout(() => {
+                        setLeavesActive2(false)
+                    }, 1000)}
                 />
-                {/* <Leaves textAlign={"right"} /> */}
+
                 {/* {
-                    leavesActive ? <Leaves textAlign={'right'} /> : null
+                    leavesActive ? <Leaves textAlign={'left'} /> : null
                 }
                 {
-                    leavesActive2 ? <Leaves textAlign={'left'} /> : null
+                    leavesActive2 ? <Leaves textAlign={'right'} /> : null
                 } */}
                 <div className='accueil__clouds'></div>
                 {/* <div className="sun"></div> */}

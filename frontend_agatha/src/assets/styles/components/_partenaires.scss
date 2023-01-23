@@ -12,7 +12,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 95%;
+    height: 90dvh;
 
     @media (max-width: 400px) {
         margin-top: 100px;
@@ -47,7 +47,7 @@
                 line-height: 0.75;
             }
 
-            @media screen and (max-width: 1115px) {
+            @media (min-width: 800px) and (max-width: 1115px) {
                 font-size: 80px;
             }
         }

@@ -8,7 +8,7 @@ const Infos = () => {
     return (
         <section id='infos'>
 
-            <InView as="div" className={className} onChange={(inView, entry) => { if (inView) { setNavActive('infos'); setClassName(className + ' fade-in') } }}>
+            <InView as="div" className={className} onChange={(inView, entry) => { if (inView) { setNavActive('infos'); setClassName('infos' + ' fade-in') } }}>
                 <h2>INFOS PRATIQUES</h2>
                 <div className='infosContainer'>
                     <div className='infosContainer__video'>

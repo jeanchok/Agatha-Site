@@ -68,7 +68,7 @@ const Actus = () => {
 
     return (
         <section id='actus'>
-            <InView as="div" className={className} onChange={(inView, entry) => { if (inView) { setNavActive('actus'); setClassName(className + ' fade-in') } }} >
+            <InView as="div" className={className} onChange={(inView, entry) => { if (inView) { setNavActive('actus'); setClassName('actus' + ' fade-in') } }} >
                 <h2>LES ACTUS</h2>
                 <div className='actusContainer'>
                     <AliceCarousel mouseTracking items={items} paddingLeft={50}

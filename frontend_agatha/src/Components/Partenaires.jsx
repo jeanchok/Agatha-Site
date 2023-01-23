@@ -58,7 +58,7 @@ const Partenaires = (props) => {
     // let minAlpha = 0.8;
     return (
         <section id='partenaires'>
-            <InView as="div" className={className} onChange={(inView, entry) => { if (inView) { setNavActive('partenaires'); setClassName(className + ' fade-in') } }}>
+            <InView as="div" className={className} onChange={(inView, entry) => { if (inView) { setNavActive('partenaires'); setClassName('partenaires' + ' fade-in') } }}>
                 <div className='partenairesText'>
                     <h2>DEVENIR PARTENAIRE</h2>
                 </div>

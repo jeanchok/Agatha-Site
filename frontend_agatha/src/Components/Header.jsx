@@ -27,7 +27,7 @@ const Header = () => {
         return (
             <Link
                 to={to}
-                className={(navActive === to) ? "nav-active" : ""}
+                className={(navActive == to) ? "nav-active" : ""}
                 onClick={(e) => scrollToSection(e, to)}
                 style={{ color: (navActive == 'accueil') ? 'black' : 'white' }}
             >

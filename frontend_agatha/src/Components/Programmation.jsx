@@ -23,7 +23,7 @@ const Programmation = () => {
         <section id='programmation'>
             <img className='programmation__creeper' src="/img/liane vecto 6.png" alt="illustration liane" />
 
-            <InView as="div" className={className} onChange={(inView, entry) => { if (inView) { setNavActive('programmation'); setClassName(className + ' fade-in') } }}>
+            <InView as="div" className={className} onChange={(inView, entry) => { if (inView) { setNavActive('programmation'); setClassName('programmation' + ' fade-in') } }}>
                 {/* <div className="sun2"></div> */}
                 <h2>LES ARTISTES</h2>
                 <div className='programmationContainer' style={data.data.length === 0 ? { background: '#ffffff4d' } : null}>

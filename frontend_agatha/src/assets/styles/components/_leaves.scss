@@ -18,6 +18,7 @@
 
     z-index: 1;
     -webkit-animation: falling 5s 0s infinite;
+    transition: 0.5s ease;
 }
 
 #leaves i:nth-of-type(2n) {
