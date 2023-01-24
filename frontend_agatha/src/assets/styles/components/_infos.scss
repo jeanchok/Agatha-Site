@@ -56,6 +56,10 @@
         height: auto;
     }
 
+    @media (orientation:landscape) and (max-height: 400px) {
+        height: auto;
+    }
+
     &Title {
         width: 100%;
         display: flex;
