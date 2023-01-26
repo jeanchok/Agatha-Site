@@ -30,7 +30,7 @@ const Landing = (props) => {
                         setLeavesActive2(false)
                     }, 1000)}
                 />
-
+                <img className='accueil__dragon' src="/img/têteDragon.png" alt="tête de dragon" />
                 {/* {
                     leavesActive ? <Leaves textAlign={'left'} /> : null
                 }

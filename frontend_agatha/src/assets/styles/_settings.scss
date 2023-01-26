@@ -151,25 +151,12 @@ h2 {
     }
 }
 
-// @media (orientation: landscape) {
-//     .dontGoLandscape {
-//         display: block;
-//         height: 100%;
-//         width: 100%;
-//         background-color: rgba(0, 0, 0, 0.82);
-//         position: fixed;
-//         z-index: 100;
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         color: white;
-//         font-size: 26px;
-//         top: 0;
-//     }
-// }
+.cookieButton {
+    background-color: green !important;
+    color: white !important;
+}
 
-// @media (orientation: portrait) {
-//     .dontGoLandscape {
-//         display: none;
-//     }
-// }
+#declineButton {
+    background-color: red;
+    color: white !important;
+}

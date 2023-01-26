@@ -8,6 +8,8 @@ footer {
     bottom: 0;
     z-index: 10;
     margin-top: 20px;
+    position: absolute;
+    margin-top: 20px;
 
     @media screen and (max-width: 970px) {
         height: 100px;

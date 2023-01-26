@@ -2,7 +2,8 @@
     background: linear-gradient(180deg, rgba(75, 0, 101, .85), rgba(46, 22, 35, .95));
     display: flex;
     flex-direction: column;
-
+    min-height: 100dvh;
+    height: auto;
     //rgba(1, 0, 46, .95)
 
     h2 {
@@ -45,7 +46,8 @@
     justify-content: center;
     align-items: center;
     scroll-snap-align: start;
-    height: 90dvh;
+    min-height: 90dvh;
+
 
     @media screen and (max-width: 400px) {
         height: auto;
@@ -200,7 +202,6 @@
             aspect-ratio: 16/9;
             object-fit: contain;
             height: auto;
-            min-height: 210px;
             z-index: 10;
         }
 
