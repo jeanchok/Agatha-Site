@@ -40,7 +40,7 @@ const Accueil = () => {
             <Header />
             <Socials />
 
-            <div className={(navigator.userAgent.indexOf("Chrome") != -1) ? 'sectionContainerChrome' : 'sectionContainer'}>
+            <div className={(navigator.userAgent.indexOf("Chrome") != -1) || (navigator.userAgent.indexOf('Safari') != -1) ? 'sectionContainerChrome' : 'sectionContainer'}>
                 <CookieConsent
                     location="bottom"
                     buttonText="Accepter"
