@@ -276,7 +276,7 @@
             }
 
             &--edition {
-                animation: flicker 1.5s infinite alternate;
+
 
                 @media (max-width: 457px) {
                     text-align: center;
@@ -292,8 +292,14 @@
                     background-size: 400%;
                     padding-left: 10px;
                     padding-top: 25px;
-                    -webkit-animation: slide-in-bck-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-                    animation: slide-in-bck-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                    animation: identifier 18s infinite;
+                    -webkit-animation: identifier 18s infinite;
+
+                    .slide-in-bck-center {
+                        -webkit-animation: slide-in-bck-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                        animation: slide-in-bck-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                    }
+
 
 
 
