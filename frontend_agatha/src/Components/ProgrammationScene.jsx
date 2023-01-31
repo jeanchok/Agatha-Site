@@ -15,6 +15,20 @@ const ProgrammationScene = (data) => {
 
     const defaultItem = { defaultItem: "defaultItem" };
     const artistes = data.data.data;
+    artistes.sort((a, b) => {
+        if (!a.attributes.HoraireDebut) return 1;
+        if (!b.attributes.HoraireDebut) return -1;
+        return a.attributes.HoraireDebut.localeCompare(b.attributes.HoraireDebut);
+    });
+
+    artistes.forEach(artiste => {
+        if (artiste.attributes.HoraireDebut) {
+            artiste.attributes.HoraireDebut = artiste.attributes.HoraireDebut.substring(0, 5)
+        }
+        if (artiste.attributes.HoraireFin) {
+            artiste.attributes.HoraireFin = artiste.attributes.HoraireFin.substring(0, 5)
+        }
+    });
 
 
 
@@ -30,7 +44,10 @@ const ProgrammationScene = (data) => {
     //     }
     // });
 
-
+    // const nbElementsToAddVendredi = artistes.length < 9 ? 9 - artistes.length : (artistes.length % 3) + 3;
+    // for (let i = 1; i <= nbElementsToAddVendredi; i++) {
+    //     artistes.push(defaultItem);
+    // }
 
 
     // const nbElementsToAddVendredi = artistesVendredi.length < 9 ? 9 - artistesVendredi.length : (artistesVendredi.length % 3) + 3;
@@ -66,22 +83,142 @@ const ProgrammationScene = (data) => {
                     <h4>SCENE ALTERNATIVE</h4>
                     <h4>SCENE DUB</h4>
                 </div>
-                <div className='progScenesContainer__artistes--artistes'>
-                    <div>
-                        {artistes.map((artiste) => {
-                            if (artiste.attributes && artiste.attributes.DateArtiste === "2023-06-09") {
-                                return (
-                                    <div key={artiste.id} style={{ backgroundImage: `url(${API_URL + artiste.attributes.ImageArtiste.data.attributes.url})`, aspectRatio: '4/3', backgroundRepeat: 'no-repeat' }}>
-                                        <div className=''>
-                                            <h4>{artiste.attributes.NomArtiste}</h4>
-                                        </div>
-                                    </div>
-                                )
-                            }
-                        })}
-                        {console.log(artistes)}
-                    </div>
-                </div>
+                {
+                    fridaySelelected ?
+                        <div className='progScenesContainer__artistes--artistes'>
+                            <div className='progScenesContainer__artistes--artistesScene'>
+                                {artistes.map((artiste) => {
+                                    if (artiste.attributes && artiste.attributes.DateArtiste === "2023-06-09" && artiste.attributes.SceneArtiste === "Techno") {
+                                        return (
+                                            <div key={artiste.id} className='progScenesContainer__artistes--artistesScene--card' >
+                                                <div className='progScenesContainer__artistes--artistesScene--cardTime'>
+                                                    <h5>
+                                                        {artiste.attributes.HoraireDebut}
+                                                    </h5>
+                                                    <h5>
+                                                        {artiste.attributes.HoraireFin}
+                                                    </h5>
+                                                </div>
+                                                <div className='progScenesContainer__artistes--artistesScene--cardName'>
+                                                    <h4>{artiste.attributes.NomArtiste}</h4>
+                                                </div>
+                                            </div>
+                                        )
+                                    }
+                                })}
+                                {console.log(artistes)}
+                            </div>
+                            <div className='progScenesContainer__artistes--artistesScene'>
+                                {artistes.map((artiste) => {
+                                    if (artiste.attributes && artiste.attributes.DateArtiste === "2023-06-09" && artiste.attributes.SceneArtiste === "Alternative") {
+                                        return (
+                                            <div key={artiste.id} className='progScenesContainer__artistes--artistesScene--card' >
+                                                <div className='progScenesContainer__artistes--artistesScene--cardTime'>
+                                                    <h5>
+                                                        {artiste.attributes.HoraireDebut}
+                                                    </h5>
+                                                    <h5>
+                                                        {artiste.attributes.HoraireFin}
+                                                    </h5>
+                                                </div>
+                                                <div className='progScenesContainer__artistes--artistesScene--cardName'>
+                                                    <h4>{artiste.attributes.NomArtiste}</h4>
+                                                </div>
+                                            </div>
+                                        )
+                                    }
+                                })}
+                            </div>
+                            <div className='progScenesContainer__artistes--artistesScene'>
+                                {artistes.map((artiste) => {
+                                    if (artiste.attributes && artiste.attributes.DateArtiste === "2023-06-09" && artiste.attributes.SceneArtiste === "Dub") {
+                                        return (
+                                            <div key={artiste.id} className='progScenesContainer__artistes--artistesScene--card' >
+                                                <div className='progScenesContainer__artistes--artistesScene--cardTime'>
+                                                    <h5>
+                                                        {artiste.attributes.HoraireDebut}
+                                                    </h5>
+                                                    <h5>
+                                                        {artiste.attributes.HoraireFin}
+                                                    </h5>
+                                                </div>
+                                                <div className='progScenesContainer__artistes--artistesScene--cardName'>
+                                                    <h4>{artiste.attributes.NomArtiste}</h4>
+                                                </div>
+                                            </div>
+                                        )
+                                    }
+                                })}
+                            </div>
+                        </div>
+                        :
+                        <div className='progScenesContainer__artistes--artistes'>
+                            <div className='progScenesContainer__artistes--artistesScene'>
+                                {artistes.map((artiste) => {
+                                    if (artiste.attributes && (artiste.attributes.DateArtiste === "2023-06-10" || artiste.attributes.DateArtiste === "2023-06-11") && artiste.attributes.SceneArtiste === "Techno") {
+                                        return (
+                                            <div key={artiste.id} className='progScenesContainer__artistes--artistesScene--card'>
+                                                <div className='progScenesContainer__artistes--artistesScene--cardTime'>
+                                                    <h5>
+                                                        {artiste.attributes.HoraireDebut}
+                                                    </h5>
+                                                    <h5>
+                                                        {artiste.attributes.HoraireFin}
+                                                    </h5>
+                                                </div>
+                                                <div className='progScenesContainer__artistes--artistesScene--cardName'>
+                                                    <h4>{artiste.attributes.NomArtiste}</h4>
+                                                </div>
+                                            </div>
+                                        )
+                                    }
+                                })}
+                            </div>
+                            <div className='progScenesContainer__artistes--artistesScene'>
+                                {artistes.map((artiste) => {
+                                    if (artiste.attributes && (artiste.attributes.DateArtiste === "2023-06-10" || artiste.attributes.DateArtiste === "2023-06-11") && artiste.attributes.SceneArtiste === "Alternative") {
+                                        return (
+                                            <div key={artiste.id} className='progScenesContainer__artistes--artistesScene--card' >
+                                                <div className='progScenesContainer__artistes--artistesScene--cardTime'>
+                                                    <h5>
+                                                        {artiste.attributes.HoraireDebut}
+                                                    </h5>
+                                                    <h5>
+                                                        {artiste.attributes.HoraireFin}
+                                                    </h5>
+                                                </div>
+                                                <div className='progScenesContainer__artistes--artistesScene--cardName'>
+                                                    <h4>{artiste.attributes.NomArtiste}</h4>
+                                                </div>
+                                            </div>
+                                        )
+                                    }
+                                })}
+                            </div>
+                            <div className='progScenesContainer__artistes--artistesScene'>
+                                {artistes.map((artiste) => {
+                                    if (artiste.attributes && (artiste.attributes.DateArtiste === "2023-06-10" || artiste.attributes.DateArtiste === "2023-06-11") && artiste.attributes.SceneArtiste === "Dub") {
+                                        return (
+                                            <div key={artiste.id} className='progScenesContainer__artistes--artistesScene--card'>
+                                                <div className='progScenesContainer__artistes--artistesScene--cardTime'>
+                                                    <h5>
+                                                        {artiste.attributes.HoraireDebut}
+                                                    </h5>
+                                                    <h5>
+                                                        {artiste.attributes.HoraireFin}
+                                                    </h5>
+                                                </div>
+                                                <div className='progScenesContainer__artistes--artistesScene--cardName'>
+                                                    <h4>{artiste.attributes.NomArtiste}</h4>
+                                                </div>
+                                            </div>
+                                        )
+                                    }
+                                })}
+                            </div>
+                        </div>
+                }
+
 
             </div>
 
