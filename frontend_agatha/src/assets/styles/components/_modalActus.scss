@@ -40,7 +40,7 @@ body.active-modal {
     z-index: 50;
     display: flex;
 
-    align-items: center;
+
 }
 
 
@@ -56,12 +56,24 @@ body.active-modal {
     background: #0e0e0e;
     padding: 14px 28px;
     border-radius: 3px;
-    max-width: 600px;
-    min-width: 300px;
+    max-width: 680px;
+    min-width: 477px;
     z-index: 60;
+
+    @media screen and (max-width: 552px) {
+        min-width: 286px;
+
+    }
 
     h3 {
         font-size: 28px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 22px;
+        font-weight: 100;
+        text-align: justify;
     }
 
     button {
