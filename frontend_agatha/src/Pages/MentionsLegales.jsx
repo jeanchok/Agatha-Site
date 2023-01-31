@@ -10,14 +10,31 @@ const MentionsLegales = () => {
             <div className='Mentions__title'>
                 <h2>MENTIONS LEGALES</h2>
             </div>
+            <div className='Mentions__text'>
+                <p>
+                    <strong> Raison Sociale :</strong> Association loi 1901 AGATHA
+                </p>
+                <p>
+                    <strong> Numéro SIRET :</strong> 922 035 670 00012
+                </p>
+                <p>
+                    <strong> Hébergement :</strong><br /> OVH <br />
+                    SAS au capital de 10 174 560 € <br />
 
-            <p>
-                <strong> Raison Sociale :</strong> Association loi 1901 AGATHA
-            </p><p>
+                    RCS Lille Métropole 424 761 419 00045 <br />
+                    Code APE 2620Z <br />
+                    N° TVA : FR 22 424 761 419 <br />
+                    Siège social : 2 rue Kellermann - 59100 Roubaix - France <br />
 
-                <strong> Numéro SIRET :</strong> 922 035 670 00012
-            </p>
+                    Président : Michel Paulin <br />
+                    OVH SAS est une filiale de la société OVH Groupe SA, société immatriculée au RCS de Lille sous le numéro 537 407 926 sise 2, rue Kellermann, 59100 Roubaix. <br />
 
+
+                </p>
+                <p>
+                    <strong> Responsable du site :</strong> Jean Choquet - contact@jeanchoquet.fr
+                </p>
+            </div>
             <Footer />
         </div>
     );

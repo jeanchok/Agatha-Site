@@ -6,9 +6,21 @@
     align-items: center;
     min-height: 100vh;
     position: relative;
+    height: 100%;
 
     &__title {
         text-align: center;
+    }
+
+    &__text {
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    p {
+        width: 80%;
     }
 
     h2 {
@@ -17,7 +29,10 @@
     }
 
     footer {
-        position: absolute;
+        // position: absolute;
+        // bottom: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
     }
 
 }

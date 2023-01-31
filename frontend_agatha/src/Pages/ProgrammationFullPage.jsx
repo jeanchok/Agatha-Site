@@ -42,6 +42,7 @@ const ProgrammationFullPage = () => {
 
         <div className='ProgrammationFullPage'>
             <Header2 idHref="/" />
+            <img className='ProgrammationFullPage__creeper' src="/img/liane vecto 5.png" alt="illustration liane" />
             <div className='ProgrammationFullPage__title'>
                 <h2>PROGRAMMATION</h2>
                 <h3>3 JOURS | 3 SCENES | 36 ARTISTES | 66 HEURES DE LIVE</h3>

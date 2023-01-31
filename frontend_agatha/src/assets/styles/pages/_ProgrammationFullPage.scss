@@ -1,5 +1,24 @@
 .ProgrammationFullPage {
-    background: linear-gradient(180deg, #BF200A, #4B0065);
+    //background: linear-gradient(180deg, rgba(255, 166, 103, .8), rgba(191, 32, 10, .8));
+    background: linear-gradient(300deg, #ffa667, #bf200a, #8a446a);
+    background-size: 180% 180%;
+    animation: gradient-animation 9s ease infinite;
+
+    @keyframes gradient-animation {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+
     display: flex;
     flex-direction: column;
     color: white;
@@ -7,22 +26,87 @@
     min-height: 100vh;
     position: relative;
 
+    &__progArtistesContainer {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__creeper {
+        width: 635px;
+        height: 222px;
+
+        top: -70px;
+        left: -155px;
+        position: absolute;
+        transform: rotate(290deg);
+
+
+        @media (max-width: 600px) {
+            width: 500px;
+            height: 163px;
+            top: -70px;
+            left: -120px;
+        }
+    }
+
     &__title {
         margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 10;
 
         h2 {
             position: relative;
             margin-bottom: 0;
+            display: flex;
+            justify-content: center;
+
+            @media (min-width: 600px) and (max-width:900px) {
+                font-size: 80px;
+            }
+
+            @media (min-width: 200px) and (max-width:600px) {
+                font-size: 60px;
+            }
 
             &:after {
                 content: "";
                 position: absolute;
-                bottom: -20px;
+                bottom: 0px;
                 left: 0;
                 right: 0;
                 height: 0;
                 border-top: 4px solid white;
                 width: 270px;
+
+                @media (min-width: 600px) and (max-width:900px) {}
+
+                @media (min-width: 200px) and (max-width:600px) {
+                    bottom: 0;
+                }
+            }
+        }
+
+        h3 {
+
+            font-size: 28px;
+
+
+
+            @media (min-width: 600px) and (max-width:900px) {
+                font-size: 24px;
+                width: 80%;
+            }
+
+            @media (min-width: 200px) and (max-width:600px) {
+                font-size: 20px;
+                width: 80%;
             }
         }
 
@@ -64,12 +148,6 @@
         }
     }
 
-    &__title {
-        h3 {
-            font-size: 28px;
-        }
-    }
-
 
     &__date {
         display: flex;
@@ -86,6 +164,20 @@
 
     .grid {
         margin-bottom: 90px;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        width: 80%;
+
+        @media (min-width: 600px) and (max-width:900px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (min-width: 200px) and (max-width:600px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
 
         &__textCard {
             display: flex;
@@ -151,7 +243,7 @@
         }
 
         button {
-            width: 25%;
+            width: 50%;
             font-size: 20px;
             background-color: black;
             color: white;
@@ -171,5 +263,39 @@
             justify-content: space-around;
             font-size: 20px;
         }
+    }
+}
+
+/* Animation */
+.slide-in-fwd-center {
+    -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-in-fwd-center {
+    0% {
+        -webkit-transform: translateZ(-1400px);
+        transform: translateZ(-1400px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-fwd-center {
+    0% {
+        -webkit-transform: translateZ(-1400px);
+        transform: translateZ(-1400px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
     }
 }

@@ -2,38 +2,33 @@ import React, { useEffect, useState } from 'react';
 import useFetch from '../Hooks/useFetch';
 
 const ProgrammationScene = (data) => {
-    // const API_URL = 'http://localhost:1337';
+    const [fridaySelelected, setFridaySelelected] = useState(true);
+    const [artistesVendredi, setArtistesVendredi] = useState([]);
+    const [artistesSamedi, setArtistesSamedi] = useState([]);
+
+
+    const API_URL = import.meta.env.VITE_API_URL;
     // const { loading, error, data } = useFetch(API_URL + '/api/programmations?populate=*')
     // if (loading) return <p>Loading...</p>
     // if (error) return <p>Errror :</p>
 
-    const [fridaySelelected, setFridaySelelected] = useState(true);
 
     const defaultItem = { defaultItem: "defaultItem" };
-    const artistes = data.data;
-
-    const artistesDimanche = [];
-    const artistesSamedi = [];
-    const artistesVendredi = [];
+    const artistes = data.data.data;
 
 
-    Array.from(artistes).map((artiste) => {
-        if (artiste.attributes.DateArtiste === "2023-06-11") {
-            artistesDimanche.push(artiste);
-        }
-    });
 
-    Array.from(artistes).map((artiste) => {
-        if (artiste.attributes.DateArtiste === "2023-06-10") {
-            artistesSamedi.push(artiste);
-        }
-    });
+    // artistes.forEach(artiste => {
+    //     if (artiste.attributes.DateArtiste === "2023-06-10") {
+    //         setArtistesSamedi(oldArray => [...oldArray, artiste]);
+    //     }
+    // });
 
-    Array.from(artistes).map((artiste) => {
-        if (artiste.attributes.DateArtiste === "2023-06-09") {
-            artistesVendredi.push(artiste);
-        }
-    });
+    // artistes.forEach(artiste => {
+    //     if (artiste.attributes.DateArtiste === "2023-06-09") {
+    //         setArtistesVendredi(oldArray => [...oldArray, artiste]);
+    //     }
+    // });
 
 
 
@@ -56,7 +51,7 @@ const ProgrammationScene = (data) => {
 
 
     return (
-        <div className='progScenesContainer'>
+        <div className='progScenesContainer slide-in-fwd-center'>
             <div className='progScenesContainer__days'>
                 <button className={fridaySelelected ? 'daySelected' : ''} onClick={() => setFridaySelelected(true)}>
                     <span>VENDREDI 9 JUIN</span>
@@ -73,10 +68,10 @@ const ProgrammationScene = (data) => {
                 </div>
                 <div className='progScenesContainer__artistes--artistes'>
                     <div>
-                        {artistesVendredi.map((artiste, index) => {
-                            if (artiste.attributes && artiste.attributes) {
+                        {artistes.map((artiste) => {
+                            if (artiste.attributes && artiste.attributes.DateArtiste === "2023-06-09") {
                                 return (
-                                    <div key={index} style={{ backgroundImage: `url(${API_URL + artiste.attributes.ImageArtiste.data.attributes.url})`, aspectRatio: '4/3', backgroundRepeat: 'no-repeat' }}>
+                                    <div key={artiste.id} style={{ backgroundImage: `url(${API_URL + artiste.attributes.ImageArtiste.data.attributes.url})`, aspectRatio: '4/3', backgroundRepeat: 'no-repeat' }}>
                                         <div className=''>
                                             <h4>{artiste.attributes.NomArtiste}</h4>
                                         </div>
