@@ -74,6 +74,11 @@ body.active-modal {
         font-size: 22px;
         font-weight: 100;
         text-align: justify;
+
+        @media screen and (max-width: 552px) {
+            font-size: 16px;
+
+        }
     }
 
     button {
