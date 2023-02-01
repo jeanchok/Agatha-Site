@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ReactMarkdown from 'react-markdown'
 
 const ModalActus = (props) => {
     const [modal, setModal] = useState(props.modalActive);
@@ -25,7 +26,7 @@ const ModalActus = (props) => {
                         className="overlay"></div>
                     <div className="modal-content">
                         <h3>{props.propsModal.TitreActu} </h3>
-                        <p>{props.propsModal.TexteActu}</p>
+                        <p><ReactMarkdown>{props.propsModal.TexteActu}</ReactMarkdown></p>
                         <button className="close-modal" onClick={() => { props.setModalActive(false); toggleModal }}>
                             X
                         </button>
