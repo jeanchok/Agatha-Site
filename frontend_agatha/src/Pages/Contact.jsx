@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Header2 from '../Components/Header2';
+import Footer from '../Components/Footer';
 
 const Contact = () => {
     const [message, setMessage] = useState(false);
@@ -31,7 +32,7 @@ const Contact = () => {
     };
     return (
         <div className='contactPage'>
-            <Header2 />
+            <Header2 idHref="/" />
             <h2>CONTACT</h2>
             <p>Remplissez le formulaire ci-dessous</p>
             <form className='contactForm' id='contact-form' ref={form} onSubmit={sendEmail} noValidate>
@@ -111,6 +112,7 @@ const Contact = () => {
                 </div>
                 {message ? <p className='successMessage'>Votre message a bien été envoyé</p> : null}
             </form>
+            <Footer />
         </div>
     );
 };

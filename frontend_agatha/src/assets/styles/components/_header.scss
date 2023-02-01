@@ -281,12 +281,15 @@ header {
     justify-content: space-between;
     margin: 24px 30px;
 
+    .navbar__buttonContainer {
+        height: 54px;
+    }
+
     .linkContainer {
         display: flex;
         justify-content: end;
         z-index: 11;
         position: relative;
-        margin-top: 4px;
 
         .glow-on-hover:after {
             border: transparent;
