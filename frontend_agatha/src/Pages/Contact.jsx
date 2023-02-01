@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Header2 from '../Components/Header2';
 import Footer from '../Components/Footer';
+import Stars from '../Components/Stars';
 
 const Contact = () => {
     const [message, setMessage] = useState(false);
@@ -112,6 +113,7 @@ const Contact = () => {
                 </div>
                 {message ? <p className='successMessage'>Votre message a bien été envoyé</p> : null}
             </form>
+            <Stars />
             <Footer />
         </div>
     );

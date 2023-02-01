@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from '../Components/Footer';
 import Header2 from '../Components/Header2';
-
+import Stars from '../Components/Stars';
 
 const MentionsLegales = () => {
     return (
@@ -35,6 +35,7 @@ const MentionsLegales = () => {
                     <strong> Responsable du site :</strong> Jean Choquet - contact@jeanchoquet.fr
                 </p>
             </div>
+            <Stars />
             <Footer />
         </div>
     );
