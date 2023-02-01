@@ -30,6 +30,8 @@ const Infos = () => {
                         </div>
 
                     </div>
+
+
                 </div>
             </InView>
         </section>

@@ -25,7 +25,7 @@ const ModalActus = (props) => {
                         onClick={() => { props.setModalActive(false); toggleModal }}
                         className="overlay"></div>
                     <div className="modal-content">
-                        <h3>{props.propsModal.TitreActu} </h3>
+                        {/* <h3>{props.propsModal.TitreActu} </h3> */}
                         <p><ReactMarkdown>{props.propsModal.TexteActu}</ReactMarkdown></p>
                         <button className="close-modal" onClick={() => { props.setModalActive(false); toggleModal }}>
                             X
