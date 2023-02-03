@@ -74,11 +74,12 @@ const Partenaires = (props) => {
                     <textarea name="message" />
                     <input type="submit" value="Send" />
                 </form> */}
-                <form className='contactForm' id='contact-form' ref={form} onSubmit={sendEmail} noValidate>
+                <form className='contactForm' id='contact-form' ref={form} onSubmit={sendEmail} noValidate aria-label="Contact pour devenir partenaire">
 
                     <div className='formRow'>
                         <div className='col-6'>
                             <input
+                                aria-label="Nom de l'entreprise"
                                 type='text'
                                 name='company'
                                 className='form-control formInput'
@@ -91,11 +92,13 @@ const Partenaires = (props) => {
                         </div>
                         <div className='col-6'>
                             <input
+                                aria-label="Nom de la personne"
                                 type='text'
                                 name='name'
                                 className='form-control formInput'
                                 placeholder={`Nom de la personne`}
                                 value={name}
+                                autocomplete="nickname"
                                 onChange={(e) => setName(e.target.value)}
                                 required
                             ></input>
@@ -103,6 +106,7 @@ const Partenaires = (props) => {
                         </div>
                         <div className='col-6'>
                             <input
+                                aria-label="Fonction au sein de l'entreprise"
                                 type='text'
                                 name='status'
                                 className='form-control formInput'
@@ -116,6 +120,7 @@ const Partenaires = (props) => {
 
                         <div className='col-6'>
                             <input
+                                aria-label="Numéro de téléphone"
                                 type='text'
                                 name='phoneNumber'
                                 className='form-control formInput'
@@ -123,13 +128,16 @@ const Partenaires = (props) => {
                                 value={phoneNumber}
                                 onChange={(e) => setPhoneNumber(e.target.value)}
                                 required
+                                autocomplete="nickname"
                             ></input>
 
                         </div>
                         <div className='col-6'>
                             <input
+                                aria-label="Adresse email"
                                 type='email'
                                 name='email'
+                                autocomplete="email"
                                 className='form-control formInput'
                                 placeholder='Adresse email'
                                 value={email}
@@ -146,6 +154,7 @@ const Partenaires = (props) => {
                     <div className='row formRow'>
                         <div className='col'>
                             <textarea
+                                aria-label="Description de la demande"
                                 rows={3}
                                 name='message'
                                 className='form-control formInput'

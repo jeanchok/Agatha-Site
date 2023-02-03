@@ -18,19 +18,19 @@ const Landing = (props) => {
         <section id='accueil' ref={props.ref}>
 
             <InView as="div" className='accueil' onChange={(inView, entry) => { if (inView) { } }}>
-                <img className='accueil__creeper' src="/img/liane vecto 2.png" alt="illustration liane"
+                <img className='accueil__creeper' src="/img/liane vecto 2.webp" alt="illustration liane"
                     onMouseEnter={() => setLeavesActive(true)}
                     onMouseLeave={() => setTimeout(() => {
                         setLeavesActive(false)
                     }, 1000)}
                 />
-                <img className='accueil__creeper2' src="/img/liane vecto 7.png" alt="illustration liane"
+                <img className='accueil__creeper2' src="/img/liane vecto 7.webp" alt="illustration liane"
                     onMouseEnter={() => setLeavesActive2(true)}
                     onMouseLeave={() => setTimeout(() => {
                         setLeavesActive2(false)
                     }, 1000)}
                 />
-                <img className='accueil__dragon fade-in' src="/img/têteDragon.png" alt="tête de dragon" />
+                <img className='accueil__dragon fade-in' src="/img/têteDragon.webp" alt="tête de dragon" />
                 {/* {
                     leavesActive ? <Leaves textAlign={'left'} /> : null
                 }
@@ -46,7 +46,7 @@ const Landing = (props) => {
                     {/* <h1 className='text-focus-in'>AGATHA</h1> */}
                     <h1 className='text-focus-in'>FESTIVAL #1</h1>
                     <div className='accueil__text--date brush-wrap'>
-                        <h3 className='text-focus-in' >9/10/11 JUIN 2023</h3>
+                        <h2 className='text-focus-in' >9/10/11 JUIN 2023</h2>
                         <svg height="0" width="0" xmlns="http://www.w3.org/2000/svg">
                             <defs>
 

@@ -132,7 +132,7 @@ const Actus = () => {
                         console.log(propsModal, modalActive)
                     }
                     <img className='actusContainer__maya' src="/img/maya2.png" alt="illustration maya 2" />
-                    <img className='actusContainer__creeper' src="/img/liane vecto.png" alt="illustration liane" />
+                    <img className='actusContainer__creeper' src="/img/liane vecto.webp" alt="illustration liane" />
 
                 </div>
 

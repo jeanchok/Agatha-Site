@@ -75,6 +75,7 @@
         padding-top: 54px;
     }
 
+
     & ul {
         display: flex;
         justify-content: space-between;
@@ -151,6 +152,12 @@
 
 .mobileMenu {
     display: none;
+}
+
+.container {
+    @media screen and (min-width: 1116px) {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1115px) {
@@ -260,6 +267,10 @@
     width: 35px;
     height: 40px;
     margin-left: 10px;
+
+    @media screen and (min-width: 1116px) {
+        display: none;
+    }
 }
 
 /* Header2 */

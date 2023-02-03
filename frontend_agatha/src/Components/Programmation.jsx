@@ -21,7 +21,7 @@ const Programmation = () => {
     // 
     return (
         <section id='programmation'>
-            <img className='programmation__creeper' src="/img/liane vecto 6.png" alt="illustration liane" />
+            <img className='programmation__creeper' src="/img/liane vecto 6.webp" alt="illustration liane" />
 
             <InView as="div" className={className} onChange={(inView, entry) => { if (inView) { setClassName('programmation' + ' fade-in') } }}>
                 {/* <div className="sun2"></div> */}

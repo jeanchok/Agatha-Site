@@ -15,7 +15,7 @@ const InfosFullPage = () => {
 
     return (
         <div className='InfosFullPage'>
-            <img className='InfosFullPage__creeper' src="/img/liane vecto 4.png" alt="illustration liane" />
+            <img className='InfosFullPage__creeper' src="/img/liane vecto 4.webp" alt="illustration liane" />
             <Header2 idHref="/" />
             <h2>INFOS PRATIQUES</h2>
             <h3>QUELLE ORGANISATION SUR PLACE ?</h3>
