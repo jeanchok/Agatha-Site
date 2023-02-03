@@ -57,12 +57,21 @@ body.active-modal {
     background: #0e0e0e;
     padding: 14px 28px;
     border-radius: 3px;
-    max-width: 70%;
+
     min-width: 477px;
     z-index: 60;
 
     @media screen and (max-width: 552px) {
         min-width: 286px;
+
+    }
+
+    @media (min-width: 552px) and (max-width: 1116px) {
+        min-width: 438px;
+    }
+
+    @media screen and (min-width: 1116px) {
+        min-width: 600px;
 
     }
 
