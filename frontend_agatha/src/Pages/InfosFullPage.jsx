@@ -22,9 +22,17 @@ const InfosFullPage = () => {
             <div className='InfosFullPage__PlanContainer'>
             </div>
             <div className='InfosFullPage__infosContainer'>
-                {data.data.map((infos, index) => (
-                    <ModuleInfos key={infos.id} text={infos.attributes.TexteInfosPratiques} title={infos.attributes.TitreInfosPratiques} />
-                ))}
+                {
+                    data ?
+                        <>
+                            {data.data.map((infos, index) => (
+                                <ModuleInfos key={infos.id} text={infos.attributes.TexteInfosPratiques} title={infos.attributes.TitreInfosPratiques} />
+                            ))}
+                        </>
+                        :
+                        <h3>Toutes les infos arrivent bientôt !</h3>
+                }
+
             </div>
             <Footer />
         </div>

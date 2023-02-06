@@ -1,19 +1,19 @@
 .sectionContainer {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    height: 100dvh;
+    height: 100vh;
     scroll-behavior: smooth;
 }
 
 .sectionContainerChrome {
     scroll-snap-type: y proximity;
     overflow-y: scroll;
-    height: 100dvh;
+    height: 100vh;
     scroll-behavior: smooth;
 }
 
 section {
-    height: 100dvh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
