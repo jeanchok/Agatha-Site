@@ -23,7 +23,7 @@ const InfosFullPage = () => {
             </div>
             <div className='InfosFullPage__infosContainer'>
                 {
-                    data ?
+                    data.data.attributes.TexteInfosPratiques ?
                         <>
                             {data.data.map((infos, index) => (
                                 <ModuleInfos key={infos.id} text={infos.attributes.TexteInfosPratiques} title={infos.attributes.TitreInfosPratiques} />
