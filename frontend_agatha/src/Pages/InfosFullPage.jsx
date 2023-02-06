@@ -23,16 +23,15 @@ const InfosFullPage = () => {
             </div>
             <div className='InfosFullPage__infosContainer'>
                 {
-                    data.data.attributes.TexteInfosPratiques ?
+                    data.data ?
                         <>
                             {data.data.map((infos, index) => (
                                 <ModuleInfos key={infos.id} text={infos.attributes.TexteInfosPratiques} title={infos.attributes.TitreInfosPratiques} />
                             ))}
                         </>
                         :
-                        <h3>Toutes les infos arrivent bientôt !</h3>
+                        <h3 className='InfosFullPage__infosContainer--waiting'>Toutes les infos arrivent bientôt !</h3>
                 }
-
             </div>
             <Footer />
         </div>
