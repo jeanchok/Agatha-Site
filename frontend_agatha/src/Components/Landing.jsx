@@ -18,6 +18,8 @@ const Landing = (props) => {
         <section id='accueil' ref={props.ref}>
 
             <InView as="div" className='accueil' onChange={(inView, entry) => { if (inView) { } }}>
+                <img className='accueil__cloudsbg1' src="/img/nuages.webp" alt="nuages" />
+                <img className='accueil__cloudsbg2' src="/img/nuages.webp" alt="nuages" />
                 <img className='accueil__creeper' src="/img/liane vecto 2.webp" alt="illustration liane"
                     onMouseEnter={() => setLeavesActive(true)}
                     onMouseLeave={() => setTimeout(() => {
