@@ -128,27 +128,27 @@
             background-repeat: repeat-x;
             background-position: 0 0;
             background-size: auto 100%;
-            animation: animatedBackground 300s infinite linear;
-            -webkit-animation: animatedBackground 300s infinite linear;
-            -moz-animation: animatedBackground 300s infinite linear;
+            animation: animatedBackground 30s infinite linear;
+            -webkit-animation: animatedBackground 30s infinite linear;
+            -moz-animation: animatedBackground 30s infinite linear;
 
             @keyframes animatedBackground {
-                from {
-                    background-position: 0 0;
-                }
-
-                /*use negative width if you want it to flow right to left else and positive for left to right*/
-                to {
-                    background-position: 10000px 0;
-                }
-
-                // 0% {
-                //     transform: translateX(0%);
+                // from {
+                //     background-position: 0 0;
                 // }
 
-                // 100% {
-                //     transform: translateX(100%);
+                // /*use negative width if you want it to flow right to left else and positive for left to right*/
+                // to {
+                //     background-position: 10000px 0;
                 // }
+
+                0% {
+                    transform: translateX(0%);
+                }
+
+                100% {
+                    transform: translateX(100%);
+                }
             }
 
 
@@ -197,50 +197,50 @@
         //     }
         // }
 
-        // &__clouds2 {
-        //     height: 100vh;
-        //     position: absolute;
-        //     width: 100%;
-        //     z-index: 1;
-        //     background-image:
-        //         url("/img/nuages.webp");
+        &__clouds2 {
+            height: 100vh;
+            position: absolute;
+            width: 100%;
+            z-index: 1;
+            background-image:
+                url("/img/nuages.webp");
 
-        //     background-repeat: repeat-x;
-        //     background-position: 0 0;
-        //     background-size: auto 100%;
-        //     //background-size: contain;
-        //     animation: animatedBackground2 30s linear infinite;
-        //     -webkit-animation: animatedBackground2 30s linear infinite;
-        //     -moz-animation: animatedBackground2 30s linear infinite;
+            background-repeat: repeat-x;
+            background-position: 0 0;
+            background-size: auto 100%;
+            //background-size: contain;
+            animation: animatedBackground2 30s linear infinite;
+            -webkit-animation: animatedBackground2 30s linear infinite;
+            -moz-animation: animatedBackground2 30s linear infinite;
 
-        //     @keyframes animatedBackground2 {
-        //         // from {
-        //         //     background-position: 0 0;
-        //         // }
+            @keyframes animatedBackground2 {
+                // from {
+                //     background-position: 0 0;
+                // }
 
-        //         // /*use negative width if you want it to flow right to left else and positive for left to right*/
-        //         // to {
-        //         //     background-position: 10000px 0;
-        //         // }
-        //         0% {
-        //             transform: translateX(-100%);
-        //         }
+                // /*use negative width if you want it to flow right to left else and positive for left to right*/
+                // to {
+                //     background-position: 10000px 0;
+                // }
+                0% {
+                    transform: translateX(-100%);
+                }
 
-        //         100% {
-        //             transform: translateX(0%);
-        //         }
-        //     }
+                100% {
+                    transform: translateX(0%);
+                }
+            }
 
-        //     @-webkit-keyframes animatedBackground {
-        //         0% {
-        //             transform: translateX(-100%);
-        //         }
+            //     @-webkit-keyframes animatedBackground {
+            //         0% {
+            //             transform: translateX(-100%);
+            //         }
 
-        //         100% {
-        //             transform: translateX(0%);
-        //         }
-        //     }
-        // }
+            //         100% {
+            //             transform: translateX(0%);
+            //         }
+            //     }
+        }
 
 
 
