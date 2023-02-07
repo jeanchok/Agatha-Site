@@ -13,6 +13,8 @@
     background-size: auto 100%;
     /*adjust s value for speed*/
     animation: animatedBackground 300s linear infinite;
+    -webkit-animation: animatedBackground 300s linear infinite;
+    -moz-animation: animatedBackground 300s linear infinite;
 
     @keyframes animatedBackground {
         from {
@@ -20,6 +22,16 @@
         }
 
         /*use negative width if you want it to flow right to left else and positive for left to right*/
+        to {
+            background-position: 10000px 0;
+        }
+    }
+
+    @-webkit-keyframes animatedBackground {
+        from {
+            background-position: 0 0;
+        }
+
         to {
             background-position: 10000px 0;
         }

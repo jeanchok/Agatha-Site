@@ -16,6 +16,14 @@ import { Helmet } from "react-helmet";
 
 const Accueil = () => {
     const [areCookiesAllowed, setAreCookiesAllowed] = useState(false);
+    // const [width, setWidth] = useState();
+    // const [height, setHeight] = useState();
+
+    // useEffect(() => {
+    //     setWidth(window.innerWidth);
+    //     setHeight(window.innerHeight);
+    // }, [width, height]);
+
 
 
     return (
