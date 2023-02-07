@@ -128,9 +128,9 @@
             background-repeat: repeat-x;
             background-position: 0 0;
             background-size: auto 100%;
-            animation: animatedBackground 300s infinite;
-            -webkit-animation: animatedBackground 300s infinite;
-            -moz-animation: animatedBackground 300s infinite;
+            animation: animatedBackground 300s infinite linear;
+            -webkit-animation: animatedBackground 300s infinite linear;
+            -moz-animation: animatedBackground 300s infinite linear;
 
             @keyframes animatedBackground {
                 from {
