@@ -14,7 +14,7 @@ $shadows-big: multiple-box-shadow(300);
 
 html,
 body {
-    background: radial-gradient(ellipse at left bottom, #1B2735 0%, #090A0F 100%);
+    background: radial-gradient(ellipse at left bottom, rgba(46, 22, 35, 0.95) 0%, rgba(46, 22, 35, 0.95) 100%);
     height: 100%;
     width: 100%;
     position: relative;

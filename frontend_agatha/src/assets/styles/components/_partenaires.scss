@@ -4,6 +4,7 @@
     background: linear-gradient(180deg, rgba(46, 22, 35, .95), rgba(0, 0, 0, 1));
     position: relative;
     overflow: hidden;
+    padding-bottom: 0;
 }
 
 //rgba(1, 0, 46, .95) rgba(0, 0, 0, 1)
@@ -12,7 +13,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90dvh;
+    padding-bottom: 30px;
+    //height: 90dvh;
+    margin-bottom: 126px;
 
     @media (max-height: 450px) and (max-width: 1024px) and (orientation: landscape) {
         padding-bottom: 105px !important;
@@ -47,7 +50,7 @@
         }
 
         @media (max-width: 400px) {
-            width: 100%;
+            // width: 100%;
         }
 
         h2 {
@@ -174,6 +177,13 @@
             }
         }
 
+    }
+
+    footer {
+        position: absolute;
+        height: auto;
+        padding: 15px;
+        justify-content: space-between;
     }
 }
 

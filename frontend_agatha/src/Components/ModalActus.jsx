@@ -26,7 +26,9 @@ const ModalActus = (props) => {
                         className="overlay"></div>
                     <div className="modal-content">
                         {/* <h3>{props.propsModal.TitreActu} </h3> */}
-                        <p><ReactMarkdown>{props.propsModal.TexteActu}</ReactMarkdown></p>
+                        <p><ReactMarkdown transformImageUri={uri =>
+                            uri.startsWith("http") ? uri : `https://admin.agathafestival.fr${uri}`
+                        }>{props.propsModal.TexteActu}</ReactMarkdown></p>
                         <button className="close-modal" onClick={() => { props.setModalActive(false); toggleModal }}>
                             X
                         </button>

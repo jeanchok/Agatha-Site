@@ -24,13 +24,17 @@ const Programmation = () => {
             <img className='programmation__creeper' src="/img/liane vecto 6.webp" alt="illustration liane" />
 
             <InView as="div" className={className} onChange={(inView, entry) => { if (inView) { setClassName('programmation' + ' fade-in') } }}>
-                {/* <div className="sun2"></div> */}
-                <InView as="div" className='programmationTitle' onChange={(inView, entry) => { if (inView) { setNavActive('programmation') } }}>
+                <div className='programmationTitle'>
 
-                    <h2>LES ARTISTES</h2>
-                </InView>
+                </div>
+                <h2>LES ARTISTES</h2>
+
                 <div className='programmationContainer' style={data.data.length === 0 ? { background: '#ffffff4d' } : null}>
+                    <InView as="div" onChange={(inView, entry) => { if (inView) { setNavActive('programmation') } }}>
+
+                    </InView>
                     <div className='programmationContainer__container1'>
+
                         {data.data.length === 0 ?
                             <>
                                 <div className='programmationContainer__incContainer programmationContainer__card item'>

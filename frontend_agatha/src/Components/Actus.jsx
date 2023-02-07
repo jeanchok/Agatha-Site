@@ -114,30 +114,34 @@ const Actus = () => {
     };
 
     return (
-        <section id='actus'>
-            <InView as="div" className={className} onChange={(inView, entry) => { if (inView) { setClassName('actus' + ' fade-in') } }} >
-                <InView as="div" className='actusTitle' onChange={(inView, entry) => { if (inView) { setNavActive('actus') } }} >
+        <>
 
-                    <h2>LES ACTUS</h2>
+            <section id='actus'>
+                <InView as="div" className={className} onChange={(inView, entry) => { if (inView) { setClassName('actus' + ' fade-in') } }} >
+                    <div className='actusTitle'>
+                        <h2>LES ACTUS</h2>
+                    </div>
+                    <InView as="div" onChange={(inView, entry) => { if (inView) { setNavActive('actus') } }} >
+
+                    </InView>
+                    <div className='actusContainer'>
+                        <AliceCarousel mouseTracking items={items} paddingLeft={50}
+                            paddingRight={50}
+                            responsive={responsive}
+                            disableDotsControls />
+
+
+                        <img className='actusContainer__maya' src="/img/maya2.png" alt="illustration maya 2" />
+                        <img className='actusContainer__creeper' src="/img/liane vecto.webp" alt="illustration liane" />
+
+                    </div>
+
                 </InView>
-                <div className='actusContainer'>
-                    <AliceCarousel mouseTracking items={items} paddingLeft={50}
-                        paddingRight={50}
-                        responsive={responsive}
-                        disableDotsControls />
-                    {
-                        modalActive && <ModalActus propsModal={propsModal} modalActive={modalActive} setModalActive={setModalActive} />
-                    }
-                    {
-                        console.log(propsModal, modalActive)
-                    }
-                    <img className='actusContainer__maya' src="/img/maya2.png" alt="illustration maya 2" />
-                    <img className='actusContainer__creeper' src="/img/liane vecto.webp" alt="illustration liane" />
-
-                </div>
-
-            </InView>
-        </section >
+            </section >
+            {
+                modalActive && <ModalActus propsModal={propsModal} modalActive={modalActive} setModalActive={setModalActive} />
+            }
+        </>
     );
 };
 

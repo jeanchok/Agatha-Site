@@ -38,6 +38,7 @@ const Landing = (props) => {
                     leavesActive2 ? <Leaves textAlign={'right'} /> : null
                 } */}
                 <div className='accueil__clouds'></div>
+                <div className='accueil__clouds2'></div>
                 {/* <div className="sun"></div> */}
 
                 <InView as="div" className='accueil__text' onChange={(inView, entry) => { if (inView) { } }}>
