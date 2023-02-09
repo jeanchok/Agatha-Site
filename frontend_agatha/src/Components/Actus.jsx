@@ -81,9 +81,9 @@ const Actus = () => {
         }
     }
 
-    let actus = data.data;
+    let actus = (data.data).sort((a, b) => b.attributes.Ordre_Affichage - a.attributes.Ordre_Affichage);
 
-
+    { console.log(actus) }
     actus.map((actus, index) => (
         items.unshift(
             <div key={actus.id} className="mycard item" data-value={index + 1}>
@@ -94,7 +94,11 @@ const Actus = () => {
 
                 <button onClick={() => { setModalActive(!modalActive); setPropsModal(actus.attributes) }} className="btn-modal" >LIRE +</button>
 
-                <img src={API_URL + actus.attributes.imageActu.data.attributes.url} alt="" />
+                {actus.attributes.imageActu.data === null ?
+                    <img src="./img/defaultActuimg.jpg" alt="carré maya" />
+                    :
+                    <img src={API_URL + actus.attributes.imageActu.data.attributes.url} alt={actus.attributes.TitreActu} />
+                }
             </div>
         )
 

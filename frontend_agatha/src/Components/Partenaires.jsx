@@ -98,7 +98,7 @@ const Partenaires = (props) => {
                                 className='form-control formInput'
                                 placeholder={`Nom de la personne`}
                                 value={name}
-                                autocomplete="nickname"
+                                autoComplete="nickname"
                                 onChange={(e) => setName(e.target.value)}
                                 required
                             ></input>
@@ -128,7 +128,7 @@ const Partenaires = (props) => {
                                 value={phoneNumber}
                                 onChange={(e) => setPhoneNumber(e.target.value)}
                                 required
-                                autocomplete="nickname"
+                                autoComplete="nickname"
                             ></input>
 
                         </div>
@@ -137,7 +137,7 @@ const Partenaires = (props) => {
                                 aria-label="Adresse email"
                                 type='email'
                                 name='email'
-                                autocomplete="email"
+                                autoComplete="email"
                                 className='form-control formInput'
                                 placeholder='Adresse email'
                                 value={email}

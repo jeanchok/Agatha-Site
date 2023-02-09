@@ -4,7 +4,8 @@
   "info": {
     "singularName": "actus",
     "pluralName": "actuses",
-    "displayName": "Actus"
+    "displayName": "Actus",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,14 +19,18 @@
       "type": "richtext"
     },
     "imageActu": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "Ordre_Affichage": {
+      "type": "integer"
     }
   }
 }
