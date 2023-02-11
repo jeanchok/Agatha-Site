@@ -79,7 +79,7 @@ const Programmation = () => {
                             : null}
                     </div>
                     <div className='programmationContainer__container2'>
-                        {data.data.length < 3 ?
+                        {data.data.length < 3 && data.data.length > 0 ?
                             <>
                                 <div className='programmationContainer__incContainer programmationContainer__card item'>
                                     <h3>PROGAMMATION A VENIR</h3>
