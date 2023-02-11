@@ -79,9 +79,9 @@ const ProgrammationScene = (data) => {
             </div>
             <div className='progScenesContainer__artistes'>
                 <div className='progScenesContainer__artistes--scenes'>
-                    <h4>SCENE TECHNO</h4>
-                    <h4>SCENE ALTERNATIVE</h4>
-                    <h4>SCENE DUB</h4>
+                    <h4>SCENE DU TEMPLE MAUDIT</h4>
+                    <h4>SCENE DES ANCIENNES CIVILISATIONS</h4>
+                    <h4>SCENE DUB'OUT</h4>
                 </div>
                 {
                     fridaySelelected ?

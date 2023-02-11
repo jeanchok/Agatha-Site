@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import useFetch from '../Hooks/useFetch';
 import { Link } from 'react-router-dom'
+import Artiste from '../Components/Artiste';
 
 const ProgrammationArtiste = () => {
     const API_URL = import.meta.env.VITE_API_URL;
@@ -64,16 +65,16 @@ const ProgrammationArtiste = () => {
                 {artistesVendredi.map((artiste, index) => {
                     if (artiste.attributes) {
                         return (
-                            <div key={index} style={{ backgroundImage: `url(${API_URL + artiste.attributes.ImageArtiste.data.attributes.url})`, aspectRatio: '4/3', backgroundRepeat: 'no-repeat', backgroundSize: '100%' }}>
-                                <div className='grid__textCard'>
-                                    <h4>{artiste.attributes.NomArtiste}</h4>
-                                    <div className='grid__textCard--link'>
-                                        <Link className='grid__textCard--link1' to=''>EN SAVOIR +</Link>
-                                        <a className='grid__textCard--link2' href={artiste.attributes.LienSpotify}><img src='/img/icons8-spotify-100.png' alt='spotify logo'></img></a>
-                                    </div>
-
-                                </div>
-                            </div>
+                            // <div key={index} style={{ backgroundImage: `url(${API_URL + artiste.attributes.ImageArtiste.data.attributes.url})`, aspectRatio: '4/3', backgroundRepeat: 'no-repeat', backgroundSize: '100%' }}>
+                            //     <div className='grid__textCard'>
+                            //         <h4>{artiste.attributes.NomArtiste}</h4>
+                            //         <div className='grid__textCard--link'>
+                            //             <Link className='grid__textCard--link1' to=''>EN SAVOIR +</Link>
+                            //             <a className='grid__textCard--link2' href={artiste.attributes.LienSpotify}><img src='/img/icons8-spotify-100.png' alt='spotify logo'></img></a>
+                            //         </div>
+                            //     </div>
+                            // </div>
+                            <Artiste key={index} artiste={artiste} />
                         )
                     }
                     else {
@@ -96,15 +97,7 @@ const ProgrammationArtiste = () => {
                 {artistesSamedi.map((artiste, index) => {
                     if (artiste.attributes) {
                         return (
-                            <div key={index} style={{ backgroundImage: `url(${API_URL + artiste.attributes.ImageArtiste.data.attributes.url})`, aspectRatio: '4/3', backgroundRepeat: 'no-repeat', backgroundSize: '100%' }}>
-                                <div className='grid__textCard'>
-                                    <h4>{artiste.attributes.NomArtiste}</h4>
-                                    <div className='grid__textCard--link'>
-                                        <Link className='grid__textCard--link1' to=''>EN SAVOIR +</Link>
-                                        <a className='grid__textCard--link2' href={artiste.attributes.LienSpotify}><img src='/img/icons8-spotify-100.png' alt='spotify logo'></img></a>
-                                    </div>
-                                </div>
-                            </div>
+                            <Artiste key={index} artiste={artiste} />
                         )
                     }
                     else {

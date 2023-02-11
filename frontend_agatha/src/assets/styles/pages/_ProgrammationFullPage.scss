@@ -186,11 +186,11 @@
             width: 100%;
 
             h4 {
-                justify-content: center;
                 display: flex;
                 height: 70%;
-                align-items: center;
+                align-items: end;
                 font-size: 28px;
+                margin-left: 8px;
             }
 
             &--link {
@@ -204,6 +204,7 @@
                     background-color: black;
                     padding: 5px 8px;
                     font-size: 18px;
+                    cursor: pointer;
                 }
 
                 &2 {

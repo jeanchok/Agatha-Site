@@ -1,0 +1,29 @@
+.descriptionContainer {
+    background-color: rgba($color: #000000, $alpha: .7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+
+    button {
+        cursor: pointer;
+        background: transparent;
+        color: white;
+        border: none;
+        font-size: 18px;
+        height: 100%;
+        display: flex;
+        padding-top: 8px;
+        padding-left: 8px;
+    }
+}
+
+p {
+    padding: 20px;
+}

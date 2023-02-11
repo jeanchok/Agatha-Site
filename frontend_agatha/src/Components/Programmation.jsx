@@ -18,7 +18,15 @@ const Programmation = () => {
         let outputString = date.toLocaleDateString('fr-FR', { weekday: 'long', month: 'long', day: 'numeric' });
         return outputString.toUpperCase();
     }
-    // 
+    let artiste = data.data;
+
+    const defaultItem = { defaultItem: <p>Loading...</p> };
+
+    const nbElementsToAdd = artiste.length < 4 ? 4 - artiste.length : 0;
+    // for (let i = 1; i <= nbElementsToAdd; i++) {
+    //     artiste.push(defaultItem);
+    // }
+
     return (
         <section id='programmation'>
             <img className='programmation__creeper' src="/img/liane vecto 6.webp" alt="illustration liane" />
@@ -34,7 +42,6 @@ const Programmation = () => {
 
                     </InView>
                     <div className='programmationContainer__container1'>
-
                         {data.data.length === 0 ?
                             <>
                                 <div className='programmationContainer__incContainer programmationContainer__card item'>
@@ -49,22 +56,40 @@ const Programmation = () => {
                             data.data.map((artiste, index) => {
                                 if (index < 2) {
                                     return (
-
                                         <div key={artiste.id} className={"programmationContainer__card item" + artiste.id} style={{ backgroundImage: `url(${API_URL + artiste.attributes.ImageArtisteMisEnAvant.data.attributes.url})` }}>
                                             <div className='programmationContainer__card--text'>
                                                 <h3>{artiste.attributes.NomArtiste} </h3>
                                                 <p>{DateFormater(artiste.attributes.DateArtisteMisEnAvant)}</p>
+                                                {
+                                                    console.log(artiste.attributes)
+                                                }
                                             </div>
                                         </div>
-
                                     )
                                 }
-
                             }) :
                             null
                         }
+                        {data.data.length === 1 ?
+                            <>
+                                <div className='programmationContainer__incContainer programmationContainer__card item'>
+                                    <h3>PROGAMMATION A VENIR</h3>
+                                </div>
+                            </>
+                            : null}
                     </div>
                     <div className='programmationContainer__container2'>
+                        {data.data.length < 3 ?
+                            <>
+                                <div className='programmationContainer__incContainer programmationContainer__card item'>
+                                    <h3>PROGAMMATION A VENIR</h3>
+                                </div>
+                                <div className='programmationContainer__incContainer programmationContainer__card item'>
+                                    <h3>PROGAMMATION A VENIR</h3>
+                                </div>
+                            </>
+                            : null}
+
                         {data.data.length === 0 ?
                             <>
                                 <div className='programmationContainer__incContainer programmationContainer__card item'>
@@ -78,17 +103,22 @@ const Programmation = () => {
                         {data.data.length > 0 ? data.data.map((artiste, index) => {
                             if (index > 1) {
                                 return (
-
                                     <div key={artiste.id} className={"programmationContainer__card item" + artiste.id} style={{ backgroundImage: `url(${API_URL + artiste.attributes.ImageArtisteMisEnAvant.data.attributes.url})` }}>
                                         <div className='programmationContainer__card--text'>
                                             <h3>{artiste.attributes.NomArtiste} </h3>
                                             <p>{DateFormater(artiste.attributes.DateArtisteMisEnAvant)}</p>
                                         </div>
                                     </div>
-
                                 )
                             }
                         }) : null}
+                        {data.data.length === 3 ?
+                            <>
+                                <div className='programmationContainer__incContainer programmationContainer__card item'>
+                                    <h3>PROGAMMATION A VENIR</h3>
+                                </div>
+                            </>
+                            : null}
                     </div>
                 </div>
                 {data.data.length > 0 ?
