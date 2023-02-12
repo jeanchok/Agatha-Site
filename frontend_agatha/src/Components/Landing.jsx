@@ -95,7 +95,7 @@ const Landing = (props) => {
                         </svg>
                     </div>
                     <div className='accueil__text--edition'>
-                        <h3 className='slide-in-bck-center'>La quête du Quetzacoatl</h3>
+                        <h3 className='slide-in-bck-center'>La quête du QuetzalcÒatl</h3>
                     </div>
 
                     <div className='linkContainer slide-in-bck-center'>
