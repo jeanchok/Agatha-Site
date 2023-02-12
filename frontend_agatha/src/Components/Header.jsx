@@ -28,7 +28,10 @@ const Header = () => {
             <Link
                 to={to}
                 className={(navActive == to) ? "nav-active" : ""}
-                onClick={(e) => scrollToSection(e, to)}
+                onClick={(e) => {
+                    scrollToSection(e, to);
+                    changeClass();
+                }}
                 style={{ color: (navActive == 'accueil') ? 'black' : 'white' }}
             >
                 <li className='content__item'>
