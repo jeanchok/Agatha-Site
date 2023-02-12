@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "postbuild": "cd dist && gzip *.js && gzip *.css",
     "preview": "vite preview"
   },
   "dependencies": {
