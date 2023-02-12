@@ -188,7 +188,7 @@ const Partenaires = (props) => {
                             </div>
                         </div>
                     )) : null}
-                    <img className='partenairesContainer__maya' src="/img/maya1.png" alt="maya illustration" />
+                    <img className='partenairesContainer__maya' src="/img/maya1.webp" alt="maya illustration" />
                     {/* <Particles minAlpha={minAlpha} drift={drift} yVariance={yVariance} rotation={rotation} speed={speed} color={color} direction={direction} shape={shape} imageUrl={imageUrl} /> */}
                 </div>
                 <Stars />
