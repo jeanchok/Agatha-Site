@@ -19,7 +19,7 @@ const ModalActus = (props) => {
         width: "35%",
         borderRadius: ".5em",
         overflowY: "auto",
-        height: "90%"
+        maxHeight: "90%"
     };
     const OVERLAY_STYLE = {
         position: "fixed",
