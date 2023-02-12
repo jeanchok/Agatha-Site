@@ -2,17 +2,21 @@ import React from 'react';
 import Header from '../Components/Header';
 import Socials from '../Components/Socials';
 import Landing from '../Components/Landing';
-import Actus from '../Components/Actus';
-import Programmation from '../Components/Programmation';
-import Infos from '../Components/Infos';
-import Partenaires from '../Components/Partenaires';
+//import Actus from '../Components/Actus';
+//import Programmation from '../Components/Programmation';
+//import Infos from '../Components/Infos';
+//import Partenaires from '../Components/Partenaires';
 import { useRef, useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { InView } from 'react-intersection-observer';
 import CookieConsent, { Cookies } from "react-cookie-consent";
 import { Helmet } from "react-helmet";
+import loadable from '@loadable/component'
 
-
+const Actus = loadable(() => import('../Components/Actus'))
+const Programmation = loadable(() => import('../Components/Programmation'))
+const Infos = loadable(() => import('../Components/Infos'))
+const Partenaires = loadable(() => import('../Components/Partenaires'))
 
 const Accueil = () => {
     const [areCookiesAllowed, setAreCookiesAllowed] = useState(false);
