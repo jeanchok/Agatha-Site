@@ -37,17 +37,19 @@ const Programmation = () => {
                 </div>
                 <h2>LES ARTISTES</h2>
 
-                <div className='programmationContainer' style={data.data.length === 0 ? { background: '#ffffff4d' } : null}>
+                <div className='programmationContainer'
+                // style={data.data.length === 0 ? { background: '#ffffff4d' } : null}
+                >
                     <InView as="div" onChange={(inView, entry) => { if (inView) { setNavActive('programmation') } }}>
 
                     </InView>
                     <div className='programmationContainer__container1'>
                         {data.data.length === 0 ?
                             <>
-                                <div className='programmationContainer__incContainer programmationContainer__card item'>
+                                <div className='programmationContainer__incContainer programmationContainer__card item1'>
                                     <h3>PROGAMMATION A VENIR</h3>
                                 </div>
-                                <div className='programmationContainer__incContainer programmationContainer__card item'>
+                                <div className='programmationContainer__incContainer programmationContainer__card item2'>
                                     <h3>PROGAMMATION A VENIR</h3>
                                 </div>
                             </>
@@ -72,7 +74,7 @@ const Programmation = () => {
                         }
                         {data.data.length === 1 ?
                             <>
-                                <div className='programmationContainer__incContainer programmationContainer__card item'>
+                                <div className='programmationContainer__incContainer programmationContainer__card item2'>
                                     <h3>PROGAMMATION A VENIR</h3>
                                 </div>
                             </>

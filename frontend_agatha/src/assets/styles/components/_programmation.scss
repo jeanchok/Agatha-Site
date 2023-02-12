@@ -180,6 +180,12 @@
         gap: 16px;
         margin: 30px 0;
 
+        & div:nth-child(1) {
+            @media (min-width: 1120px) {
+                margin-right: -20px;
+            }
+        }
+
         @media (max-width: 1120px) {
             justify-content: end;
             align-items: center;
@@ -198,6 +204,12 @@
         gap: 16px;
         margin: 30px 0;
 
+        & div:nth-child(1) {
+            @media (min-width: 1120px) {
+                margin-left: 20px;
+            }
+        }
+
         @media (max-width: 1120px) {
             justify-content: start;
             align-items: center;
@@ -207,28 +219,28 @@
         }
     }
 
-    .item1 {}
+    // .item1 {}
 
-    .item2 {
+    // .item2 {
 
-        margin-top: 20px;
-        margin-right: -30px;
+    //     margin-top: 20px;
+    //     margin-right: -30px;
 
-        @media (max-width: 1038px) {
-            margin: 0;
-        }
-    }
+    //     @media (max-width: 1038px) {
+    //         margin: 0;
+    //     }
+    // }
 
-    .item3 {}
+    // .item3 {}
 
-    .item4 {
-        margin-left: 30px;
-        margin-top: 20px;
+    // .item4 {
+    //     margin-left: 30px;
+    //     margin-top: 20px;
 
-        @media (max-width: 1038px) {
-            margin: 0;
-        }
-    }
+    //     @media (max-width: 1038px) {
+    //         margin: 0;
+    //     }
+    // }
 
 
     &__card {
