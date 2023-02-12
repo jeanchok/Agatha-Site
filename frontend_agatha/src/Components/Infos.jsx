@@ -15,7 +15,7 @@ const Infos = () => {
                 </InView>
                 <div className='infosContainer'>
                     <div className='infosContainer__video'>
-                        <img src="/img/Plan d'accès macro agatha.png" alt="carte domaine du denais" />
+                        <img src="/img/Plan daccès macro agatha.webp" alt="carte domaine du denais" />
                     </div>
                     <div className='infosContainer__text'>
                         <h3>ACCESSIBILITE</h3>
