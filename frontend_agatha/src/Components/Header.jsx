@@ -77,9 +77,9 @@ m441 163 c-29 -140 87 -256 227 -227 42 8 53 7 68 -6 17 -15 -2 -35 -315 -349
 
             </div>
             <button className={!menuClass ? "mobileMenu container" : "mobileMenu container change"} onClick={changeClass}>
-                <div className="bar1"></div>
-                <div className="bar2"></div>
-                <div className="bar3"></div>
+                <div style={{ backgroundColor: (navActive == 'accueil' && !menuClass) ? 'black' : 'white' }} className="bar1"></div>
+                <div style={{ backgroundColor: (navActive == 'accueil' && !menuClass) ? 'black' : 'white' }} className="bar2"></div>
+                <div style={{ backgroundColor: (navActive == 'accueil' && !menuClass) ? 'black' : 'white' }} className="bar3"></div>
             </button>
             <ul className={!menuClass ? 'none' : 'list'}>
                 {navLink("accueil", "ACCUEIL")}
