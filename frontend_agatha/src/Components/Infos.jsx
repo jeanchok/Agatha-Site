@@ -24,7 +24,7 @@ const Infos = () => {
                         <div className='linkContainer'>
                             <a className='linkContainer__linkButton glow-on-hover' href="/infospratiques">
                                 <span>EN SAVOIR +</span>
-                                <img src="/img/pointes-de-fleches-fines-a-droite.png" alt="fleche" />
+                                <img src="/img/pointes-de-fleches-fines-a-droite.png" alt="fleche" className='arrowButton' />
                             </a>
                         </div>
 

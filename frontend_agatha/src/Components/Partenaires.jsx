@@ -168,7 +168,7 @@ const Partenaires = (props) => {
                     <div className='linkContainer'>
                         <button type='submit' className='linkContainer__linkButton glow-on-hover'>
                             <span>ENVOYER</span>
-                            <img src="/img/pointes-de-fleches-fines-a-droite.png" alt="fleche" />
+                            <img src="/img/pointes-de-fleches-fines-a-droite.png" alt="fleche" className='arrowButton' />
                         </button>
                     </div>
                     {/* <button className='submit-btn' type='submit'>
