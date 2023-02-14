@@ -1,7 +1,5 @@
-import React, { useEffect, useState, useContext } from 'react';
-// import env from "react-dotenv";
+import React, { useState, useContext } from 'react';
 import useFetch from '../Hooks/useFetch'
-import { Link } from 'react-router-dom'
 import { InView } from 'react-intersection-observer';
 import { MyContext } from '../Hooks/useContext';
 import "react-alice-carousel/lib/scss/alice-carousel.scss";

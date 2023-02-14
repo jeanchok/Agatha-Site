@@ -1,6 +1,6 @@
 
 import useFetch from '../Hooks/useFetch';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 const Artiste = ({ artiste }) => {
     const [displayDescription, setDisplayDescription] = useState(false);

@@ -1,5 +1,4 @@
 import React, { useRef, useContext, useState } from 'react';
-import Particles from "./Particules";
 import Footer from '../Components/Footer';
 import { InView } from 'react-intersection-observer';
 import { MyContext } from '../Hooks/useContext';

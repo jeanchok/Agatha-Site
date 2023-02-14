@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import useFetch from '../Hooks/useFetch';
-import { Link } from 'react-router-dom'
 import Artiste from '../Components/Artiste';
 
 const ProgrammationArtiste = () => {

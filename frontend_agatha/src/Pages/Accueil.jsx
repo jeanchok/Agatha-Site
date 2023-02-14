@@ -7,8 +7,6 @@ import Landing from '../Components/Landing';
 //import Infos from '../Components/Infos';
 //import Partenaires from '../Components/Partenaires';
 import { useRef, useEffect, useState } from 'react';
-import { useInView } from 'react-intersection-observer';
-import { InView } from 'react-intersection-observer';
 import CookieConsent, { Cookies } from "react-cookie-consent";
 import { Helmet } from "react-helmet";
 import loadable from '@loadable/component'
