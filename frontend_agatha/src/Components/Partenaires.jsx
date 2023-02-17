@@ -8,6 +8,7 @@ import Stars from '../Components/Stars';
 
 const Partenaires = (props) => {
     const [message, setMessage] = useState(false);
+    const [missingElements, setMissingElements] = useState(false);
     const [email, setEmail] = useState('');
     const [name, setName] = useState('');
     const [company, setCompany] = useState('');
@@ -31,19 +32,25 @@ const Partenaires = (props) => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_2isbus8', 'template_2zuuq48', form.current, EMAILJS)
-            .then((result) => {
-                console.log(result.text);
-                setMessage(true);
-                setEmail('');
-                setName('');
-                setPhoneNumber('');
-                setStatus('');
-                setCompany('');
-                setMessageBody('');
-            }, (error) => {
-                console.log(error.text);
-            });
+        if (company !== "" && name !== "" && status !== "" && phoneNumber !== "" && email !== "" && messageBody !== "") {
+            setMissingElements(false);
+            emailjs.sendForm('service_2isbus8', 'template_2zuuq48', form.current, EMAILJS)
+                .then((result) => {
+                    console.log(result.text);
+                    setMessage(true);
+                    setEmail('');
+                    setName('');
+                    setPhoneNumber('');
+                    setStatus('');
+                    setCompany('');
+                    setMessageBody('');
+                }, (error) => {
+                    console.log(error.text);
+                });
+        } else {
+            setMissingElements(true);
+        }
+
     };
 
     // let color = "white";
@@ -73,7 +80,7 @@ const Partenaires = (props) => {
                     <textarea name="message" />
                     <input type="submit" value="Send" />
                 </form> */}
-                <form className='contactForm' id='contact-form' ref={form} onSubmit={sendEmail} noValidate aria-label="Contact pour devenir partenaire">
+                <form className='contactForm' id='contact-form' ref={form} onSubmit={sendEmail} aria-label="Contact pour devenir partenaire">
 
                     <div className='formRow'>
                         <div className='col-6'>
@@ -173,6 +180,7 @@ const Partenaires = (props) => {
                     {/* <button className='submit-btn' type='submit'>
                         Envoyer
                     </button> */}
+                    {missingElements ? <p className='successMessage'>Remplissez tous les champs pour envoyer le message</p> : null}
                     {message ? <p className='successMessage'>Votre message a bien été envoyé</p> : null}
                 </form>
 
