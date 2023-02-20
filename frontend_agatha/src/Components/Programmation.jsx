@@ -61,7 +61,7 @@ const Programmation = () => {
                                         <div key={artiste.id} className={"programmationContainer__card item" + artiste.id} style={{ backgroundImage: `url(${API_URL + artiste.attributes.ImageArtisteMisEnAvant.data.attributes.url})` }}>
                                             <div className='programmationContainer__card--text'>
                                                 <h3>{artiste.attributes.NomArtiste} </h3>
-                                                <p>{DateFormater(artiste.attributes.DateArtisteMisEnAvant)}</p>
+                                                {/* <p>{DateFormater(artiste.attributes.DateArtisteMisEnAvant)}</p> */}
                                                 {
                                                     console.log(artiste.attributes)
                                                 }
@@ -108,7 +108,7 @@ const Programmation = () => {
                                     <div key={artiste.id} className={"programmationContainer__card item" + artiste.id} style={{ backgroundImage: `url(${API_URL + artiste.attributes.ImageArtisteMisEnAvant.data.attributes.url})` }}>
                                         <div className='programmationContainer__card--text'>
                                             <h3>{artiste.attributes.NomArtiste} </h3>
-                                            <p>{DateFormater(artiste.attributes.DateArtisteMisEnAvant)}</p>
+                                            {/* <p>{DateFormater(artiste.attributes.DateArtisteMisEnAvant)}</p> */}
                                         </div>
                                     </div>
                                 )

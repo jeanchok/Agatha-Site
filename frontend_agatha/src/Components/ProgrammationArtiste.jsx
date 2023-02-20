@@ -28,7 +28,7 @@ const ProgrammationArtiste = () => {
 
 
     artistes.map((artiste) => {
-        if (artiste.attributes.DateArtiste === "2023-06-10") {
+        if (artiste.attributes.DateArtiste === "2023-06-10" || artiste.attributes.DateArtiste === "2023-06-11") {
             artistesSamedi.push(artiste);
         }
     });
@@ -78,7 +78,7 @@ const ProgrammationArtiste = () => {
                     }
                     else {
                         return (
-                            <div className='grid__incomingArtiste' key={index} style={{ aspectRatio: '4/3' }} >
+                            <div className='grid__incomingArtiste' key={index} style={{ aspectRatio: '3/2' }} >
                                 <h4>A VENIR</h4>
                             </div>
                         )
@@ -101,7 +101,7 @@ const ProgrammationArtiste = () => {
                     }
                     else {
                         return (
-                            <div className='grid__incomingArtiste' key={index} style={{ aspectRatio: '4/3' }}>
+                            <div className='grid__incomingArtiste' key={index} style={{ aspectRatio: '3/2' }}>
                                 <h4>A VENIR</h4>
                             </div>
                         )

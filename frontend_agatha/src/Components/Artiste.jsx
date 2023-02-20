@@ -10,12 +10,18 @@ const Artiste = ({ artiste }) => {
     // if (loading) return <p></p>
     // if (error) return <p>Errror :</p>
 
+    let img = new Image();
+    img.src = API_URL + artiste.attributes.ImageArtiste.data.attributes.url
+    console.log(img.width / img.height)
+    let aspectRatioImg = img.width / img.height
+
+
     return (
-        <div style={{ backgroundImage: `url(${API_URL + artiste.attributes.ImageArtiste.data.attributes.url})`, backgroundRepeat: 'no-repeat', backgroundSize: '100%', position: "relative" }}>
+        <div style={{ backgroundImage: `url(${API_URL + artiste.attributes.ImageArtiste.data.attributes.url})`, aspectRatio: `${aspectRatioImg}`, backgroundRepeat: 'no-repeat', backgroundSize: '100%', position: "relative" }}>
             {
                 displayDescription ?
                     <div className='descriptionContainer'>
-                        <button onClick={() => setDisplayDescription(false)}>
+                        <button onClick={(e) => { e.preventDefault; setDisplayDescription(false) }}>
                             X
                         </button>
                         <p>{artiste.attributes.DescriptionArtiste}</p>
@@ -26,7 +32,7 @@ const Artiste = ({ artiste }) => {
                         {
                             (artiste.attributes.LienSpotify).includes("spotify") ?
                                 <div className='grid__textCard--link'>
-                                    <button className='grid__textCard--link1' onClick={() => setDisplayDescription(true)}>EN SAVOIR +</button>
+                                    <button className='grid__textCard--link1' onClick={(e) => { e.preventDefault; setDisplayDescription(true) }}>EN SAVOIR +</button>
                                     <a className='grid__textCard--link2' href={artiste.attributes.LienSpotify} target="_blank">
                                         {
                                             (artiste.attributes.LienSpotify).includes("spotify") ?
@@ -39,7 +45,7 @@ const Artiste = ({ artiste }) => {
                                 </div>
                                 :
                                 <div className='grid__textCard--link' style={{ paddingBottom: '10px' }}>
-                                    <button className='grid__textCard--link1' onClick={() => setDisplayDescription(true)}>EN SAVOIR +</button>
+                                    <button className='grid__textCard--link1' onClick={(e) => { e.preventDefault; setDisplayDescription(true) }}>EN SAVOIR +</button>
                                     <a className='grid__textCard--link2' href={artiste.attributes.LienSpotify} target="_blank">
                                         {
                                             (artiste.attributes.LienSpotify).includes("spotify") ?
