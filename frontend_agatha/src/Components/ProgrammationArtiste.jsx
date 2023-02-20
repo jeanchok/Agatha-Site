@@ -46,7 +46,7 @@ const ProgrammationArtiste = () => {
     artistesVendredi.sort((a, b) => a.order - b.order)
     artistesSamedi.sort((a, b) => a.order - b.order)
 
-
+    console.log(artistes, 'artistes', artistesVendredi, artistesSamedi)
 
     const nbElementsToAddVendredi = artistesVendredi.length < 9 ? 9 - artistesVendredi.length : (artistesVendredi.length % 3) + 3;
     for (let i = 1; i <= nbElementsToAddVendredi; i++) {
