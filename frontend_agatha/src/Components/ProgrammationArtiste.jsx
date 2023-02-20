@@ -29,15 +29,24 @@ const ProgrammationArtiste = () => {
 
     artistes.map((artiste) => {
         if (artiste.attributes.DateArtiste === "2023-06-10" || artiste.attributes.DateArtiste === "2023-06-11") {
+            artiste.order = Array.from(artiste.attributes.NomArtiste)[0];
+            artiste.attributes.NomArtiste = artiste.attributes.NomArtiste.substr(1);
             artistesSamedi.push(artiste);
         }
     });
 
     artistes.map((artiste) => {
         if (artiste.attributes.DateArtiste === "2023-06-09") {
+            artiste.order = Array.from(artiste.attributes.NomArtiste)[0];
+            artiste.attributes.NomArtiste = artiste.attributes.NomArtiste.substr(1);
+            console.log(artiste)
             artistesVendredi.push(artiste);
         }
     });
+
+    artistesVendredi.sort((a, b) => a.order - b.order)
+    artistesSamedi.sort((a, b) => a.order - b.order)
+
 
 
     const nbElementsToAddVendredi = artistesVendredi.length < 9 ? 9 - artistesVendredi.length : (artistesVendredi.length % 3) + 3;
