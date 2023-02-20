@@ -21,11 +21,13 @@
         display: flex;
         padding-top: 8px;
         padding-left: 8px;
+        padding-right: 0;
     }
 }
 
 p {
     padding: 10px;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: lighter;
+    padding-left: 4px;
 }
