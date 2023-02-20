@@ -28,7 +28,7 @@ const Artiste = ({ artiste }) => {
                     </div>
                     :
                     <div className='grid__textCard'>
-                        <h4>{artiste.attributes.NomArtiste}</h4>
+                        <h4>{artiste.attributes.NomArtiste.substr(1)}</h4>
                         {
                             (artiste.attributes.LienSpotify).includes("spotify") ?
                                 <div className='grid__textCard--link'>

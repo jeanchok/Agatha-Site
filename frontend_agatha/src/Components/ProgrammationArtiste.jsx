@@ -29,17 +29,18 @@ const ProgrammationArtiste = () => {
 
     artistes.map((artiste) => {
         if (artiste.attributes.DateArtiste === "2023-06-10" || artiste.attributes.DateArtiste === "2023-06-11") {
-            artiste.order = Array.from(artiste.attributes.NomArtiste)[0];
-            artiste.attributes.NomArtiste = artiste.attributes.NomArtiste.substr(1);
+            let words = artiste.attributes.NomArtiste.split(' ')
+            artiste.order = words[0]
+            console.log("artiste.order2", artistesVendredi)
             artistesSamedi.push(artiste);
         }
     });
 
     artistes.map((artiste) => {
         if (artiste.attributes.DateArtiste === "2023-06-09") {
-            artiste.order = Array.from(artiste.attributes.NomArtiste)[0];
-            artiste.attributes.NomArtiste = artiste.attributes.NomArtiste.substr(1);
-            console.log(artiste)
+            let words = artiste.attributes.NomArtiste.split(' ')
+            artiste.order = words[0]
+            console.log("artiste.order2", artistesVendredi)
             artistesVendredi.push(artiste);
         }
     });
