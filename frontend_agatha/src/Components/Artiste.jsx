@@ -12,7 +12,6 @@ const Artiste = ({ artiste }) => {
 
     let img = new Image();
     img.src = API_URL + artiste.attributes.ImageArtiste.data.attributes.url
-    console.log(img.width / img.height)
     let aspectRatioImg = img.width / img.height
 
 

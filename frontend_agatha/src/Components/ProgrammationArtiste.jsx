@@ -30,8 +30,7 @@ const ProgrammationArtiste = () => {
     artistes.map((artiste) => {
         if (artiste.attributes.DateArtiste === "2023-06-10" || artiste.attributes.DateArtiste === "2023-06-11") {
             let words = artiste.attributes.NomArtiste.split(' ')
-            artiste.order = words[0]
-            console.log("artiste.order2", artistesVendredi)
+            artiste.order = +words[0]
             artistesSamedi.push(artiste);
         }
     });
@@ -39,8 +38,7 @@ const ProgrammationArtiste = () => {
     artistes.map((artiste) => {
         if (artiste.attributes.DateArtiste === "2023-06-09") {
             let words = artiste.attributes.NomArtiste.split(' ')
-            artiste.order = words[0]
-            console.log("artiste.order2", artistesVendredi)
+            artiste.order = +words[0]
             artistesVendredi.push(artiste);
         }
     });
