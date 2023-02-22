@@ -62,9 +62,6 @@ const Programmation = () => {
                                             <div className='programmationContainer__card--text'>
                                                 <h3>{artiste.attributes.NomArtiste} </h3>
                                                 {/* <p>{DateFormater(artiste.attributes.DateArtisteMisEnAvant)}</p> */}
-                                                {
-                                                    console.log(artiste.attributes)
-                                                }
                                             </div>
                                         </div>
                                     )

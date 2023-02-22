@@ -81,7 +81,7 @@ const Actus = () => {
 
     let actus = (data.data).sort((a, b) => b.attributes.Ordre_Affichage - a.attributes.Ordre_Affichage);
 
-    { console.log(actus) }
+
     actus.map((actus, index) => (
         items.unshift(
             <div key={actus.id} className="mycard item" data-value={index + 1}>
