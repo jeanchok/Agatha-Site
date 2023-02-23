@@ -97,8 +97,12 @@ const Landing = (props) => {
                     <div className='accueil__text--edition'>
                         <h3 className='slide-in-bck-center'>La quête du QuetzalcÒatl</h3>
                     </div>
+                    <div className='accueil__text--spotify'>
+                        <iframe style={{ borderRadius: "12px", color: 'black' }} src="https://open.spotify.com/embed/track/619SP1dle59BAo6KhpwIBj?utm_source=generator&theme=0" width="100%" height="100" frameBorder="0" allowFullScreen="" color="black" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
 
                     <div className='linkContainer slide-in-bck-center'>
+
                         <a className='linkContainer__linkButton glow-on-hover' href="https://forms.gle/jre4ZCbTBnWh7bKo9" target="_blank">
                             <span>DEVENIR BENEVOLE</span>
                             <img src="/img/pointes-de-fleches-fines-a-droite.png" alt="fleche" className='arrowButton' />

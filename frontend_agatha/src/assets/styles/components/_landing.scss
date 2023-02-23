@@ -357,6 +357,14 @@
 
             }
 
+            &--spotify {
+                width: 45%;
+
+                @media (max-width: 600px) {
+                    width: 65%;
+                }
+            }
+
             // @keyframes flicker {
 
             //     0%,
