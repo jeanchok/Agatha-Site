@@ -13,7 +13,7 @@ const Header2 = (idHref) => {
                 </div>
 
                 <div className='navbar__buttonContainer'>
-                    <a className='navbar__buttonContainer--button' target="_blank" href='https://www.helloasso.com/associations/agatha/evenements/festival-agatha-1-la-quete-du-quetzacoatl?_ga=2.212681172.1188197210.1676286238-1053994602.1674568188&_gac=1.187338202.1674568188.CjwKCAiAoL6eBhA3EiwAXDom5p4ki9yi2JKnHBS4F7COJ6OfpxXq3Cs3awrUAIcihlExExPO6o4WkRoC57gQAvD_BwE&_gl=1%2a1y1goyc%2a_ga%2aMTA1Mzk5NDYwMi4xNjc0NTY4MTg4%2a_ga_TKC826G3G2%2aMTY3NjM3ODE3NC4xMi4xLjE2NzYzNzgxOTUuMC4wLjA.'>
+                    <a className='navbar__buttonContainer--button' target="_blank" href='https://www.helloasso.com/associations/agatha'>
                         <svg className='navbar__buttonContainer--icone' version="1.0" xmlns="http://www.w3.org/2000/svg"
                             width="128.000000pt" height="128.000000pt" viewBox="0 0 128.000000 128.000000"
                             preserveAspectRatio="xMidYMid meet">
