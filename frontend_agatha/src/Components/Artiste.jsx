@@ -6,7 +6,7 @@ const Artiste = ({ artiste }) => {
     const [displayDescription, setDisplayDescription] = useState(false);
 
     const API_URL = import.meta.env.VITE_API_URL;
-    const { loading, error, data } = useFetch(API_URL + '/api/programmations?populate=*')
+    const { loading, error, data } = useFetch(API_URL + '/api/programmations?populate=*&pagination[page]=1&pagination[pageSize]=100')
     // if (loading) return <p></p>
     // if (error) return <p>Errror :</p>
 
@@ -16,7 +16,7 @@ const Artiste = ({ artiste }) => {
 
 
     return (
-        <div style={{ backgroundImage: `url(${API_URL + artiste.attributes.ImageArtiste.data.attributes.url})`, aspectRatio: `${aspectRatioImg}`, backgroundRepeat: 'no-repeat', backgroundSize: '100%', position: "relative" }}>
+        <div style={{ backgroundImage: `url(${API_URL + artiste.attributes.ImageArtiste.data.attributes.url})`, aspectRatio: `${aspectRatioImg}`, backgroundRepeat: 'no-repeat', backgroundSize: '100%', position: "relative", minHeight: "300px" }}>
             {
                 displayDescription ?
                     <div className='descriptionContainer'>
@@ -29,32 +29,34 @@ const Artiste = ({ artiste }) => {
                     <div className='grid__textCard'>
                         <h4>{artiste.attributes.NomArtiste.substr(1)}</h4>
                         {
-                            (artiste.attributes.LienSpotify).includes("spotify") ?
-                                <div className='grid__textCard--link'>
-                                    <button className='grid__textCard--link1' onClick={(e) => { e.preventDefault; setDisplayDescription(true) }}>EN SAVOIR +</button>
-                                    <a className='grid__textCard--link2' href={artiste.attributes.LienSpotify} target="_blank">
-                                        {
-                                            (artiste.attributes.LienSpotify).includes("spotify") ?
-                                                <img src='/img/icons8-spotify-100.png' alt='spotify logo'></img>
-                                                :
-                                                <img src='/img/soundcloud.png' className='soundcloudIcone' alt='souncloud logo'></img>
-                                        }
+                            artiste.attributes.LienSpotify ?
+                                (artiste.attributes.LienSpotify).includes("spotify") ?
+                                    <div className='grid__textCard--link'>
+                                        <button className='grid__textCard--link1' onClick={(e) => { e.preventDefault; setDisplayDescription(true) }}>EN SAVOIR +</button>
+                                        <a className='grid__textCard--link2' href={artiste.attributes.LienSpotify} target="_blank">
+                                            {
+                                                (artiste.attributes.LienSpotify).includes("spotify") ?
+                                                    <img src='/img/icons8-spotify-100.png' alt='spotify logo'></img>
+                                                    :
+                                                    <img src='/img/soundcloud.png' className='soundcloudIcone' alt='souncloud logo'></img>
+                                            }
 
-                                    </a>
-                                </div>
-                                :
-                                <div className='grid__textCard--link' style={{ paddingBottom: '10px' }}>
-                                    <button className='grid__textCard--link1' onClick={(e) => { e.preventDefault; setDisplayDescription(true) }}>EN SAVOIR +</button>
-                                    <a className='grid__textCard--link2' href={artiste.attributes.LienSpotify} target="_blank">
-                                        {
-                                            (artiste.attributes.LienSpotify).includes("spotify") ?
-                                                <img src='/img/icons8-spotify-100.png' alt='spotify logo'></img>
-                                                :
-                                                <img src='/img/soundcloud.png' className='soundcloudIcone' alt='souncloud logo'></img>
-                                        }
+                                        </a>
+                                    </div>
+                                    :
+                                    <div className='grid__textCard--link' style={{ paddingBottom: '10px' }}>
+                                        <button className='grid__textCard--link1' onClick={(e) => { e.preventDefault; setDisplayDescription(true) }}>EN SAVOIR +</button>
+                                        <a className='grid__textCard--link2' href={artiste.attributes.LienSpotify} target="_blank">
+                                            {
+                                                (artiste.attributes.LienSpotify).includes("spotify") ?
+                                                    <img src='/img/icons8-spotify-100.png' alt='spotify logo'></img>
+                                                    :
+                                                    <img src='/img/soundcloud.png' className='soundcloudIcone' alt='souncloud logo'></img>
+                                            }
 
-                                    </a>
-                                </div>
+                                        </a>
+                                    </div>
+                                : null
                         }
 
                     </div>

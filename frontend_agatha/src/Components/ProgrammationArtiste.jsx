@@ -4,7 +4,7 @@ import Artiste from '../Components/Artiste';
 
 const ProgrammationArtiste = () => {
     const API_URL = import.meta.env.VITE_API_URL;
-    const { loading, error, data } = useFetch(API_URL + '/api/programmations?populate=*')
+    const { loading, error, data } = useFetch(API_URL + '/api/programmations?populate=*&pagination[page]=1&pagination[pageSize]=100')
     if (loading) return <p></p>
     if (error) return <p>Errror :</p>
 
@@ -22,9 +22,10 @@ const ProgrammationArtiste = () => {
 
     const artistes = data.data;
 
-
     const artistesSamedi = [];
     const artistesVendredi = [];
+
+
 
 
     artistes.map((artiste) => {
