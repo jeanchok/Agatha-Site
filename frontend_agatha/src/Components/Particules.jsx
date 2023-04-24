@@ -1,5 +1,5 @@
 import Sparticles from "sparticles";
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 
 const Particules = (props) => {
     useEffect(() => {

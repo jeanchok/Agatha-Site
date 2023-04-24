@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import Header from '../Components/Header';
 import Socials from '../Components/Socials';
 import Landing from '../Components/Landing';
@@ -11,10 +11,10 @@ import CookieConsent, { Cookies } from "react-cookie-consent";
 import { Helmet } from "react-helmet";
 import loadable from '@loadable/component'
 
-const Actus = loadable(() => import('../Components/Actus'))
-const Programmation = loadable(() => import('../Components/Programmation'))
-const Infos = loadable(() => import('../Components/Infos'))
-const Partenaires = loadable(() => import('../Components/Partenaires'))
+const Actus = lazy(() => import('../Components/Actus'))
+const Programmation = lazy(() => import('../Components/Programmation'))
+const Infos = lazy(() => import('../Components/Infos'))
+const Partenaires = lazy(() => import('../Components/Partenaires'))
 
 const Accueil = () => {
     const [areCookiesAllowed, setAreCookiesAllowed] = useState(false);

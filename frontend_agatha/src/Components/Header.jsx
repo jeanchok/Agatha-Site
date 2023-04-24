@@ -1,13 +1,9 @@
-import React, { useState, useEffect, useRef, useContext } from 'react';
+import React, { useState, useContext } from 'react';
 import { Link } from "react-router-dom";
-//import { Link } from "react-scroll";
 import { MyContext } from '../Hooks/useContext';
 
 
 const Header = () => {
-    const elementIds = ['accueil', 'actus', 'programmation', 'infos', 'partenaires'];
-    const [isActive, setIisActive] = useState("");
-    const [isLoading, setIsLoading] = useState(true);
     const { navActive, setNavActive } = useContext(MyContext);
     const [menuClass, setMenuClass] = useState(false);
 
@@ -42,9 +38,6 @@ const Header = () => {
         );
 
     }
-
-
-
 
 
     return (

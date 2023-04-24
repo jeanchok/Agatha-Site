@@ -1,14 +1,9 @@
-
-import useFetch from '../Hooks/useFetch';
 import React, { useState } from 'react';
 
 const Artiste = ({ artiste }) => {
     const [displayDescription, setDisplayDescription] = useState(false);
-
     const API_URL = import.meta.env.VITE_API_URL;
-    const { loading, error, data } = useFetch(API_URL + '/api/programmations?populate=*&pagination[page]=1&pagination[pageSize]=100')
-    // if (loading) return <p></p>
-    // if (error) return <p>Errror :</p>
+
 
     let img = new Image();
     img.src = API_URL + artiste.attributes.ImageArtiste.data.attributes.url

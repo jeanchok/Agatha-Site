@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import useFetch from '../Hooks/useFetch';
+import React, { useState } from 'react';
 
 const ProgrammationScene = (data) => {
     const [fridaySelelected, setFridaySelelected] = useState(true);

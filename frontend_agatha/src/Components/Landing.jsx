@@ -1,7 +1,5 @@
 import React, { useContext, useState } from 'react';
-import Particles from "./Particules";
 import { InView } from 'react-intersection-observer';
-//import { setGlobalState, useGlobalState } from '../hooks/useGlobalState';
 import { MyContext } from '../Hooks/useContext';
 import Leaves from './Leaves';
 
@@ -102,11 +100,6 @@ const Landing = (props) => {
                     </div>
 
                     <div className='linkContainer slide-in-bck-center'>
-
-                        <a className='linkContainer__linkButton glow-on-hover' href="https://forms.gle/jre4ZCbTBnWh7bKo9" target="_blank">
-                            <span>DEVENIR BENEVOLE</span>
-                            <img src="/img/pointes-de-fleches-fines-a-droite.png" alt="fleche" className='arrowButton' />
-                        </a>
                     </div>
                 </InView>
 

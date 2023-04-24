@@ -154,9 +154,6 @@ const Partenaires = (props) => {
 
                         </div>
                     </div>
-
-
-
                     <div className='row formRow'>
                         <div className='col'>
                             <textarea
@@ -183,8 +180,6 @@ const Partenaires = (props) => {
                     {missingElements ? <p className='successMessage'>Remplissez tous les champs pour envoyer le message</p> : null}
                     {message ? <p className='successMessage'>Votre message a bien été envoyé</p> : null}
                 </form>
-
-
                 <div className='partenairesContainer'>
                     {data ? data.data.map(partenaires => (
                         <div key={partenaires.id} className={"partenairesContainer__card item" + partenaires.id}>

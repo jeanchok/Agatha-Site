@@ -25,9 +25,6 @@ function App() {
           <Route path="programmation" element={<ProgrammationFullPage />} />
           <Route path="mentionslegales" element={<MentionsLegales />} />
           <Route path="contact" element={<Contact />} />
-          {/* <Route path="contact" element={<Contact />} />
-        <Route path="portfolio" element={<Portfolio />} />
-        <Route path="competences" element={<Competences />} /> */}
         </Routes>
       </MyContext.Provider>
     </BrowserRouter>
