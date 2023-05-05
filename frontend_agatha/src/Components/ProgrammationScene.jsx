@@ -132,15 +132,30 @@ const ProgrammationScene = (data) => {
             </div>
             <div className='progScenesContainer__artistes'>
                 <div className='progScenesContainer__artistes--scenes'>
-                    <h4>SCENE DU TEMPLE MAUDIT</h4>
-                    <h4 className='middleScene'>SCENE DES ANCIENNES CIVILISATIONS</h4>
-                    <h4>SCENE DUB'OUT</h4>
+                    <h4>SCENE DU TEMPLE MAUDIT <br />
+                        {
+                            fridaySelelected ? "21H / 08H" : "18H / 08H"
+                        }
+                    </h4>
+                    <h4 className='middleScene'>SCENE DES ANCIENNES CIVILISATIONS<br />
+                        {
+                            fridaySelelected ? "20H / 02H" : "19H / 04H"
+                        }
+                    </h4>
+                    <h4>DUB'OUT & CHILL OUT<br />
+                        {
+                            fridaySelelected ? "20H / 06H" : "18H / 06H"
+                        }
+                    </h4>
                 </div>
                 {
                     fridaySelelected ?
                         <div className='progScenesContainer__artistes--artistes'>
                             <div className='progScenesContainer__artistes--artistesScene'>
-                                <h4 className='progScenesContainer__artistes--artistesScene--responsiveTitle'>SCENE DU TEMPLE MAUDIT</h4>
+                                <h4 className='progScenesContainer__artistes--artistesScene--responsiveTitle'>SCENE DU TEMPLE MAUDIT<br />
+                                    {
+                                        fridaySelelected ? "21H / 08H" : "18H / 08H"
+                                    }</h4>
                                 {
                                     s1ArtistsFriday.map((artiste, index) => (
                                         <div key={index} className='progScenesContainer__artistes--artistesScene--card' >
@@ -171,7 +186,10 @@ const ProgrammationScene = (data) => {
                                 })} */}
                             </div>
                             <div className='progScenesContainer__artistes--artistesScene middleScene'>
-                                <h4 className='progScenesContainer__artistes--artistesScene--responsiveTitle'>SCENE DES ANCIENNES CIVILISATIONS</h4>
+                                <h4 className='progScenesContainer__artistes--artistesScene--responsiveTitle'>SCENE DES ANCIENNES CIVILISATIONS<br />
+                                    {
+                                        fridaySelelected ? "20H / 02H" : "19H / 04H"
+                                    } </h4>
                                 {
                                     s3ArtistsFriday.map((artiste, index) => (
                                         <div key={index} className='progScenesContainer__artistes--artistesScene--card' >
@@ -202,7 +220,11 @@ const ProgrammationScene = (data) => {
                                 })} */}
                             </div>
                             <div className='progScenesContainer__artistes--artistesScene'>
-                                <h4 className='progScenesContainer__artistes--artistesScene--responsiveTitle'>SCENE DUB'OUT</h4>
+                                <h4 className='progScenesContainer__artistes--artistesScene--responsiveTitle'>SCENE DUB'OUT
+                                    <br />
+                                    {
+                                        fridaySelelected ? "20H / 06H" : "18H / 06H"
+                                    }</h4>
                                 {
                                     s2ArtistsFriday.map((artiste, index) => (
                                         <div key={index} className='progScenesContainer__artistes--artistesScene--card' >
@@ -236,7 +258,11 @@ const ProgrammationScene = (data) => {
                         :
                         <div className='progScenesContainer__artistes--artistes'>
                             <div className='progScenesContainer__artistes--artistesScene'>
-                                <h4 className='progScenesContainer__artistes--artistesScene--responsiveTitle'>SCENE DU TEMPLE MAUDIT</h4>
+                                <h4 className='progScenesContainer__artistes--artistesScene--responsiveTitle'>SCENE DU TEMPLE MAUDIT
+                                    <br />
+                                    {
+                                        fridaySelelected ? "21H / 08H" : "18H / 08H"
+                                    }</h4>
                                 {
                                     s1ArtistsSaturday.map((artiste, index) => (
                                         <div key={index} className='progScenesContainer__artistes--artistesScene--card' >
@@ -267,7 +293,11 @@ const ProgrammationScene = (data) => {
                                 })} */}
                             </div>
                             <div className='progScenesContainer__artistes--artistesScene middleScene'>
-                                <h4 className='progScenesContainer__artistes--artistesScene--responsiveTitle'>SCENE DES ANCIENNES CIVILISATIONS</h4>
+                                <h4 className='progScenesContainer__artistes--artistesScene--responsiveTitle'>SCENE DES ANCIENNES CIVILISATIONS<br />
+                                    {
+                                        fridaySelelected ? "20H / 02H" : "19H / 04H"
+                                    }
+                                </h4>
                                 {
                                     s3ArtistsSaturday.map((artiste, index) => (
                                         <div key={index} className='progScenesContainer__artistes--artistesScene--card' >
@@ -298,7 +328,11 @@ const ProgrammationScene = (data) => {
                                 })} */}
                             </div>
                             <div className='progScenesContainer__artistes--artistesScene'>
-                                <h4 className='progScenesContainer__artistes--artistesScene--responsiveTitle'>SCENE DUB'OUT</h4>
+                                <h4 className='progScenesContainer__artistes--artistesScene--responsiveTitle'>SCENE DUB'OUT   <br />
+                                    {
+                                        fridaySelelected ? "20H / 06H" : "18H / 06H"
+                                    }
+                                </h4>
                                 {
                                     s2ArtistsSaturday.map((artiste, index) => (
                                         <div key={index} className='progScenesContainer__artistes--artistesScene--card' >

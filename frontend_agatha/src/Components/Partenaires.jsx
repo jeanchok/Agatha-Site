@@ -85,7 +85,7 @@ const Partenaires = (props) => {
                     <h2>DEVENIR PARTENAIRE</h2>
                 </div> */}
                 <InView as="div" className='partenairesText' onChange={(inView, entry) => { if (inView) { setNavActive('partenaires'); console.log("partenaires") } }}>
-                    <h2>NOS PARTENAIRE</h2>
+                    <h2>NOS PARTENAIRES</h2>
                 </InView>
                 {/* <form ref={form} onSubmit={sendEmail}>
                     <label>Name</label>
