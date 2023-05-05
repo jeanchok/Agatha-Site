@@ -27,6 +27,22 @@ const Partenaires = (props) => {
     if (error) return <p>Errror :</p>
 
 
+    const partenairesSrc = [
+        "/img/parenaires/Chez Nous LG J CG.JPG",
+        "/img/parenaires/coup coeur coiffure.png",
+        "/img/parenaires/IMG_1588.PNG",
+        "/img/parenaires/indesign.jpg",
+        "/img/parenaires/LOGO (1).png",
+        "/img/parenaires/Logo wiwil_ink tattoo.png",
+        "/img/parenaires/market sable.png",
+        "/img/parenaires/pancarte-1-kaliverre.png",
+        "/img/parenaires/sup u la guerche.png"
+    ]
+
+    const partenairesSrc2 = [
+        "/img/parenaires/Ils soutiennent le projet/IMG_1587.PNG",
+        "/img/parenaires/Ils soutiennent le projet/IMG_1591.JPG"
+    ]
 
 
     const sendEmail = (e) => {
@@ -69,7 +85,7 @@ const Partenaires = (props) => {
                     <h2>DEVENIR PARTENAIRE</h2>
                 </div> */}
                 <InView as="div" className='partenairesText' onChange={(inView, entry) => { if (inView) { setNavActive('partenaires'); console.log("partenaires") } }}>
-                    <h2>DEVENIR PARTENAIRE</h2>
+                    <h2>NOS PARTENAIRE</h2>
                 </InView>
                 {/* <form ref={form} onSubmit={sendEmail}>
                     <label>Name</label>
@@ -80,9 +96,9 @@ const Partenaires = (props) => {
                     <textarea name="message" />
                     <input type="submit" value="Send" />
                 </form> */}
-                <form className='contactForm' id='contact-form' ref={form} onSubmit={sendEmail} aria-label="Contact pour devenir partenaire">
+                {/* <form className='contactForm' id='contact-form' ref={form} onSubmit={sendEmail} aria-label="Contact pour devenir partenaire"> */}
 
-                    <div className='formRow'>
+                {/* <div className='formRow'>
                         <div className='col-6'>
                             <input
                                 aria-label="Nom de l'entreprise"
@@ -173,23 +189,43 @@ const Partenaires = (props) => {
                             <span>ENVOYER</span>
                             <img src="/img/pointes-de-fleches-fines-a-droite.png" alt="fleche" className='arrowButton' />
                         </button>
-                    </div>
-                    {/* <button className='submit-btn' type='submit'>
+                    </div> */}
+                {/* <button className='submit-btn' type='submit'>
                         Envoyer
                     </button> */}
-                    {missingElements ? <p className='successMessage'>Remplissez tous les champs pour envoyer le message</p> : null}
-                    {message ? <p className='successMessage'>Votre message a bien été envoyé</p> : null}
-                </form>
+                {/* {missingElements ? <p className='successMessage'>Remplissez tous les champs pour envoyer le message</p> : null}
+                {message ? <p className='successMessage'>Votre message a bien été envoyé</p> : null} */}
+                {/* </form> */}
                 <div className='partenairesContainer'>
-                    {data ? data.data.map(partenaires => (
-                        <div key={partenaires.id} className={"partenairesContainer__card item" + partenaires.id}>
+                    <div className='partenairesContainer__partenaires'>
+                        {
+                            partenairesSrc.map((partenaires, index) => (
+                                <div key={index} className={"partenairesContainer__card item" + index}>
+                                    <img src={partenaires} alt="" />
+                                </div>
+                            ))
+                        }
+                    </div>
+                    <h3>Ils soutiennent le festival</h3>
+                    <div className='partenairesContainer__soutiens'>
 
+                        {
+                            partenairesSrc2.map((partenaires, index) => (
+                                <div key={index} className={"partenairesContainer__card item" + index}>
+                                    <img src={partenaires} alt="" />
+                                </div>
+                            ))
+                        }
+                    </div>
+
+                    {/* {data ? data.data.map(partenaires => (
+                        <div key={partenaires.id} className={"partenairesContainer__card item" + partenaires.id}>
                             <img src={API_URL + partenaires.attributes.LogoPartenaire.data.attributes.url} alt="" />
                             <div className='partenairesContainer__card--text'>
                                 <h4>{partenaires.attributes.NomPartenaire} </h4>
                             </div>
                         </div>
-                    )) : null}
+                    )) : null} */}
                     <img className='partenairesContainer__maya' src="/img/maya1.webp" alt="maya illustration" />
                     {/* <Particles minAlpha={minAlpha} drift={drift} yVariance={yVariance} rotation={rotation} speed={speed} color={color} direction={direction} shape={shape} imageUrl={imageUrl} /> */}
                 </div>

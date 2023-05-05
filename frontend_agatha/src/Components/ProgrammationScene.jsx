@@ -6,10 +6,7 @@ const ProgrammationScene = (data) => {
     const [artistesSamedi, setArtistesSamedi] = useState([]);
 
 
-    const API_URL = import.meta.env.VITE_API_URL;
-    // const { loading, error, data } = useFetch(API_URL + '/api/programmations?populate=*')
-    // if (loading) return <p>Loading...</p>
-    // if (error) return <p>Errror :</p>
+
 
 
     const defaultItem = { defaultItem: "defaultItem" };
@@ -28,6 +25,63 @@ const ProgrammationScene = (data) => {
             artiste.attributes.HoraireFin = artiste.attributes.HoraireFin.substring(0, 5)
         }
     });
+
+    const s1ArtistsFriday = [
+        `Katell B2B Menthine`,
+        `Helene Brahem`,
+        `Specimen B2B Kyrox`,
+        `Vicaps`,
+        `Tete Plate`,
+        `Amen Mettre Bass`,
+        `Industry 43`,
+        `Miza`,
+        `Chech`
+    ]
+
+    const s2ArtistsFriday = [
+        `Fox In Dub`,
+        `Ruff A Dub`,
+        `Digital Seal`,
+        `M-Syla`,
+        `Crucial Rob`,
+        `J.Ika`
+    ]
+
+    const s3ArtistsFriday = [
+        `Dourgan`,
+        `Novels`,
+        `Oxid & Leon`
+    ]
+
+    const s1ArtistsSaturday = [
+        `Muzoterik`,
+        `Touns B2B DJ Brams`,
+        `Pusher`,
+        `109`,
+        `Gab`,
+        `Wast`,
+        `Luche`,
+        `Dica`,
+        `Omicid`,
+        `C.Ysme`
+    ]
+
+    const s2ArtistsSaturday = [
+        `Fox In Dub`,
+        `Roll & Record`,
+        `Mac Gyver (Stand High Patrol)`,
+        `Guru Pope`,
+        `Fabasstone`,
+        `Ruff A Dub`
+    ]
+
+    const s3ArtistsSaturday = [
+        `Breizh'O Folk`,
+        `Kairos`,
+        `Chouch'N'Molotov`,
+        `Chico Electrik`,
+        `Perkyzisound`
+    ]
 
 
 
@@ -79,14 +133,24 @@ const ProgrammationScene = (data) => {
             <div className='progScenesContainer__artistes'>
                 <div className='progScenesContainer__artistes--scenes'>
                     <h4>SCENE DU TEMPLE MAUDIT</h4>
-                    <h4>SCENE DES ANCIENNES CIVILISATIONS</h4>
+                    <h4 className='middleScene'>SCENE DES ANCIENNES CIVILISATIONS</h4>
                     <h4>SCENE DUB'OUT</h4>
                 </div>
                 {
                     fridaySelelected ?
                         <div className='progScenesContainer__artistes--artistes'>
                             <div className='progScenesContainer__artistes--artistesScene'>
-                                {artistes.map((artiste) => {
+                                <h4 className='progScenesContainer__artistes--artistesScene--responsiveTitle'>SCENE DU TEMPLE MAUDIT</h4>
+                                {
+                                    s1ArtistsFriday.map((artiste, index) => (
+                                        <div key={index} className='progScenesContainer__artistes--artistesScene--card' >
+                                            <div className='progScenesContainer__artistes--artistesScene--cardName'>
+                                                <h4>{artiste}</h4>
+                                            </div>
+                                        </div>
+                                    ))
+                                }
+                                {/* {artistes.map((artiste) => {
                                     if (artiste.attributes && artiste.attributes.DateArtiste === "2023-06-09" && artiste.attributes.SceneArtiste === "Techno") {
                                         return (
                                             <div key={artiste.id} className='progScenesContainer__artistes--artistesScene--card' >
@@ -104,11 +168,20 @@ const ProgrammationScene = (data) => {
                                             </div>
                                         )
                                     }
-                                })}
-                                {console.log(artistes)}
+                                })} */}
                             </div>
-                            <div className='progScenesContainer__artistes--artistesScene'>
-                                {artistes.map((artiste) => {
+                            <div className='progScenesContainer__artistes--artistesScene middleScene'>
+                                <h4 className='progScenesContainer__artistes--artistesScene--responsiveTitle'>SCENE DES ANCIENNES CIVILISATIONS</h4>
+                                {
+                                    s3ArtistsFriday.map((artiste, index) => (
+                                        <div key={index} className='progScenesContainer__artistes--artistesScene--card' >
+                                            <div className='progScenesContainer__artistes--artistesScene--cardName'>
+                                                <h4>{artiste}</h4>
+                                            </div>
+                                        </div>
+                                    ))
+                                }
+                                {/* {artistes.map((artiste) => {
                                     if (artiste.attributes && artiste.attributes.DateArtiste === "2023-06-09" && artiste.attributes.SceneArtiste === "Alternative") {
                                         return (
                                             <div key={artiste.id} className='progScenesContainer__artistes--artistesScene--card' >
@@ -126,10 +199,20 @@ const ProgrammationScene = (data) => {
                                             </div>
                                         )
                                     }
-                                })}
+                                })} */}
                             </div>
                             <div className='progScenesContainer__artistes--artistesScene'>
-                                {artistes.map((artiste) => {
+                                <h4 className='progScenesContainer__artistes--artistesScene--responsiveTitle'>SCENE DUB'OUT</h4>
+                                {
+                                    s2ArtistsFriday.map((artiste, index) => (
+                                        <div key={index} className='progScenesContainer__artistes--artistesScene--card' >
+                                            <div className='progScenesContainer__artistes--artistesScene--cardName'>
+                                                <h4>{artiste}</h4>
+                                            </div>
+                                        </div>
+                                    ))
+                                }
+                                {/* {artistes.map((artiste) => {
                                     if (artiste.attributes && artiste.attributes.DateArtiste === "2023-06-09" && artiste.attributes.SceneArtiste === "Dub") {
                                         return (
                                             <div key={artiste.id} className='progScenesContainer__artistes--artistesScene--card' >
@@ -147,13 +230,23 @@ const ProgrammationScene = (data) => {
                                             </div>
                                         )
                                     }
-                                })}
+                                })} */}
                             </div>
                         </div>
                         :
                         <div className='progScenesContainer__artistes--artistes'>
                             <div className='progScenesContainer__artistes--artistesScene'>
-                                {artistes.map((artiste) => {
+                                <h4 className='progScenesContainer__artistes--artistesScene--responsiveTitle'>SCENE DU TEMPLE MAUDIT</h4>
+                                {
+                                    s1ArtistsSaturday.map((artiste, index) => (
+                                        <div key={index} className='progScenesContainer__artistes--artistesScene--card' >
+                                            <div className='progScenesContainer__artistes--artistesScene--cardName'>
+                                                <h4>{artiste}</h4>
+                                            </div>
+                                        </div>
+                                    ))
+                                }
+                                {/* {artistes.map((artiste) => {
                                     if (artiste.attributes && (artiste.attributes.DateArtiste === "2023-06-10" || artiste.attributes.DateArtiste === "2023-06-11") && artiste.attributes.SceneArtiste === "Techno") {
                                         return (
                                             <div key={artiste.id} className='progScenesContainer__artistes--artistesScene--card'>
@@ -171,10 +264,20 @@ const ProgrammationScene = (data) => {
                                             </div>
                                         )
                                     }
-                                })}
+                                })} */}
                             </div>
-                            <div className='progScenesContainer__artistes--artistesScene'>
-                                {artistes.map((artiste) => {
+                            <div className='progScenesContainer__artistes--artistesScene middleScene'>
+                                <h4 className='progScenesContainer__artistes--artistesScene--responsiveTitle'>SCENE DES ANCIENNES CIVILISATIONS</h4>
+                                {
+                                    s3ArtistsSaturday.map((artiste, index) => (
+                                        <div key={index} className='progScenesContainer__artistes--artistesScene--card' >
+                                            <div className='progScenesContainer__artistes--artistesScene--cardName'>
+                                                <h4>{artiste}</h4>
+                                            </div>
+                                        </div>
+                                    ))
+                                }
+                                {/* {artistes.map((artiste) => {
                                     if (artiste.attributes && (artiste.attributes.DateArtiste === "2023-06-10" || artiste.attributes.DateArtiste === "2023-06-11") && artiste.attributes.SceneArtiste === "Alternative") {
                                         return (
                                             <div key={artiste.id} className='progScenesContainer__artistes--artistesScene--card' >
@@ -192,10 +295,20 @@ const ProgrammationScene = (data) => {
                                             </div>
                                         )
                                     }
-                                })}
+                                })} */}
                             </div>
                             <div className='progScenesContainer__artistes--artistesScene'>
-                                {artistes.map((artiste) => {
+                                <h4 className='progScenesContainer__artistes--artistesScene--responsiveTitle'>SCENE DUB'OUT</h4>
+                                {
+                                    s2ArtistsSaturday.map((artiste, index) => (
+                                        <div key={index} className='progScenesContainer__artistes--artistesScene--card' >
+                                            <div className='progScenesContainer__artistes--artistesScene--cardName'>
+                                                <h4>{artiste}</h4>
+                                            </div>
+                                        </div>
+                                    ))
+                                }
+                                {/* {artistes.map((artiste) => {
                                     if (artiste.attributes && (artiste.attributes.DateArtiste === "2023-06-10" || artiste.attributes.DateArtiste === "2023-06-11") && artiste.attributes.SceneArtiste === "Dub") {
                                         return (
                                             <div key={artiste.id} className='progScenesContainer__artistes--artistesScene--card'>
@@ -213,7 +326,7 @@ const ProgrammationScene = (data) => {
                                             </div>
                                         )
                                     }
-                                })}
+                                })} */}
                             </div>
                         </div>
                 }

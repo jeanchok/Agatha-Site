@@ -49,15 +49,15 @@ const ProgrammationArtiste = () => {
 
     console.log(artistes, 'artistes', artistesVendredi, artistesSamedi)
 
-    const nbElementsToAddVendredi = artistesVendredi.length < 9 ? 9 - artistesVendredi.length : (artistesVendredi.length % 3) + 3;
-    for (let i = 1; i <= nbElementsToAddVendredi; i++) {
-        artistesVendredi.push(defaultItem);
-    }
+    // const nbElementsToAddVendredi = artistesVendredi.length < 9 ? 9 - artistesVendredi.length : (artistesVendredi.length % 3) + 3;
+    // for (let i = 1; i <= nbElementsToAddVendredi; i++) {
+    //     artistesVendredi.push(defaultItem);
+    // }
 
-    const nbElementsToAddSamedi = artistesSamedi.length < 9 ? 9 - artistesSamedi.length : (artistesSamedi.length % 3) + 3;
-    for (let i = 1; i <= nbElementsToAddSamedi; i++) {
-        artistesSamedi.push(defaultItem);
-    }
+    // const nbElementsToAddSamedi = artistesSamedi.length < 9 ? 9 - artistesSamedi.length : (artistesSamedi.length % 3) + 3;
+    // for (let i = 1; i <= nbElementsToAddSamedi; i++) {
+    //     artistesSamedi.push(defaultItem);
+    // }
 
 
     return (

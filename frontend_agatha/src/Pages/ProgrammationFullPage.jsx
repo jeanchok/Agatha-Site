@@ -47,19 +47,18 @@ const ProgrammationFullPage = () => {
                 <h2>PROGRAMMATION</h2>
             </div>
 
-            {/* <div className='ProgrammationFullPage__buttonContainer'>
+            <div className='ProgrammationFullPage__buttonContainer'>
                 <button className={isArtisteSelected ? 'ProgrammationFullPage__buttonContainer--artisteButton artisteActive' : 'ProgrammationFullPage__buttonContainer--artisteButton'} onClick={() => setIsArtisteSelected(true)}>
                     <span>ARTISTES</span>
                 </button>
                 <button className={!isArtisteSelected ? 'ProgrammationFullPage__buttonContainer--sceneButton sceneActive' : 'ProgrammationFullPage__buttonContainer--sceneButton'} onClick={() => setIsArtisteSelected(false)}>
                     <span>SCENES</span>
                 </button>
-            </div> */}
+            </div>
 
-            {/* {
+            {
                 isArtisteSelected ? <ProgrammationArtiste /> : <ProgrammationScene data={data} />
-            } */}
-            <ProgrammationArtiste />
+            }
             <Footer />
         </div>
 
