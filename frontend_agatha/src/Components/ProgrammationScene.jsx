@@ -27,7 +27,7 @@ const ProgrammationScene = (data) => {
     });
 
     const s1ArtistsFriday = [
-        `Katell B2B Menthine`,
+        `Menthine`,
         `Helene Brahem`,
         `Specimen B2B Kyrox`,
         `Vicaps`,
