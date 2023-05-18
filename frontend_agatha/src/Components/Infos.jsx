@@ -20,7 +20,7 @@ const Infos = () => {
                     <div className='infosContainer__text'>
                         <h3>ACCESSIBILITE</h3>
                         <p>
-                            Le Festival AGATHA se déroulera sur la commune de Saint-Denis-d'Anjou (53290), petit village médiéval aux nombreux monuments classés et situé au centre d’un triangle formé par trois grandes villes : Angers, Le Mans et Laval. Une gare ferroviaire dessert la commune voisine de Sablé-sur-Sarthe, située à seulement 15 minutes en voiture. Cette gare est desservie par le TGV, ce qui la place à seulement 1 heure 10 de Paris. Pour vous rendre sur place, nous vous recommandons de privilégier le covoiturage, un groupe Facebook dédié sera bientôt mis en place.                        </p>
+                            Le Festival AGATHA se déroulera sur la commune de Saint-Denis-d'Anjou (53290), petit village médiéval aux nombreux monuments classés et situé au centre d’un triangle formé par trois grandes villes : Angers, Le Mans et Laval. Une gare ferroviaire dessert la commune voisine de Sablé-sur-Sarthe, située à seulement 15 minutes en voiture. Cette gare est desservie par le TGV, ce qui la place à seulement 1 heure 10 de Paris. Pour vous rendre sur place, nous vous recommandons de privilégier le covoiturage.                 </p>
                         <div className='linkContainer'>
                             <a className='linkContainer__linkButton glow-on-hover' href="/infospratiques">
                                 <span>EN SAVOIR +</span>
