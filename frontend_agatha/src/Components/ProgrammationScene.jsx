@@ -27,9 +27,10 @@ const ProgrammationScene = (data) => {
     });
 
     const s1ArtistsFriday = [
-        `Menthine`,
+        `Katell B2B Menthine`,
+        `Kyrox`,
         `Helene Brahem`,
-        `Specimen B2B Kyrox`,
+        `Specimen`,
         `Vicaps`,
         `Tete Plate`,
         `Amen Mettre Bass`,
