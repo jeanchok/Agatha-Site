@@ -11,7 +11,7 @@ const Artiste = ({ artiste }) => {
 
 
     return (
-        <div style={{ backgroundImage: `url(${API_URL + artiste.attributes.ImageArtiste.data.attributes.url})`, aspectRatio: `${aspectRatioImg}`, backgroundRepeat: 'no-repeat', backgroundSize: '100%', position: "relative", minHeight: "300px" }}>
+        <div style={{ backgroundImage: `url(${API_URL + artiste.attributes.ImageArtiste.data.attributes.url})`, backgroundColor: `#0000002e`, aspectRatio: `${aspectRatioImg}`, backgroundRepeat: 'no-repeat', backgroundSize: '100%', position: "relative", minHeight: "300px" }}>
             {
                 displayDescription ?
                     <div className='descriptionContainer'>
