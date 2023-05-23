@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const ProgrammationScene = (data) => {
+const ProgrammationScene = (data, isArtisteSelected) => {
     const [fridaySelelected, setFridaySelelected] = useState(true);
     const [artistesVendredi, setArtistesVendredi] = useState([]);
     const [artistesSamedi, setArtistesSamedi] = useState([]);

@@ -2,7 +2,7 @@ import React from 'react';
 import useFetch from '../Hooks/useFetch';
 import Artiste from '../Components/Artiste';
 
-const ProgrammationArtiste = () => {
+const ProgrammationArtiste = (isArtisteSelected) => {
     const API_URL = import.meta.env.VITE_API_URL;
     const { loading, error, data } = useFetch(API_URL + '/api/programmations?populate=*&pagination[page]=1&pagination[pageSize]=100')
     if (loading) return <p></p>
@@ -61,7 +61,7 @@ const ProgrammationArtiste = () => {
 
 
     return (
-        <div className='ProgrammationFullPage__progArtistesContainer slide-in-fwd-center' >
+        <div className='ProgrammationFullPage__progArtistesContainer slide-in-fwd-center'>
             {/* div className='ProgrammationFullPage__progArtistesContainer slide-in-fwd-center' */}
             <div className='ProgrammationFullPage__date '>
                 <h4>VENDREDI 9 JUIN</h4>

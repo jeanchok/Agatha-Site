@@ -56,9 +56,18 @@ const ProgrammationFullPage = () => {
                 </button>
             </div>
 
-            {
-                isArtisteSelected ? <ProgrammationArtiste /> : <ProgrammationScene data={data} />
-            }
+            {/* {
+                isArtisteSelected ? <ProgrammationArtiste isArtisteSelected={isArtisteSelected} /> : <ProgrammationScene data={data} isArtisteSelected={isArtisteSelected} />
+            } */}
+
+
+            <div style={{ display: isArtisteSelected ? 'flex' : 'none' }} className='ProgrammationArtiste'>
+                <ProgrammationArtiste isArtisteSelected={isArtisteSelected} />
+            </div>
+            <div style={{ display: isArtisteSelected ? 'none' : 'flex' }} className='ProgrammationScene'>
+                <ProgrammationScene data={data} isArtisteSelected={isArtisteSelected} />
+            </div>
+
             <Footer />
         </div>
 
