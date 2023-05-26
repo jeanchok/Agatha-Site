@@ -28,20 +28,20 @@ const Partenaires = (props) => {
 
 
     const partenairesSrc = [
-        "/img/parenaires/Chez Nous LG J CG.JPG",
-        "/img/parenaires/coup coeur coiffure.png",
-        "/img/parenaires/IMG_1588.PNG",
-        "/img/parenaires/indesign.jpg",
-        "/img/parenaires/LOGO (1).png",
-        "/img/parenaires/Logo wiwil_ink tattoo.png",
-        "/img/parenaires/market sable.png",
-        "/img/parenaires/pancarte-1-kaliverre.png",
-        "/img/parenaires/sup u la guerche.png"
+        "/img/parenaires/Chez Nous LG J CG.webp",
+        "/img/parenaires/coup coeur coiffure.webp",
+        "/img/parenaires/IMG_1588.webp",
+        "/img/parenaires/indesign.webp",
+        "/img/parenaires/LOGO (1).webp",
+        "/img/parenaires/Logo wiwil_ink tattoo.webp",
+        "/img/parenaires/market sable.webp",
+        "/img/parenaires/pancarte-1-kaliverre.webp",
+        "/img/parenaires/sup u la guerche.webp"
     ]
 
     const partenairesSrc2 = [
-        "/img/parenaires/Ils soutiennent le projet/IMG_1587.PNG",
-        "/img/parenaires/Ils soutiennent le projet/IMG_1591.JPG"
+        "/img/parenaires/Ils soutiennent le projet/IMG_1587.webp",
+        "/img/parenaires/Ils soutiennent le projet/IMG_1591.webp"
     ]
 
 
