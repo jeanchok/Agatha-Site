@@ -32,7 +32,7 @@ const Partenaires = (props) => {
         "/img/parenaires/coup coeur coiffure.webp",
         "/img/parenaires/IMG_1588.webp",
         "/img/parenaires/indesign.webp",
-        "/img/parenaires/LOGO (1).webp",
+        "/img/parenaires/Logo-Redscop.webp",
         "/img/parenaires/Logo wiwil_ink tattoo.webp",
         "/img/parenaires/market sable.webp",
         "/img/parenaires/pancarte-1-kaliverre.webp",
