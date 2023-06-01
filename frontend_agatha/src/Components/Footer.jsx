@@ -25,13 +25,6 @@ const Footer = () => {
                 {navLink("/mentionslegales", "MENTIONS LEGALES")}
                 {navLink("/contact", "CONTACT")}
                 {navLink("/partenariat", "PARTENARIAT")}
-                <a className='footer__linkContainer--link' href="https://forms.gle/jre4ZCbTBnWh7bKo9" target="_blank">
-                    <li className='content__item'>
-                        <span className='link link--metis'>BENEVOLAT</span>
-                    </li>
-                </a>
-
-
             </div>
         </footer>
     );
