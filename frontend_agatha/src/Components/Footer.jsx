@@ -24,7 +24,12 @@ const Footer = () => {
             <div className='footer__linkContainer'>
                 {navLink("/mentionslegales", "MENTIONS LEGALES")}
                 {navLink("/contact", "CONTACT")}
-                {navLink("/partenariat", "PARTENARIAT")}
+                <a href="/#partenaires" className="footer__linkContainer--link">
+                    <li className='content__item'>
+                        <span className='link link--metis'>PARTENARIAT</span>
+                    </li>
+                </a>
+                {/* {navLink("/", "PARTENARIAT")} */}
             </div>
         </footer>
     );

@@ -20,12 +20,20 @@ const InfosFullPage = () => {
             <h2>INFOS PRATIQUES</h2>
             <h3>QUELLE ORGANISATION SUR PLACE ?</h3>
             <div className='InfosFullPage__PlanContainer'>
+                <h3>Plan du site</h3>
+                <div className='infoslinkContainer'>
+                    <a className='infoslinkContainer__linkButton glow-on-hover' href="/img/Plan festivaliers.pdf" download>
+                        <span>Télécharger le plan</span>
+                        <img src="/img/pointes-de-fleches-fines-a-droite.png" alt="fleche" className='arrowButton' />
+                    </a>
+                </div>
+
             </div>
+            <img className='InfosFullPage__plan' src="/img/Plan-festivaliers.webp" alt="plan du site" />
             <div className='InfosFullPage__infosContainer'>
                 {data.data.map((infos, index) => (
                     <ModuleInfos key={infos.id} text={infos.attributes.TexteInfosPratiques} title={infos.attributes.TitreInfosPratiques} />
                 ))}
-                <h3 className='InfosFullPage__infosContainer--waiting'>Toutes les infos arrivent bientôt !</h3>
             </div>
             <Footer />
         </div>
