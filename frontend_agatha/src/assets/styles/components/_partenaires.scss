@@ -97,12 +97,14 @@
         position: relative;
         flex-direction: column;
 
+
         &__partenaires {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(3, 1fr);
             grid-column-gap: 120px;
             grid-row-gap: 0px;
+            z-index: 100;
 
             @media (min-width: 920px) and (max-width: 1110px) {
                 grid-column-gap: 50px;

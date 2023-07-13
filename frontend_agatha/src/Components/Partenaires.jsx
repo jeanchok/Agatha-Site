@@ -36,7 +36,8 @@ const Partenaires = (props) => {
         "/img/parenaires/Logo wiwil_ink tattoo.webp",
         "/img/parenaires/market sable.webp",
         "/img/parenaires/pancarte-1-kaliverre.webp",
-        "/img/parenaires/sup u la guerche.webp"
+        "/img/parenaires/sup u la guerche.webp",
+        "/img/parenaires/cmb.png"
     ]
 
     const partenairesSrc2 = [
